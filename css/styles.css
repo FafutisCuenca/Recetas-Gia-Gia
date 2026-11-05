@@ -1048,13 +1048,50 @@ img { max-width: 100%; display: block; }
     font-size: 9pt;
   }
 
-  /* Eliminar historia, consejos y acompañamientos */
+  /* Ocultar historia y fuente, pero conservar consejo y bebidas */
 
-  .story-box,
-  .tip-box,
-  .section-wrap > section.section-wrap {
-    display: none !important;
-  }
+.story-box {
+  display: none !important;
+}
+
+/* Conservar el consejo de Gia Gia */
+
+.tip-box {
+  display: block !important;
+  margin-top: 20px;
+  padding: 12px !important;
+  background: white !important;
+  border: 1px solid #ccc !important;
+  break-inside: avoid;
+}
+
+/* Conservar acompañamientos y nombres de bebidas */
+
+.section-wrap > section.section-wrap {
+  display: block !important;
+  margin-top: 20px;
+  padding: 0 !important;
+}
+
+.drink-grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.drink-card {
+  background: white !important;
+  border: 1px solid #ddd !important;
+  padding: 8px 12px !important;
+  break-inside: avoid;
+}
+
+/* Ocultar enlaces de navegación a las bebidas */
+
+.drink-card a,
+.section-wrap > section.section-wrap > p a {
+  display: none !important;
+}
 
   /* Ingredientes y preparación */
 
