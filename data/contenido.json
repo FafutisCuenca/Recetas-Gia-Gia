@@ -1,0 +1,341 @@
+
+{
+  "version": "1.0.0",
+  "proyecto": {
+    "nombre": "Las Recetas de Gia Gia",
+    "lema": "El sabor debe ser auténtico.",
+    "subtitulo": "Sabores, historias y tradiciones de Grecia",
+    "nombreGriego": "Οι συνταγές της γιαγιάς"
+  },
+  "biografia": {
+    "nombre": "Gia Gia",
+    "titulo": "La historia detrás de nuestra cocina",
+    "descripcion": "Una historia familiar que merece conservarse.",
+    "biografia": "Próximamente compartiremos la historia de Gia Gia, sus raíces griegas, sus recuerdos familiares y su pasión por la cocina.",
+    "imagen": "",
+    "estado": "pendiente"
+  },
+  "recetas": [
+    {
+      "id": "pastitsio",
+      "nombre": "Pastitsio",
+      "nombreGriego": "Παστίτσιο",
+      "categoria": "Plato fuerte",
+      "categoriaId": "plato-fuerte",
+      "descripcion": "Una deliciosa combinación de pasta, carne especiada y una generosa capa de bechamel gratinada.",
+      "imagen": "img/recetas/pastitsio.jpg",
+      "destacada": true,
+      "estado": "Referencia pendiente de validación",
+      "porciones": 8,
+      "tiempoPreparacion": "35 minutos",
+      "tiempoCoccion": "50 minutos",
+      "tiempoTotal": "1 h 25 min",
+      "historia": {
+        "titulo": "Un clásico de la mesa griega",
+        "texto": "El pastitsio es uno de los grandes platillos horneados de Grecia. Combina pasta tubular, carne preparada con tomate y especias aromáticas, y una cubierta de bechamel. Su presentación en capas recuerda a otros platillos mediterráneos, aunque tiene una identidad propia dentro de la cocina griega."
+      },
+      "ingredientes": [
+        {"cantidad": "500 g", "nombre": "pasta tubular para pastitsio, bucatini o ziti"},
+        {"cantidad": "600 g", "nombre": "carne molida de res"},
+        {"cantidad": "1", "nombre": "cebolla grande finamente picada"},
+        {"cantidad": "2 dientes", "nombre": "ajo picado"},
+        {"cantidad": "400 g", "nombre": "tomate triturado"},
+        {"cantidad": "100 ml", "nombre": "vino tinto seco"},
+        {"cantidad": "1", "nombre": "rama de canela"},
+        {"cantidad": "2", "nombre": "hojas de laurel"},
+        {"cantidad": "1/4 cucharadita", "nombre": "clavo molido"},
+        {"cantidad": "1/2 cucharadita", "nombre": "canela molida"},
+        {"cantidad": "100 g", "nombre": "queso kefalotyri o parmesano"},
+        {"cantidad": "80 g", "nombre": "mantequilla"},
+        {"cantidad": "80 g", "nombre": "harina de trigo"},
+        {"cantidad": "1 litro", "nombre": "leche entera"},
+        {"cantidad": "2", "nombre": "yemas de huevo"},
+        {"cantidad": "1/4 cucharadita", "nombre": "nuez moscada"},
+        {"cantidad": "al gusto", "nombre": "sal, pimienta y aceite de oliva"}
+      ],
+      "preparacion": [
+        "Precalentar el horno a 180 °C. Engrasar un refractario grande.",
+        "Calentar aceite de oliva en una sartén y sofreír la cebolla y el ajo hasta que estén suaves.",
+        "Agregar la carne molida y cocinar hasta que cambie de color.",
+        "Incorporar el vino tinto y dejar reducir. Agregar el tomate, laurel, canela, clavo, sal y pimienta.",
+        "Cocinar a fuego bajo durante aproximadamente 25 a 30 minutos, hasta obtener una salsa espesa. Retirar la canela y el laurel.",
+        "Cocer la pasta en agua con sal hasta que quede ligeramente firme. Escurrir y reservar.",
+        "Para la bechamel, derretir la mantequilla, incorporar la harina y mezclar durante un minuto.",
+        "Agregar la leche tibia poco a poco, batiendo constantemente hasta obtener una salsa espesa y uniforme.",
+        "Retirar del fuego. Incorporar la nuez moscada y las yemas, mezclando rápidamente. Agregar una parte del queso.",
+        "Colocar la pasta en el refractario, distribuir encima la salsa de carne y cubrir con la bechamel.",
+        "Espolvorear el queso restante y hornear durante 40 a 50 minutos, hasta que la superficie esté dorada.",
+        "Dejar reposar de 15 a 20 minutos antes de cortar y servir."
+      ],
+      "consejo": "La salsa de carne debe quedar espesa y la bechamel suficientemente firme. Dejar reposar el pastitsio después de hornearlo ayuda a conseguir porciones bien definidas.",
+      "consejoValidado": false,
+      "acompanamiento": "Combina muy bien con una ensalada griega fresca y un vino tinto de cuerpo medio.",
+      "bebidas": ["retsina", "agua"],
+      "fuente": {
+        "nombre": "Lauer House - Pastitsio",
+        "url": "https://lauerhouse.gr/greek-specialities/pastitsio"
+      }
+    },
+    {
+      "id": "keftedes",
+      "nombre": "Keftedes",
+      "nombreGriego": "Κεφτέδες",
+      "categoria": "Entrada",
+      "categoriaId": "entrada",
+      "descripcion": "Albóndigas griegas doradas, aromatizadas con hierbas frescas, menta y orégano.",
+      "imagen": "img/recetas/keftedes.jpg",
+      "destacada": true,
+      "estado": "Referencia pendiente de validación",
+      "porciones": 8,
+      "tiempoPreparacion": "25 minutos",
+      "tiempoCoccion": "20 minutos",
+      "tiempoTotal": "45 min + reposo",
+      "historia": {
+        "titulo": "Un clásico para compartir",
+        "texto": "Los keftedes son pequeñas albóndigas presentes en la tradición culinaria griega. Se sirven como meze, entrada o plato principal y admiten variaciones familiares en el uso de hierbas, carne y condimentos."
+      },
+      "ingredientes": [
+        {"cantidad": "700 g", "nombre": "carne molida de res"},
+        {"cantidad": "1", "nombre": "cebolla mediana rallada"},
+        {"cantidad": "2 dientes", "nombre": "ajo finamente picado"},
+        {"cantidad": "2 rebanadas", "nombre": "pan blanco sin corteza"},
+        {"cantidad": "1/3 taza", "nombre": "leche para remojar el pan"},
+        {"cantidad": "1", "nombre": "huevo"},
+        {"cantidad": "3 cucharadas", "nombre": "perejil fresco picado"},
+        {"cantidad": "1 cucharada", "nombre": "menta fresca picada"},
+        {"cantidad": "1 cucharadita", "nombre": "orégano seco"},
+        {"cantidad": "1 cucharada", "nombre": "vinagre de vino tinto"},
+        {"cantidad": "al gusto", "nombre": "sal y pimienta"},
+        {"cantidad": "suficiente", "nombre": "harina para cubrir ligeramente"},
+        {"cantidad": "suficiente", "nombre": "aceite de oliva para freír"}
+      ],
+      "preparacion": [
+        "Remojar el pan en leche durante unos minutos y escurrirlo bien.",
+        "Colocar la carne en un recipiente amplio.",
+        "Agregar cebolla, ajo, pan, huevo, perejil, menta, orégano y vinagre.",
+        "Sazonar con sal y pimienta. Mezclar hasta integrar todos los ingredientes sin trabajar excesivamente la carne.",
+        "Cubrir y refrigerar durante 30 minutos para que la mezcla tome consistencia.",
+        "Formar albóndigas pequeñas y ligeramente ovaladas.",
+        "Pasarlas ligeramente por harina y retirar el exceso.",
+        "Calentar aceite de oliva en una sartén a fuego medio.",
+        "Freír en tandas, volteando para dorar uniformemente y asegurando que estén completamente cocidas en el centro.",
+        "Escurrir sobre papel absorbente y servir calientes o tibias."
+      ],
+      "consejo": "La menta fresca y el perejil aportan un aroma característico. Es importante escurrir el pan para que la mezcla no quede demasiado húmeda.",
+      "consejoValidado": false,
+      "acompanamiento": "Servir con tzatziki, pan pita, limón y una ensalada fresca.",
+      "bebidas": ["ouzo", "agua"],
+      "fuente": {
+        "nombre": "Argiro Barbarigou - Greek Keftedes",
+        "url": "https://www.argiro.gr/en/recipe/light-and-tender-greek-keftedes/"
+      }
+    },
+    {
+      "id": "moussaka",
+      "nombre": "Moussaka",
+      "nombreGriego": "Μουσακάς",
+      "categoria": "Plato fuerte",
+      "categoriaId": "plato-fuerte",
+      "descripcion": "Capas de berenjena, carne especiada y bechamel horneadas hasta obtener una superficie dorada.",
+      "imagen": "img/recetas/moussaka.jpg",
+      "destacada": true,
+      "estado": "Referencia pendiente de validación",
+      "porciones": 8,
+      "tiempoPreparacion": "45 minutos",
+      "tiempoCoccion": "60 minutos",
+      "tiempoTotal": "1 h 45 min",
+      "historia": {
+        "titulo": "Un platillo emblemático del Mediterráneo",
+        "texto": "La moussaka tiene antecedentes en distintas cocinas del Mediterráneo oriental. La versión griega que hoy conocemos, con capas de berenjena, carne y una cubierta generosa de bechamel, se consolidó como uno de los grandes platillos horneados de Grecia."
+      },
+      "ingredientes": [
+        {"cantidad": "3 grandes", "nombre": "berenjenas"},
+        {"cantidad": "2 medianas", "nombre": "papas"},
+        {"cantidad": "600 g", "nombre": "carne molida de res o cordero"},
+        {"cantidad": "1", "nombre": "cebolla grande picada"},
+        {"cantidad": "2 dientes", "nombre": "ajo picado"},
+        {"cantidad": "400 g", "nombre": "tomate triturado"},
+        {"cantidad": "100 ml", "nombre": "vino tinto seco"},
+        {"cantidad": "1/2 cucharadita", "nombre": "canela molida"},
+        {"cantidad": "1/4 cucharadita", "nombre": "clavo molido"},
+        {"cantidad": "2", "nombre": "hojas de laurel"},
+        {"cantidad": "80 g", "nombre": "mantequilla"},
+        {"cantidad": "80 g", "nombre": "harina de trigo"},
+        {"cantidad": "1 litro", "nombre": "leche entera"},
+        {"cantidad": "2", "nombre": "huevos"},
+        {"cantidad": "80 g", "nombre": "queso kefalotyri o parmesano"},
+        {"cantidad": "al gusto", "nombre": "aceite de oliva, sal, pimienta y nuez moscada"}
+      ],
+      "preparacion": [
+        "Cortar las berenjenas en rebanadas longitudinales de aproximadamente un centímetro. Espolvorear con sal y dejar reposar 30 minutos.",
+        "Enjuagar las berenjenas y secarlas cuidadosamente.",
+        "Cortar las papas en rodajas. Hornear o dorar ligeramente las papas y berenjenas con aceite de oliva hasta que estén tiernas.",
+        "Sofreír la cebolla y el ajo. Incorporar la carne y cocinar hasta dorar.",
+        "Agregar vino, tomate, canela, clavo, laurel, sal y pimienta. Cocinar a fuego bajo hasta que la salsa espese.",
+        "Preparar la bechamel derritiendo la mantequilla e incorporando la harina.",
+        "Añadir la leche poco a poco, batiendo hasta espesar. Agregar nuez moscada y queso.",
+        "Dejar entibiar ligeramente la salsa e incorporar los huevos batidos poco a poco.",
+        "En un refractario colocar primero las papas, después una capa de berenjenas y luego la salsa de carne.",
+        "Repetir las capas de berenjena y carne si el recipiente lo permite.",
+        "Cubrir generosamente con bechamel y espolvorear queso.",
+        "Hornear a 180 °C durante 45 a 60 minutos hasta que la cubierta esté dorada.",
+        "Dejar reposar al menos 20 minutos antes de cortar."
+      ],
+      "consejo": "Evitar que la berenjena conserve demasiada humedad y procurar que la salsa de carne quede espesa. El reposo es fundamental para servir porciones firmes.",
+      "consejoValidado": false,
+      "acompanamiento": "Ensalada horiatiki, pan rústico y vino tinto.",
+      "bebidas": ["retsina", "agua"],
+      "fuente": {
+        "nombre": "Diane Kochilas - Classic Moussaka",
+        "url": "https://www.dianekochilas.com/classic-moussaka/"
+      }
+    },
+    {
+      "id": "spanakopitas",
+      "nombre": "Spanakopitas",
+      "nombreGriego": "Σπανακόπιτα",
+      "categoria": "Entrada",
+      "categoriaId": "entrada",
+      "descripcion": "Crujientes triángulos de pasta filo rellenos de espinacas, queso feta y hierbas aromáticas.",
+      "imagen": "img/recetas/spanakopitas.jpg",
+      "destacada": true,
+      "estado": "Referencia pendiente de validación",
+      "porciones": 8,
+      "tiempoPreparacion": "35 minutos",
+      "tiempoCoccion": "25 minutos",
+      "tiempoTotal": "1 hora",
+      "historia": {
+        "titulo": "El sabor de las hierbas griegas",
+        "texto": "La spanakopita es una preparación tradicional de la familia de las tartas saladas griegas. La combinación de hojas verdes, hierbas frescas, queso y pasta filo tiene numerosas variantes regionales y familiares. Puede presentarse como una tarta grande o en pequeños triángulos individuales."
+      },
+      "ingredientes": [
+        {"cantidad": "500 g", "nombre": "espinacas frescas"},
+        {"cantidad": "200 g", "nombre": "queso feta desmoronado"},
+        {"cantidad": "1", "nombre": "cebolla mediana picada"},
+        {"cantidad": "3", "nombre": "cebollines picados"},
+        {"cantidad": "2 cucharadas", "nombre": "eneldo fresco picado"},
+        {"cantidad": "2 cucharadas", "nombre": "perejil fresco picado"},
+        {"cantidad": "1", "nombre": "huevo"},
+        {"cantidad": "1 paquete", "nombre": "pasta filo descongelada"},
+        {"cantidad": "100 ml", "nombre": "aceite de oliva"},
+        {"cantidad": "al gusto", "nombre": "pimienta y nuez moscada"}
+      ],
+      "preparacion": [
+        "Lavar y picar las espinacas. Cocinarlas brevemente en una sartén hasta que pierdan su volumen.",
+        "Escurrir y exprimir muy bien las espinacas para eliminar la mayor cantidad de líquido posible.",
+        "Sofreír la cebolla y los cebollines con un poco de aceite de oliva hasta que estén suaves.",
+        "Mezclar las espinacas con la cebolla, el feta, el eneldo, el perejil y el huevo.",
+        "Sazonar con pimienta y una pizca de nuez moscada. Probar antes de agregar sal porque el feta ya es salado.",
+        "Precalentar el horno a 180 °C.",
+        "Extender una hoja de pasta filo y mantener cubiertas las demás con un paño limpio ligeramente húmedo.",
+        "Pincelar con aceite de oliva y colocar otra hoja encima. Cortar tiras longitudinales.",
+        "Colocar una cucharada del relleno en un extremo y doblar en forma de triángulo, alternando los lados hasta terminar la tira.",
+        "Repetir con el resto de las hojas y el relleno.",
+        "Colocar los triángulos en una charola, pincelar ligeramente con aceite y hornear de 20 a 25 minutos hasta que estén dorados y crujientes."
+      ],
+      "consejo": "El secreto de una buena spanakopita está en retirar el exceso de agua de las espinacas y evitar que la pasta filo se reseque mientras se trabaja.",
+      "consejoValidado": false,
+      "acompanamiento": "Excelente como entrada, acompañada de tzatziki, aceitunas y una bebida fresca.",
+      "bebidas": ["ouzo", "agua"],
+      "fuente": {
+        "nombre": "Diane Kochilas - Classic Spanakopita",
+        "url": "https://www.youtube.com/watch?v=vzf87B0AEqA"
+      }
+    },
+    {
+      "id": "horiatiki",
+      "nombre": "Horiatiki Salata",
+      "nombreGriego": "Χωριάτικη σαλάτα",
+      "categoria": "Ensalada",
+      "categoriaId": "ensalada",
+      "descripcion": "La ensalada de pueblo griega: tomate, pepino, aceitunas Kalamata, pimiento, cebolla y queso feta.",
+      "imagen": "img/recetas/horiatiki.jpg",
+      "destacada": true,
+      "estado": "Referencia pendiente de validación",
+      "porciones": 4,
+      "tiempoPreparacion": "15 minutos",
+      "tiempoCoccion": "Sin cocción",
+      "tiempoTotal": "15 min",
+      "historia": {
+        "titulo": "La sencillez de la mesa griega",
+        "texto": "Horiatiki significa ensalada de pueblo. Es una preparación muy representativa de la cocina griega, basada en vegetales frescos, aceitunas, queso feta, orégano y aceite de oliva. La versión tradicional no necesita lechuga: los ingredientes se presentan en trozos generosos y la feta suele colocarse en una pieza sobre las verduras."
+      },
+      "ingredientes": [
+        {"cantidad": "4", "nombre": "tomates maduros"},
+        {"cantidad": "1", "nombre": "pepino grande"},
+        {"cantidad": "1", "nombre": "pimiento verde"},
+        {"cantidad": "1/2", "nombre": "cebolla morada"},
+        {"cantidad": "100 g", "nombre": "aceitunas Kalamata"},
+        {"cantidad": "200 g", "nombre": "queso feta en bloque"},
+        {"cantidad": "1 cucharadita", "nombre": "orégano seco"},
+        {"cantidad": "1/4 taza", "nombre": "aceite de oliva extra virgen"},
+        {"cantidad": "1 cucharada", "nombre": "vinagre de vino tinto"},
+        {"cantidad": "al gusto", "nombre": "sal y pimienta"}
+      ],
+      "preparacion": [
+        "Lavar y secar los vegetales.",
+        "Cortar los tomates en gajos y el pepino en medias lunas gruesas.",
+        "Cortar el pimiento en tiras y la cebolla en rodajas delgadas.",
+        "Colocar los vegetales en una ensaladera amplia.",
+        "Agregar las aceitunas Kalamata.",
+        "Aliñar con aceite de oliva, vinagre, sal y pimienta.",
+        "Colocar el bloque de queso feta encima de los vegetales.",
+        "Espolvorear generosamente con orégano seco y servir."
+      ],
+      "consejo": "No cortar los vegetales demasiado pequeños. Una buena horiatiki depende de la calidad del tomate, del aceite de oliva y del queso feta.",
+      "consejoValidado": false,
+      "acompanamiento": "Acompaña prácticamente cualquier plato griego, especialmente pastitsio, moussaka y carnes asadas.",
+      "bebidas": ["retsina", "agua"],
+      "fuente": {
+        "nombre": "GetGreece - Horiatiki",
+        "url": "https://www.getgreece.com/recipes/horiatiki"
+      }
+    }
+  ],
+  "bebidas": [
+    {
+      "id": "ouzo",
+      "nombre": "Ouzo",
+      "tipo": "Destilado tradicional griego",
+      "descripcion": "Bebida anisada emblemática de Grecia, tradicionalmente asociada con pequeños platillos y aperitivos.",
+      "ideal": "Keftedes, aceitunas, feta y mezedes."
+    },
+    {
+      "id": "metaxa",
+      "nombre": "Metaxa",
+      "tipo": "Destilado griego",
+      "descripcion": "Destilado griego de estilo brandy, conocido por sus notas aromáticas y su presentación característica.",
+      "ideal": "Sobremesa y postres."
+    },
+    {
+      "id": "retsina",
+      "nombre": "Retsina",
+      "tipo": "Vino tradicional griego",
+      "descripcion": "Vino griego tradicional con un perfil aromático característico asociado a la resina de pino.",
+      "ideal": "Moussaka, pastitsio, ensaladas y platillos mediterráneos."
+    },
+    {
+      "id": "agua",
+      "nombre": "Agua natural",
+      "tipo": "Bebida sin alcohol",
+      "descripcion": "Una opción sencilla y refrescante para acompañar cualquier comida.",
+      "ideal": "Todos los platillos."
+    },
+    {
+      "id": "frappe",
+      "nombre": "Frappé griego",
+      "tipo": "Café frío",
+      "descripcion": "Café frío espumoso, muy popular en Grecia.",
+      "ideal": "Después de comer y para acompañar un postre."
+    }
+  ],
+  "publicaciones": [],
+  "eventos": [],
+  "reconocimientos": [],
+  "categorias": [
+    {"id": "entrada", "nombre": "Entradas"},
+    {"id": "ensalada", "nombre": "Ensaladas"},
+    {"id": "plato-fuerte", "nombre": "Platos fuertes"},
+    {"id": "postre", "nombre": "Postres"}
+  ]
+}
