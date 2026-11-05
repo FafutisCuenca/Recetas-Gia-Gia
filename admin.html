@@ -4,46 +4,551 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Centro de administración de Las Recetas de Gia Gia.">
   <title>Administración | Gia Gia</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/admin.js" defer></script>
 </head>
+
 <body data-page="admin">
+
   <header id="site-header"></header>
 
   <main class="section-wrap admin-area">
-    <span class="eyebrow">CENTRO DE CONTENIDOS</span>
-    <h1>Administración de Gia Gia</h1>
-    <p>
-      Edita el contenido del recetario y prepara las actualizaciones
-      para publicarlas en GitHub.
-    </p>
+
+    <section class="admin-heading">
+      <span class="eyebrow">CENTRO DE CONTENIDOS</span>
+      <h1>Administración de Gia Gia</h1>
+      <p>
+        Administra las recetas, conserva las historias familiares
+        y prepara el contenido que se publicará en nuestro recetario.
+      </p>
+    </section>
 
     <div class="admin-warning">
-      Este administrador trabaja localmente. Los cambios no se publican
-      automáticamente en el sitio.
+      <strong>Administración local:</strong>
+      los cambios se realizan en este navegador. Para publicarlos,
+      deberás exportar el archivo contenido.json y sustituir el
+      archivo correspondiente en GitHub.
     </div>
 
-    <div class="admin-actions">
-      <button id="load-json" class="btn btn-primary">Cargar contenido publicado</button>
-      <label class="btn btn-outline" for="json-file">Importar JSON</label>
-      <input id="json-file" type="file" accept=".json,application/json" hidden>
-      <button id="validate-json" class="btn btn-outline">Validar contenido</button>
-      <button id="download-json" class="btn btn-primary">Exportar JSON</button>
+    <!-- HERRAMIENTAS GENERALES -->
+
+    <section class="admin-toolbar">
+      <div class="admin-toolbar-group">
+        <button type="button" id="load-json" class="btn btn-primary">
+          Cargar contenido publicado
+        </button>
+
+        <label class="btn btn-outline" for="json-file">
+          Importar JSON
+        </label>
+
+        <input
+          type="file"
+          id="json-file"
+          accept=".json,application/json"
+          hidden
+        >
+      </div>
+
+      <div class="admin-toolbar-group">
+        <button type="button" id="validate-json" class="btn btn-outline">
+          Validar contenido
+        </button>
+
+        <button type="button" id="download-json" class="btn btn-primary">
+          Exportar contenido.json
+        </button>
+      </div>
+    </section>
+
+    <div
+      id="admin-status"
+      class="admin-status"
+      role="status"
+      aria-live="polite">
     </div>
 
-    <div id="admin-status" class="admin-status" aria-live="polite"></div>
+    <!-- ESTADÍSTICAS -->
 
-    <label for="json-editor">Archivo de contenidos (JSON)</label>
-    <textarea id="json-editor" rows="25" spellcheck="false"
-      placeholder="Carga el archivo contenido.json para comenzar a editar."></textarea>
+    <section class="admin-statistics">
 
-    <p class="help-text">
-      Guarda el archivo exportado como contenido.json y reemplaza
-      el archivo de la carpeta data en tu repositorio.
-    </p>
+      <article class="admin-stat">
+        <span id="stat-total">0</span>
+        <small>Total de recetas</small>
+      </article>
+
+      <article class="admin-stat">
+        <span id="stat-published">0</span>
+        <small>Publicadas</small>
+      </article>
+
+      <article class="admin-stat">
+        <span id="stat-draft">0</span>
+        <small>Borradores</small>
+      </article>
+
+      <article class="admin-stat">
+        <span id="stat-paused">0</span>
+        <small>Pausadas</small>
+      </article>
+
+    </section>
+
+    <!-- ADMINISTRACIÓN DE RECETAS -->
+
+    <section class="admin-section">
+
+      <div class="admin-section-heading">
+        <div>
+          <span class="eyebrow">ARCHIVO GASTRONÓMICO</span>
+          <h2>Gestión de recetas</h2>
+        </div>
+
+        <button
+          type="button"
+          id="new-recipe"
+          class="btn btn-primary">
+          + Nueva receta
+        </button>
+      </div>
+
+      <div class="admin-catalog-tools">
+
+        <input
+          type="search"
+          id="admin-search"
+          placeholder="Buscar receta por nombre..."
+          aria-label="Buscar receta"
+        >
+
+        <select id="admin-filter-status" aria-label="Filtrar por estado">
+          <option value="todos">Todos los estados</option>
+          <option value="publicada">Publicadas</option>
+          <option value="borrador">Borradores</option>
+          <option value="pausada">Pausadas</option>
+        </select>
+
+        <select id="admin-filter-category" aria-label="Filtrar por categoría">
+          <option value="todos">Todas las categorías</option>
+          <option value="entrada">Entradas</option>
+          <option value="ensalada">Ensaladas</option>
+          <option value="plato-fuerte">Platos fuertes</option>
+          <option value="postre">Postres</option>
+        </select>
+
+      </div>
+
+      <div id="recipe-admin-list" class="admin-recipe-list">
+        <div class="empty-state">
+          Carga el contenido para consultar las recetas.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FORMULARIO DE EDICIÓN -->
+
+    <section class="admin-section admin-editor-section" id="recipe-editor">
+
+      <div class="admin-section-heading">
+        <div>
+          <span class="eyebrow">FICHA GASTRONÓMICA</span>
+          <h2 id="editor-title">Nueva receta</h2>
+        </div>
+
+        <span id="editor-mode" class="admin-mode">
+          Sin seleccionar
+        </span>
+      </div>
+
+      <form id="recipe-form" autocomplete="off">
+
+        <!-- IDENTIFICACIÓN -->
+
+        <fieldset class="admin-fieldset">
+          <legend>1. Identificación de la receta</legend>
+
+          <div class="admin-form-grid">
+
+            <div class="admin-field">
+              <label for="recipe-id">Identificador *</label>
+              <input
+                type="text"
+                id="recipe-id"
+                placeholder="ejemplo: dolmades"
+                required
+              >
+              <small>Usa minúsculas, números y guiones.</small>
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-name">Nombre en español *</label>
+              <input
+                type="text"
+                id="recipe-name"
+                required
+                placeholder="Nombre del platillo"
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-greek">Nombre en griego</label>
+              <input
+                type="text"
+                id="recipe-greek"
+                placeholder="Nombre en alfabeto griego"
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-category">Categoría *</label>
+              <select id="recipe-category" required>
+                <option value="entrada">Entradas</option>
+                <option value="ensalada">Ensaladas</option>
+                <option value="plato-fuerte">Platos fuertes</option>
+                <option value="postre">Postres</option>
+              </select>
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-region">Región de Grecia</label>
+              <input
+                type="text"
+                id="recipe-region"
+                placeholder="Ejemplo: Macedonia, Creta..."
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-status">Estado editorial *</label>
+              <select id="recipe-status" required>
+                <option value="borrador">Borrador</option>
+                <option value="publicada">Publicada</option>
+                <option value="pausada">Pausada</option>
+              </select>
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-featured">En portada</label>
+              <select id="recipe-featured">
+                <option value="false">No</option>
+                <option value="true">Sí</option>
+              </select>
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-tags">Etiquetas</label>
+              <input
+                type="text"
+                id="recipe-tags"
+                placeholder="Mediterránea, tradicional, familiar"
+              >
+              <small>Separa las etiquetas con comas.</small>
+            </div>
+
+          </div>
+
+          <div class="admin-field">
+            <label for="recipe-description">Descripción breve *</label>
+            <textarea
+              id="recipe-description"
+              rows="3"
+              required
+              placeholder="Presentación breve de la receta...">
+            </textarea>
+          </div>
+
+        </fieldset>
+
+        <!-- HISTORIA -->
+
+        <fieldset class="admin-fieldset">
+          <legend>2. Historia y tradición</legend>
+
+          <div class="admin-field">
+            <label for="recipe-story-title">Título de la historia</label>
+            <input
+              type="text"
+              id="recipe-story-title"
+              placeholder="La historia de este platillo"
+            >
+          </div>
+
+          <div class="admin-field">
+            <label for="recipe-story-text">Historia de la receta</label>
+            <textarea
+              id="recipe-story-text"
+              rows="5"
+              placeholder="Origen, tradición, contexto cultural...">
+            </textarea>
+          </div>
+
+        </fieldset>
+
+        <!-- DATOS DE PREPARACIÓN -->
+
+        <fieldset class="admin-fieldset">
+          <legend>3. Datos de preparación</legend>
+
+          <div class="admin-form-grid">
+
+            <div class="admin-field">
+              <label for="recipe-servings">Porciones</label>
+              <input
+                type="number"
+                id="recipe-servings"
+                min="1"
+                value="4"
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-difficulty">Dificultad</label>
+              <select id="recipe-difficulty">
+                <option value="">Sin especificar</option>
+                <option value="Fácil">Fácil</option>
+                <option value="Media">Media</option>
+                <option value="Difícil">Difícil</option>
+              </select>
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-prep-time">Tiempo de preparación</label>
+              <input
+                type="text"
+                id="recipe-prep-time"
+                placeholder="30 minutos"
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-cook-time">Tiempo de cocción</label>
+              <input
+                type="text"
+                id="recipe-cook-time"
+                placeholder="45 minutos"
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-total-time">Tiempo total</label>
+              <input
+                type="text"
+                id="recipe-total-time"
+                placeholder="1 hora 15 minutos"
+              >
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- INGREDIENTES -->
+
+        <fieldset class="admin-fieldset">
+          <legend>4. Ingredientes</legend>
+
+          <p class="help-text">
+            Cada ingrediente conserva cantidad, unidad, nombre
+            y observaciones.
+          </p>
+
+          <div id="ingredients-editor"></div>
+
+          <button
+            type="button"
+            id="add-ingredient"
+            class="btn btn-outline">
+            + Agregar ingrediente
+          </button>
+
+        </fieldset>
+
+        <!-- PREPARACIÓN -->
+
+        <fieldset class="admin-fieldset">
+          <legend>5. Preparación paso a paso</legend>
+
+          <div id="steps-editor"></div>
+
+          <button
+            type="button"
+            id="add-step"
+            class="btn btn-outline">
+            + Agregar paso
+          </button>
+
+        </fieldset>
+
+        <!-- FOTOGRAFÍAS -->
+
+        <fieldset class="admin-fieldset">
+          <legend>6. Fotografías</legend>
+
+          <div class="admin-field">
+            <label for="recipe-image">Imagen principal</label>
+            <input
+              type="text"
+              id="recipe-image"
+              placeholder="img/recetas/nombre-receta.png"
+            >
+            <small>
+              Escribe la ruta de la imagen dentro del repositorio.
+              Se admiten JPG, PNG y WebP.
+            </small>
+          </div>
+
+          <div class="admin-field">
+            <label for="recipe-gallery">Galería de imágenes</label>
+            <textarea
+              id="recipe-gallery"
+              rows="3"
+              placeholder="Una ruta por línea">
+            </textarea>
+          </div>
+
+        </fieldset>
+
+        <!-- CONSEJO FAMILIAR -->
+
+        <fieldset class="admin-fieldset">
+          <legend>7. El toque de Gia Gia</legend>
+
+          <div class="admin-field">
+            <label for="recipe-tip">Consejo o recomendación</label>
+            <textarea
+              id="recipe-tip"
+              rows="4"
+              placeholder="Consejo para preparar o servir el platillo...">
+            </textarea>
+          </div>
+
+          <div class="admin-field">
+            <label for="recipe-tip-validated">
+              Validación familiar del consejo
+            </label>
+
+            <select id="recipe-tip-validated">
+              <option value="false">Pendiente de revisión familiar</option>
+              <option value="true">Validado por Gia Gia</option>
+            </select>
+          </div>
+
+        </fieldset>
+
+        <!-- ACOMPAÑAMIENTOS -->
+
+        <fieldset class="admin-fieldset">
+          <legend>8. Acompañamientos y bebidas</legend>
+
+          <div class="admin-field">
+            <label for="recipe-accompaniment">Acompañamiento</label>
+            <textarea
+              id="recipe-accompaniment"
+              rows="3"
+              placeholder="Guarniciones y sugerencias para servir...">
+            </textarea>
+          </div>
+
+          <div class="admin-field">
+            <label>Bebidas relacionadas</label>
+            <div id="recipe-drinks" class="admin-check-list">
+              <p class="help-text">
+                Las opciones aparecerán al cargar el catálogo de bebidas.
+              </p>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <!-- FUENTES -->
+
+        <fieldset class="admin-fieldset">
+          <legend>9. Fuentes y referencias</legend>
+
+          <div class="admin-form-grid">
+
+            <div class="admin-field">
+              <label for="recipe-source-name">Nombre de la fuente</label>
+              <input
+                type="text"
+                id="recipe-source-name"
+                placeholder="Autor, publicación o sitio"
+              >
+            </div>
+
+            <div class="admin-field">
+              <label for="recipe-source-url">Enlace de consulta</label>
+              <input
+                type="url"
+                id="recipe-source-url"
+                placeholder="https://..."
+              >
+            </div>
+
+          </div>
+
+          <div class="admin-field">
+            <label for="recipe-notes">Notas administrativas</label>
+            <textarea
+              id="recipe-notes"
+              rows="3"
+              placeholder="Observaciones internas, pendientes de revisión...">
+            </textarea>
+          </div>
+
+        </fieldset>
+
+        <!-- ACCIONES DEL FORMULARIO -->
+
+        <div class="admin-form-actions">
+
+          <button
+            type="submit"
+            id="save-recipe"
+            class="btn btn-primary">
+            Guardar receta
+          </button>
+
+          <button
+            type="button"
+            id="cancel-edit"
+            class="btn btn-outline">
+            Cancelar edición
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+    <!-- INFORMACIÓN DEL ARCHIVO -->
+
+    <section class="admin-section">
+
+      <span class="eyebrow">CONTROL DE PUBLICACIÓN</span>
+      <h2>Archivo de contenidos</h2>
+
+      <div class="admin-warning">
+        <strong>Importante:</strong>
+        guardar una receta en esta pantalla no modifica GitHub.
+        Primero valida y exporta el archivo. Después reemplaza
+        <code>data/contenido.json</code> en tu repositorio.
+      </div>
+
+      <p class="help-text">
+        El catálogo de bebidas, publicaciones, eventos,
+        reconocimientos y demás información del proyecto se conserva
+        al actualizar las recetas desde este administrador.
+      </p>
+
+    </section>
+
   </main>
 
   <footer id="site-footer"></footer>
+
 </body>
 </html>
