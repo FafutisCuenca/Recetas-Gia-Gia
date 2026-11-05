@@ -970,9 +970,26 @@ img { max-width: 100%; display: block; }
   scroll-margin-top: 25px;
 }
 
-/* IMPRESIÓN DE RECETAS */
+
+/* ==========================================================
+   IMPRESIÓN DE RECETAS - LAS RECETAS DE GIA GIA
+   ========================================================== */
 
 @media print {
+
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 10pt;
+  }
+
+  /* Ocultar navegación y elementos innecesarios */
+
   #site-header,
   #site-footer,
   .btn,
@@ -981,29 +998,107 @@ img { max-width: 100%; display: block; }
     display: none !important;
   }
 
-  body {
-    background: white;
-    color: black;
+  /* Contenedor general */
+
+  #recipe-detail {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
   }
 
+  /* Encabezado: fotografía y descripción */
+
   .recipe-hero {
-    display: block;
-    background: white;
+    display: grid !important;
+    grid-template-columns: 145px 1fr;
+    align-items: center;
+    gap: 20px;
+    background: white !important;
+    margin: 0 0 20px !important;
+    padding: 0 0 15px !important;
+    border-bottom: 1px solid #ccc;
+    break-inside: avoid;
   }
 
   .recipe-hero-photo {
-    max-height: 250px;
+    width: 145px !important;
+    height: 120px !important;
+    max-height: 120px !important;
+    overflow: hidden;
   }
 
-  .recipe-columns {
-    grid-template-columns: 1fr 1.5fr;
+  .recipe-hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+
+  .recipe-hero-content h1 {
+    font-size: 21pt;
+    margin: 5px 0;
+  }
+
+  .recipe-hero-content p {
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .recipe-meta {
+    font-size: 9pt;
+  }
+
+  /* Eliminar historia, consejos y acompañamientos */
 
   .story-box,
   .tip-box,
-  .recipe-panel {
+  .section-wrap > section.section-wrap {
+    display: none !important;
+  }
+
+  /* Ingredientes y preparación */
+
+  .recipe-columns {
+    display: grid !important;
+    grid-template-columns: 34% 66%;
+    gap: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .recipe-panel,
+  .recipe-method {
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .recipe-panel h2,
+  .recipe-method h2 {
+    font-size: 14pt;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+
+  .recipe-panel p,
+  .ingredient-list li,
+  .method-list li {
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  .ingredient-list li,
+  .method-list li {
+    margin-bottom: 7px;
     break-inside: avoid;
   }
+
+  .recipe-panel,
+  .recipe-method {
+    break-inside: auto;
+  }
+
 }
 
 /* RESPONSIVE ADMINISTRACIÓN */
