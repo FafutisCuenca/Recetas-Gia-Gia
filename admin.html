@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administración | Gia Gia</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/admin.js" defer></script>
+</head>
+<body data-page="admin">
+  <header id="site-header"></header>
+
+  <main class="section-wrap admin-area">
+    <span class="eyebrow">CENTRO DE CONTENIDOS</span>
+    <h1>Administración de Gia Gia</h1>
+    <p>
+      Edita el contenido del recetario y prepara las actualizaciones
+      para publicarlas en GitHub.
+    </p>
+
+    <div class="admin-warning">
+      Este administrador trabaja localmente. Los cambios no se publican
+      automáticamente en el sitio.
+    </div>
+
+    <div class="admin-actions">
+      <button id="load-json" class="btn btn-primary">Cargar contenido publicado</button>
+      <label class="btn btn-outline" for="json-file">Importar JSON</label>
+      <input id="json-file" type="file" accept=".json,application/json" hidden>
+      <button id="validate-json" class="btn btn-outline">Validar contenido</button>
+      <button id="download-json" class="btn btn-primary">Exportar JSON</button>
+    </div>
+
+    <div id="admin-status" class="admin-status" aria-live="polite"></div>
+
+    <label for="json-editor">Archivo de contenidos (JSON)</label>
+    <textarea id="json-editor" rows="25" spellcheck="false"
+      placeholder="Carga el archivo contenido.json para comenzar a editar."></textarea>
+
+    <p class="help-text">
+      Guarda el archivo exportado como contenido.json y reemplaza
+      el archivo de la carpeta data en tu repositorio.
+    </p>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
