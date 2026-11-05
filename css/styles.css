@@ -1010,7 +1010,7 @@ img { max-width: 100%; display: block; }
 
   .recipe-hero {
     display: grid !important;
-    grid-template-columns: 145px 1fr;
+    grid-template-columns: 190px 1fr;
     align-items: center;
     gap: 20px;
     background: white !important;
@@ -1021,16 +1021,17 @@ img { max-width: 100%; display: block; }
   }
 
   .recipe-hero-photo {
-    width: 145px !important;
-    height: 120px !important;
-    max-height: 120px !important;
+    width: 190px !important;
+    height: 145px !important;
+    max-height: 145px !important;
     overflow: hidden;
   }
 
   .recipe-hero-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background: white;
   }
 
   .recipe-hero-content h1 {
