@@ -295,6 +295,7 @@ function mostrarRecetario() {
   filtrar();
 }
 
+
 // ------------------------------------------------------------
 // PÁGINA INDIVIDUAL DE RECETA
 // ------------------------------------------------------------
@@ -338,6 +339,36 @@ function mostrarReceta() {
   const fuente = r.fuente || {};
 
   main.innerHTML = `
+
+    <!-- CABECERA EXCLUSIVA PARA IMPRESIÓN -->
+
+    <div class="print-recipe-header">
+
+      <div class="print-recipe-photo">
+        ${r.imagen ? `
+          <img
+            src="${escapar(r.imagen)}"
+            alt="${escapar(r.nombre)}">
+        ` : ""}
+      </div>
+
+      <div class="print-recipe-title">
+
+        <span>
+          ${escapar(r.nombreGriego || "")}
+          ·
+          ${escapar(r.categoria || "")}
+        </span>
+
+        <h1>${escapar(r.nombre)}</h1>
+
+        <p>${escapar(r.descripcion || "")}</p>
+
+      </div>
+
+    </div>
+
+    <!-- VISTA NORMAL DE LA RECETA -->
 
     <section class="recipe-hero">
 
