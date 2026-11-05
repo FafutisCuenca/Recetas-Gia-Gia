@@ -1,4 +1,3 @@
-
 {
   "version": "1.0.0",
   "proyecto": {
@@ -20,7 +19,7 @@
       "id": "pastitsio",
       "nombre": "Pastitsio",
       "nombreGriego": "Παστίτσιο",
-      "categoria": "Plato fuerte",
+      "categoria": "plato-fuerte",
       "categoriaId": "plato-fuerte",
       "descripcion": "Una deliciosa combinación de pasta, carne especiada y una generosa capa de bechamel gratinada.",
       "imagen": "img/recetas/pastitsio.png",
@@ -35,23 +34,74 @@
         "texto": "El pastitsio es uno de los grandes platillos horneados de Grecia. Combina pasta tubular, carne preparada con tomate y especias aromáticas, y una cubierta de bechamel. Su presentación en capas recuerda a otros platillos mediterráneos, aunque tiene una identidad propia dentro de la cocina griega."
       },
       "ingredientes": [
-        {"cantidad": "500 g", "nombre": "pasta tubular para pastitsio, bucatini o ziti"},
-        {"cantidad": "600 g", "nombre": "carne molida de res"},
-        {"cantidad": "1", "nombre": "cebolla grande finamente picada"},
-        {"cantidad": "2 dientes", "nombre": "ajo picado"},
-        {"cantidad": "400 g", "nombre": "tomate triturado"},
-        {"cantidad": "100 ml", "nombre": "vino tinto seco"},
-        {"cantidad": "1", "nombre": "rama de canela"},
-        {"cantidad": "2", "nombre": "hojas de laurel"},
-        {"cantidad": "1/4 cucharadita", "nombre": "clavo molido"},
-        {"cantidad": "1/2 cucharadita", "nombre": "canela molida"},
-        {"cantidad": "100 g", "nombre": "queso kefalotyri o parmesano"},
-        {"cantidad": "80 g", "nombre": "mantequilla"},
-        {"cantidad": "80 g", "nombre": "harina de trigo"},
-        {"cantidad": "1 litro", "nombre": "leche entera"},
-        {"cantidad": "2", "nombre": "yemas de huevo"},
-        {"cantidad": "1/4 cucharadita", "nombre": "nuez moscada"},
-        {"cantidad": "al gusto", "nombre": "sal, pimienta y aceite de oliva"}
+        {
+          "cantidad": "500 g",
+          "nombre": "pasta tubular para pastitsio, bucatini o ziti"
+        },
+        {
+          "cantidad": "600 g",
+          "nombre": "carne molida de res"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "cebolla grande finamente picada"
+        },
+        {
+          "cantidad": "2 dientes",
+          "nombre": "ajo picado"
+        },
+        {
+          "cantidad": "400 g",
+          "nombre": "tomate triturado"
+        },
+        {
+          "cantidad": "100 ml",
+          "nombre": "vino tinto seco"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "rama de canela"
+        },
+        {
+          "cantidad": "2",
+          "nombre": "hojas de laurel"
+        },
+        {
+          "cantidad": "1/4 cucharadita",
+          "nombre": "clavo molido"
+        },
+        {
+          "cantidad": "1/2 cucharadita",
+          "nombre": "canela molida"
+        },
+        {
+          "cantidad": "100 g",
+          "nombre": "queso kefalotyri o parmesano"
+        },
+        {
+          "cantidad": "80 g",
+          "nombre": "mantequilla"
+        },
+        {
+          "cantidad": "80 g",
+          "nombre": "harina de trigo"
+        },
+        {
+          "cantidad": "1 litro",
+          "nombre": "leche entera"
+        },
+        {
+          "cantidad": "2",
+          "nombre": "yemas de huevo"
+        },
+        {
+          "cantidad": "1/4 cucharadita",
+          "nombre": "nuez moscada"
+        },
+        {
+          "cantidad": "al gusto",
+          "nombre": "sal, pimienta y aceite de oliva"
+        }
       ],
       "preparacion": [
         "Precalentar el horno a 180 °C. Engrasar un refractario grande.",
@@ -70,11 +120,20 @@
       "consejo": "La salsa de carne debe quedar espesa y la bechamel suficientemente firme. Dejar reposar el pastitsio después de hornearlo ayuda a conseguir porciones bien definidas.",
       "consejoValidado": false,
       "acompanamiento": "Combina muy bien con una ensalada griega fresca y un vino tinto de cuerpo medio.",
-      "bebidas": ["retsina", "agua"],
+      "bebidas": [
+        "retsina",
+        "agua"
+      ],
       "fuente": {
         "nombre": "Lauer House - Pastitsio",
         "url": "https://lauerhouse.gr/greek-specialities/pastitsio"
-      }
+      },
+      "estadoPublicacion": "publicada",
+      "region": "",
+      "etiquetas": [],
+      "dificultad": "",
+      "galeria": [],
+      "notas": ""
     },
     {
       "id": "keftedes",
@@ -95,19 +154,58 @@
         "texto": "Los keftedes son pequeñas albóndigas presentes en la tradición culinaria griega. Se sirven como meze, entrada o plato principal y admiten variaciones familiares en el uso de hierbas, carne y condimentos."
       },
       "ingredientes": [
-        {"cantidad": "700 g", "nombre": "carne molida de res"},
-        {"cantidad": "1", "nombre": "cebolla mediana rallada"},
-        {"cantidad": "2 dientes", "nombre": "ajo finamente picado"},
-        {"cantidad": "2 rebanadas", "nombre": "pan blanco sin corteza"},
-        {"cantidad": "1/3 taza", "nombre": "leche para remojar el pan"},
-        {"cantidad": "1", "nombre": "huevo"},
-        {"cantidad": "3 cucharadas", "nombre": "perejil fresco picado"},
-        {"cantidad": "1 cucharada", "nombre": "menta fresca picada"},
-        {"cantidad": "1 cucharadita", "nombre": "orégano seco"},
-        {"cantidad": "1 cucharada", "nombre": "vinagre de vino tinto"},
-        {"cantidad": "al gusto", "nombre": "sal y pimienta"},
-        {"cantidad": "suficiente", "nombre": "harina para cubrir ligeramente"},
-        {"cantidad": "suficiente", "nombre": "aceite de oliva para freír"}
+        {
+          "cantidad": "700 g",
+          "nombre": "carne molida de res"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "cebolla mediana rallada"
+        },
+        {
+          "cantidad": "2 dientes",
+          "nombre": "ajo finamente picado"
+        },
+        {
+          "cantidad": "2 rebanadas",
+          "nombre": "pan blanco sin corteza"
+        },
+        {
+          "cantidad": "1/3 taza",
+          "nombre": "leche para remojar el pan"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "huevo"
+        },
+        {
+          "cantidad": "3 cucharadas",
+          "nombre": "perejil fresco picado"
+        },
+        {
+          "cantidad": "1 cucharada",
+          "nombre": "menta fresca picada"
+        },
+        {
+          "cantidad": "1 cucharadita",
+          "nombre": "orégano seco"
+        },
+        {
+          "cantidad": "1 cucharada",
+          "nombre": "vinagre de vino tinto"
+        },
+        {
+          "cantidad": "al gusto",
+          "nombre": "sal y pimienta"
+        },
+        {
+          "cantidad": "suficiente",
+          "nombre": "harina para cubrir ligeramente"
+        },
+        {
+          "cantidad": "suficiente",
+          "nombre": "aceite de oliva para freír"
+        }
       ],
       "preparacion": [
         "Remojar el pan en leche durante unos minutos y escurrirlo bien.",
@@ -124,11 +222,15 @@
       "consejo": "La menta fresca y el perejil aportan un aroma característico. Es importante escurrir el pan para que la mezcla no quede demasiado húmeda.",
       "consejoValidado": false,
       "acompanamiento": "Servir con tzatziki, pan pita, limón y una ensalada fresca.",
-      "bebidas": ["ouzo", "agua"],
+      "bebidas": [
+        "ouzo",
+        "agua"
+      ],
       "fuente": {
         "nombre": "Argiro Barbarigou - Greek Keftedes",
         "url": "https://www.argiro.gr/en/recipe/light-and-tender-greek-keftedes/"
-      }
+      },
+      "estadoPublicacion": "borrador"
     },
     {
       "id": "moussaka",
@@ -149,22 +251,70 @@
         "texto": "La moussaka tiene antecedentes en distintas cocinas del Mediterráneo oriental. La versión griega que hoy conocemos, con capas de berenjena, carne y una cubierta generosa de bechamel, se consolidó como uno de los grandes platillos horneados de Grecia."
       },
       "ingredientes": [
-        {"cantidad": "3 grandes", "nombre": "berenjenas"},
-        {"cantidad": "2 medianas", "nombre": "papas"},
-        {"cantidad": "600 g", "nombre": "carne molida de res o cordero"},
-        {"cantidad": "1", "nombre": "cebolla grande picada"},
-        {"cantidad": "2 dientes", "nombre": "ajo picado"},
-        {"cantidad": "400 g", "nombre": "tomate triturado"},
-        {"cantidad": "100 ml", "nombre": "vino tinto seco"},
-        {"cantidad": "1/2 cucharadita", "nombre": "canela molida"},
-        {"cantidad": "1/4 cucharadita", "nombre": "clavo molido"},
-        {"cantidad": "2", "nombre": "hojas de laurel"},
-        {"cantidad": "80 g", "nombre": "mantequilla"},
-        {"cantidad": "80 g", "nombre": "harina de trigo"},
-        {"cantidad": "1 litro", "nombre": "leche entera"},
-        {"cantidad": "2", "nombre": "huevos"},
-        {"cantidad": "80 g", "nombre": "queso kefalotyri o parmesano"},
-        {"cantidad": "al gusto", "nombre": "aceite de oliva, sal, pimienta y nuez moscada"}
+        {
+          "cantidad": "3 grandes",
+          "nombre": "berenjenas"
+        },
+        {
+          "cantidad": "2 medianas",
+          "nombre": "papas"
+        },
+        {
+          "cantidad": "600 g",
+          "nombre": "carne molida de res o cordero"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "cebolla grande picada"
+        },
+        {
+          "cantidad": "2 dientes",
+          "nombre": "ajo picado"
+        },
+        {
+          "cantidad": "400 g",
+          "nombre": "tomate triturado"
+        },
+        {
+          "cantidad": "100 ml",
+          "nombre": "vino tinto seco"
+        },
+        {
+          "cantidad": "1/2 cucharadita",
+          "nombre": "canela molida"
+        },
+        {
+          "cantidad": "1/4 cucharadita",
+          "nombre": "clavo molido"
+        },
+        {
+          "cantidad": "2",
+          "nombre": "hojas de laurel"
+        },
+        {
+          "cantidad": "80 g",
+          "nombre": "mantequilla"
+        },
+        {
+          "cantidad": "80 g",
+          "nombre": "harina de trigo"
+        },
+        {
+          "cantidad": "1 litro",
+          "nombre": "leche entera"
+        },
+        {
+          "cantidad": "2",
+          "nombre": "huevos"
+        },
+        {
+          "cantidad": "80 g",
+          "nombre": "queso kefalotyri o parmesano"
+        },
+        {
+          "cantidad": "al gusto",
+          "nombre": "aceite de oliva, sal, pimienta y nuez moscada"
+        }
       ],
       "preparacion": [
         "Cortar las berenjenas en rebanadas longitudinales de aproximadamente un centímetro. Espolvorear con sal y dejar reposar 30 minutos.",
@@ -184,11 +334,15 @@
       "consejo": "Evitar que la berenjena conserve demasiada humedad y procurar que la salsa de carne quede espesa. El reposo es fundamental para servir porciones firmes.",
       "consejoValidado": false,
       "acompanamiento": "Ensalada horiatiki, pan rústico y vino tinto.",
-      "bebidas": ["retsina", "agua"],
+      "bebidas": [
+        "retsina",
+        "agua"
+      ],
       "fuente": {
         "nombre": "Diane Kochilas - Classic Moussaka",
         "url": "https://www.dianekochilas.com/classic-moussaka/"
-      }
+      },
+      "estadoPublicacion": "borrador"
     },
     {
       "id": "spanakopitas",
@@ -209,16 +363,46 @@
         "texto": "La spanakopita es una preparación tradicional de la familia de las tartas saladas griegas. La combinación de hojas verdes, hierbas frescas, queso y pasta filo tiene numerosas variantes regionales y familiares. Puede presentarse como una tarta grande o en pequeños triángulos individuales."
       },
       "ingredientes": [
-        {"cantidad": "500 g", "nombre": "espinacas frescas"},
-        {"cantidad": "200 g", "nombre": "queso feta desmoronado"},
-        {"cantidad": "1", "nombre": "cebolla mediana picada"},
-        {"cantidad": "3", "nombre": "cebollines picados"},
-        {"cantidad": "2 cucharadas", "nombre": "eneldo fresco picado"},
-        {"cantidad": "2 cucharadas", "nombre": "perejil fresco picado"},
-        {"cantidad": "1", "nombre": "huevo"},
-        {"cantidad": "1 paquete", "nombre": "pasta filo descongelada"},
-        {"cantidad": "100 ml", "nombre": "aceite de oliva"},
-        {"cantidad": "al gusto", "nombre": "pimienta y nuez moscada"}
+        {
+          "cantidad": "500 g",
+          "nombre": "espinacas frescas"
+        },
+        {
+          "cantidad": "200 g",
+          "nombre": "queso feta desmoronado"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "cebolla mediana picada"
+        },
+        {
+          "cantidad": "3",
+          "nombre": "cebollines picados"
+        },
+        {
+          "cantidad": "2 cucharadas",
+          "nombre": "eneldo fresco picado"
+        },
+        {
+          "cantidad": "2 cucharadas",
+          "nombre": "perejil fresco picado"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "huevo"
+        },
+        {
+          "cantidad": "1 paquete",
+          "nombre": "pasta filo descongelada"
+        },
+        {
+          "cantidad": "100 ml",
+          "nombre": "aceite de oliva"
+        },
+        {
+          "cantidad": "al gusto",
+          "nombre": "pimienta y nuez moscada"
+        }
       ],
       "preparacion": [
         "Lavar y picar las espinacas. Cocinarlas brevemente en una sartén hasta que pierdan su volumen.",
@@ -236,11 +420,15 @@
       "consejo": "El secreto de una buena spanakopita está en retirar el exceso de agua de las espinacas y evitar que la pasta filo se reseque mientras se trabaja.",
       "consejoValidado": false,
       "acompanamiento": "Excelente como entrada, acompañada de tzatziki, aceitunas y una bebida fresca.",
-      "bebidas": ["ouzo", "agua"],
+      "bebidas": [
+        "ouzo",
+        "agua"
+      ],
       "fuente": {
         "nombre": "Diane Kochilas - Classic Spanakopita",
         "url": "https://www.youtube.com/watch?v=vzf87B0AEqA"
-      }
+      },
+      "estadoPublicacion": "borrador"
     },
     {
       "id": "horiatiki",
@@ -261,16 +449,46 @@
         "texto": "Horiatiki significa ensalada de pueblo. Es una preparación muy representativa de la cocina griega, basada en vegetales frescos, aceitunas, queso feta, orégano y aceite de oliva. La versión tradicional no necesita lechuga: los ingredientes se presentan en trozos generosos y la feta suele colocarse en una pieza sobre las verduras."
       },
       "ingredientes": [
-        {"cantidad": "4", "nombre": "tomates maduros"},
-        {"cantidad": "1", "nombre": "pepino grande"},
-        {"cantidad": "1", "nombre": "pimiento verde"},
-        {"cantidad": "1/2", "nombre": "cebolla morada"},
-        {"cantidad": "100 g", "nombre": "aceitunas Kalamata"},
-        {"cantidad": "200 g", "nombre": "queso feta en bloque"},
-        {"cantidad": "1 cucharadita", "nombre": "orégano seco"},
-        {"cantidad": "1/4 taza", "nombre": "aceite de oliva extra virgen"},
-        {"cantidad": "1 cucharada", "nombre": "vinagre de vino tinto"},
-        {"cantidad": "al gusto", "nombre": "sal y pimienta"}
+        {
+          "cantidad": "4",
+          "nombre": "tomates maduros"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "pepino grande"
+        },
+        {
+          "cantidad": "1",
+          "nombre": "pimiento verde"
+        },
+        {
+          "cantidad": "1/2",
+          "nombre": "cebolla morada"
+        },
+        {
+          "cantidad": "100 g",
+          "nombre": "aceitunas Kalamata"
+        },
+        {
+          "cantidad": "200 g",
+          "nombre": "queso feta en bloque"
+        },
+        {
+          "cantidad": "1 cucharadita",
+          "nombre": "orégano seco"
+        },
+        {
+          "cantidad": "1/4 taza",
+          "nombre": "aceite de oliva extra virgen"
+        },
+        {
+          "cantidad": "1 cucharada",
+          "nombre": "vinagre de vino tinto"
+        },
+        {
+          "cantidad": "al gusto",
+          "nombre": "sal y pimienta"
+        }
       ],
       "preparacion": [
         "Lavar y secar los vegetales.",
@@ -285,11 +503,15 @@
       "consejo": "No cortar los vegetales demasiado pequeños. Una buena horiatiki depende de la calidad del tomate, del aceite de oliva y del queso feta.",
       "consejoValidado": false,
       "acompanamiento": "Acompaña prácticamente cualquier plato griego, especialmente pastitsio, moussaka y carnes asadas.",
-      "bebidas": ["retsina", "agua"],
+      "bebidas": [
+        "retsina",
+        "agua"
+      ],
       "fuente": {
         "nombre": "GetGreece - Horiatiki",
         "url": "https://www.getgreece.com/recipes/horiatiki"
-      }
+      },
+      "estadoPublicacion": "borrador"
     }
   ],
   "bebidas": [
@@ -333,9 +555,21 @@
   "eventos": [],
   "reconocimientos": [],
   "categorias": [
-    {"id": "entrada", "nombre": "Entradas"},
-    {"id": "ensalada", "nombre": "Ensaladas"},
-    {"id": "plato-fuerte", "nombre": "Platos fuertes"},
-    {"id": "postre", "nombre": "Postres"}
+    {
+      "id": "entrada",
+      "nombre": "Entradas"
+    },
+    {
+      "id": "ensalada",
+      "nombre": "Ensaladas"
+    },
+    {
+      "id": "plato-fuerte",
+      "nombre": "Platos fuertes"
+    },
+    {
+      "id": "postre",
+      "nombre": "Postres"
+    }
   ]
 }
