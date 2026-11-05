@@ -1073,17 +1073,67 @@ img { max-width: 100%; display: block; }
   padding: 0 !important;
 }
 
+
+/* PRESENTACIÓN COMPACTA DE LAS BEBIDAS */
+
+.section-wrap > section.section-wrap {
+  display: block !important;
+  margin-top: 14px !important;
+  padding: 0 !important;
+}
+
+.section-wrap > section.section-wrap > .eyebrow {
+  font-size: 8pt;
+  color: #777;
+}
+
+.section-wrap > section.section-wrap > h2 {
+  font-size: 12pt;
+  margin: 4px 0 6px;
+  font-weight: 600;
+}
+
+.section-wrap > section.section-wrap > p {
+  font-size: 9pt;
+  margin: 4px 0;
+}
+
+/* Nombres de bebidas sin tarjetas ni recuadros */
+
 .drink-grid {
-  display: flex !important;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: block !important;
+  margin: 5px 0 !important;
 }
 
 .drink-card {
-  background: white !important;
-  border: 1px solid #ddd !important;
-  padding: 8px 12px !important;
-  break-inside: avoid;
+  display: inline !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.drink-card h3 {
+  display: inline !important;
+  font-size: 9pt !important;
+  font-weight: normal;
+  margin: 0 !important;
+}
+
+.drink-card:not(:last-child) h3::after {
+  content: "  ·  ";
+  color: #888;
+}
+
+.drink-card a {
+  display: none !important;
+}
+
+/* Ocultar el enlace al catálogo */
+
+.section-wrap > section.section-wrap > p a {
+  display: none !important;
 }
 
 /* Ocultar enlaces de navegación a las bebidas */
