@@ -925,6 +925,299 @@
     "nombre": "Preparación tradicional griega de Gemista",
     "url": ""
   }
+},
+    
+{
+  "id": "domates-gemistes",
+  "nombre": "Jitomates rellenos al estilo griego",
+  "nombreGriego": "Ντομάτες γεμιστές",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Jitomates maduros rellenos de arroz, cebolla, hierbas frescas y aceite de oliva, horneados lentamente hasta quedar suaves y aromáticos. Una preparación tradicional de la cocina familiar griega.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "30 minutos",
+  "tiempoCoccion": "1 hora 15 minutos",
+  "tiempoTotal": "1 hora 45 minutos",
+  "historia": {
+    "titulo": "El aroma del verano en la mesa griega",
+    "texto": "Los domates gemistes son una de las preparaciones más queridas de la tradición gastronómica griega. Forman parte de los gemista, un conjunto de platillos elaborados con verduras rellenas de arroz, hierbas aromáticas y aceite de oliva. Durante el verano, cuando los jitomates alcanzan su madurez y concentran todo su sabor, las familias griegas los preparan al horno, aprovechando también su pulpa y sus jugos para cocinar el relleno. Cada hogar conserva sus propios secretos, pero el resultado siempre evoca la cocina mediterránea y las comidas compartidas en familia."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "6",
+      "nombre": "jitomates grandes, maduros y firmes"
+    },
+    {
+      "cantidad": "250 g",
+      "nombre": "arroz de grano medio"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "cebollas medianas finamente picadas"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "dientes de ajo picados"
+    },
+    {
+      "cantidad": "1/2 taza",
+      "nombre": "perejil fresco picado"
+    },
+    {
+      "cantidad": "1/4 taza",
+      "nombre": "hierbabuena fresca picada"
+    },
+    {
+      "cantidad": "100 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "papas medianas cortadas en gajos"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "orégano seco"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra recién molida"
+    },
+    {
+      "cantidad": "150 ml",
+      "nombre": "agua o caldo de verduras"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "azúcar, opcional, para equilibrar la acidez del jitomate"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 180 °C. Lavar los jitomates y secarlos cuidadosamente.",
+    "Cortar la parte superior de cada jitomate, conservando las tapas. Con una cuchara, retirar cuidadosamente la pulpa y las semillas sin romper las paredes. Reservar toda la pulpa.",
+    "Picar o triturar la pulpa de los jitomates y reservarla junto con sus jugos.",
+    "Calentar aproximadamente la mitad del aceite de oliva en una sartén amplia. Incorporar la cebolla y cocinar durante 5 minutos, hasta que esté suave y transparente.",
+    "Agregar el ajo y cocinar durante un minuto. Incorporar la pulpa de jitomate reservada y el orégano. Cocinar durante unos 5 minutos para concentrar ligeramente los sabores.",
+    "Añadir el arroz crudo, el perejil y la hierbabuena. Sazonar con sal y pimienta. Incorporar aproximadamente la mitad del agua o caldo y cocinar durante 5 minutos, removiendo suavemente. El arroz debe quedar parcialmente crudo, pues terminará de cocinarse en el horno.",
+    "Retirar la mezcla del fuego y dejarla reposar unos minutos.",
+    "Rellenar los jitomates sin llegar hasta el borde, dejando espacio para que el arroz se expanda. Colocar nuevamente las tapas.",
+    "Acomodar los jitomates en un refractario para horno. Distribuir los gajos de papa entre ellos para mantenerlos firmes y aprovechar los jugos de la cocción.",
+    "Mezclar el agua o caldo restante con el aceite de oliva restante. Verter cuidadosamente en el fondo del refractario y sazonar. Si los jitomates son muy ácidos, añadir una cucharadita de azúcar a los jugos.",
+    "Cubrir el refractario con papel aluminio y hornear durante aproximadamente 45 minutos.",
+    "Retirar el papel aluminio y continuar horneando entre 25 y 30 minutos, hasta que los jitomates estén suaves, ligeramente dorados y el arroz completamente cocido.",
+    "Retirar del horno y dejar reposar durante 10 minutos antes de servir."
+  ],
+  "consejo": "Elegir jitomates maduros pero firmes es fundamental para que conserven su forma durante la cocción. No desechar su pulpa: es la base del sabor del relleno. El secreto está en dejar que el arroz termine de cocinarse lentamente dentro del jitomate y absorba todos sus jugos.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir tibios o a temperatura ambiente, acompañados de queso feta, aceitunas Kalamata y pan rústico. También pueden disfrutarse con yogur griego natural.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Gemista",
+    "url": ""
+  }
+},
+    
+{
+  "id": "gyro",
+  "nombre": "Gyro griego",
+  "nombreGriego": "Γύρος",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Deliciosa carne marinada con hierbas y especias mediterráneas, asada hasta quedar dorada y jugosa, servida en pan pita con tzatziki, jitomate, cebolla morada y papas fritas. Puede prepararse con pollo, res o cordero.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "30 minutos",
+  "tiempoCoccion": "25 minutos",
+  "tiempoTotal": "3 horas 25 minutos, incluyendo el marinado",
+  "historia": {
+    "titulo": "El sabor inconfundible de las calles de Grecia",
+    "texto": "El gyro es uno de los grandes símbolos de la gastronomía popular griega. Su nombre procede de la palabra griega que significa giro o vuelta, en referencia al asador vertical que gira mientras la carne se cocina lentamente. La superficie se va dorando y sus finas láminas se cortan conforme están listas. Se sirve habitualmente en pan pita caliente, acompañado de tzatziki, jitomate, cebolla y, en muchas ocasiones, papas fritas. Aunque el cerdo es una de las carnes más habituales en Grecia, también existen preparaciones con pollo, res y cordero. Su aroma, sus ingredientes mediterráneos y su forma de servirse lo han convertido en uno de los platillos griegos más conocidos en todo el mundo."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "1 kg",
+      "nombre": "de una proteína a elegir: muslos de pollo deshuesados, carne de res en cortes delgados o pierna de cordero deshuesada"
+    },
+    {
+      "cantidad": "80 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "limones, el jugo"
+    },
+    {
+      "cantidad": "4",
+      "nombre": "dientes de ajo finamente picados"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "orégano seco"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "tomillo seco"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "comino molido"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "pimentón dulce"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "romero seco triturado"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "sal"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "pimienta negra recién molida"
+    },
+    {
+      "cantidad": "6",
+      "nombre": "panes pita griegos"
+    },
+    {
+      "cantidad": "300 g",
+      "nombre": "tzatziki preparado"
+    },
+    {
+      "cantidad": "3",
+      "nombre": "jitomates maduros cortados en rodajas"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla morada cortada en rodajas finas"
+    },
+    {
+      "cantidad": "500 g",
+      "nombre": "papas cortadas en bastones para freír"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "aceite de oliva para calentar el pan pita"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "perejil fresco para decorar, opcional"
+    }
+  ],
+  "preparacion": [
+    "Seleccionar una de las tres proteínas: pollo, res o cordero. Cortar la carne en láminas o tiras delgadas y uniformes, procurando que tengan un grosor similar para facilitar una cocción pareja.",
+    "En un recipiente amplio mezclar el aceite de oliva, el jugo de limón, el ajo, el orégano, el tomillo, el comino, el pimentón, el romero, la sal y la pimienta.",
+    "Incorporar la carne y mezclar hasta cubrirla completamente con la marinada. Tapar y refrigerar durante 2 a 4 horas. Si se utiliza pollo, mantenerlo refrigerado durante todo el marinado y no reutilizar la marinada cruda.",
+    "Mientras la carne reposa, preparar los acompañamientos. Lavar y cortar los jitomates, rebanar la cebolla morada y preparar el tzatziki. Reservar en refrigeración.",
+    "Preparar las papas fritas hasta que estén doradas y crujientes. Escurrir el exceso de aceite y reservar calientes.",
+    "Retirar la carne del refrigerador y escurrir ligeramente el exceso de marinada. Calentar una sartén amplia o una plancha a fuego medio-alto.",
+    "Cocinar la carne en pequeñas tandas para evitar que se acumule líquido y se cueza en lugar de dorarse. Voltear las piezas para conseguir una superficie dorada y ligeramente crujiente.",
+    "Verificar que la carne esté completamente cocida. El pollo debe alcanzar una temperatura interna de 74 °C; la carne de res y el cordero deben cocinarse según el corte y el punto de cocción deseado, utilizando un termómetro para comprobar la seguridad alimentaria.",
+    "Retirar la carne del fuego y dejarla reposar unos minutos. Si las piezas son grandes, cortarlas en láminas finas antes de servir.",
+    "Calentar los panes pita en una plancha o sartén con unas gotas de aceite de oliva, hasta que estén suaves, calientes y ligeramente dorados.",
+    "Colocar cada pan pita sobre un plato o papel para envolver. Untar una porción generosa de tzatziki, agregar la carne, jitomate, cebolla morada y algunas papas fritas.",
+    "Doblar o enrollar el pan pita para formar el gyro y servir inmediatamente, acompañado de papas fritas adicionales si se desea."
+  ],
+  "consejo": "El secreto de un buen gyro está en cortar la carne en láminas delgadas, respetar el tiempo de marinado y cocinarla en tandas para que se dore en lugar de hervirse. Los muslos de pollo son especialmente jugosos; la res ofrece un sabor intenso y el cordero aporta un carácter mediterráneo muy especial. El tzatziki debe estar frío y el pan pita caliente al momento de servir.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir en pan pita caliente con tzatziki, jitomate, cebolla morada y papas fritas. Puede acompañarse con aceitunas Kalamata, queso feta y una ensalada griega.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Recetas Nestlé México - Cómo preparar un auténtico Gyro griego",
+    "url": "https://www.recetasnestle.com.mx/escuela-sabor/caseras/gyro-pollo-griego"
+  }
+},
+    
+{
+  "id": "tzatziki",
+  "nombre": "Tzatziki tradicional griego",
+  "nombreGriego": "Τζατζίκι",
+  "categoria": "Aderezo",
+  "categoriaId": "aderezo",
+  "descripcion": "Fresco y cremoso aderezo griego preparado con yogur, pepino rallado, ajo, aceite de oliva y un toque de vinagre. Un acompañamiento imprescindible de la cocina mediterránea.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "20 minutos",
+  "tiempoCoccion": "No requiere",
+  "tiempoTotal": "50 minutos, incluyendo el reposo",
+  "historia": {
+    "titulo": "La frescura de la mesa griega",
+    "texto": "El tzatziki es uno de los acompañamientos más conocidos de la gastronomía griega. Se prepara principalmente con yogur espeso, pepino, ajo y aceite de oliva, ingredientes sencillos que juntos ofrecen una combinación fresca y aromática. Es habitual encontrarlo en las tabernas y en las mesas familiares, servido junto con carnes asadas, brochetas, pan pita y otros platillos tradicionales. Cada familia puede ajustar la cantidad de ajo, vinagre y hierbas de acuerdo con su gusto, pero su esencia permanece: un aderezo fresco, cremoso y lleno de sabor."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "500 g",
+      "nombre": "yogur griego natural sin azúcar, preferentemente espeso y sin saborizantes"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "pepino grande"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "dientes de ajo finamente rallados o machacados"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "vinagre de vino blanco"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "jugo de limón, opcional"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "eneldo fresco finamente picado"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "hierbabuena fresca finamente picada, opcional"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "pimienta negra recién molida"
+    }
+  ],
+  "preparacion": [
+    "Lavar el pepino y, si se desea, retirar parcialmente la cáscara. Rallarlo utilizando la parte gruesa del rallador.",
+    "Colocar el pepino rallado en un colador, agregar una pizca de sal y dejar reposar durante aproximadamente 10 minutos para que libere parte de su agua.",
+    "Presionar el pepino con las manos limpias o con un paño de cocina limpio para retirar la mayor cantidad posible de líquido. Este paso es fundamental para evitar que el tzatziki quede aguado.",
+    "Colocar el yogur griego en un recipiente amplio. Incorporar el pepino escurrido y el ajo finamente rallado.",
+    "Agregar el aceite de oliva, el vinagre de vino blanco y, si se desea, el jugo de limón.",
+    "Incorporar el eneldo fresco y la hierbabuena opcional. Mezclar suavemente hasta integrar todos los ingredientes.",
+    "Sazonar con sal y pimienta negra al gusto. Probar y ajustar la cantidad de ajo, vinagre o hierbas según la preferencia.",
+    "Cubrir el recipiente y refrigerar durante al menos 30 minutos para permitir que los sabores se integren.",
+    "Antes de servir, mezclar suavemente y terminar con un pequeño chorrito de aceite de oliva y un poco de eneldo fresco."
+  ],
+  "consejo": "El secreto de un buen tzatziki está en escurrir muy bien el pepino y utilizar yogur griego espeso. El ajo debe aportar aroma sin dominar los demás ingredientes. Prepararlo con anticipación permite que los sabores se integren y mejora su resultado. Mantener refrigerado hasta el momento de servir.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir frío con Gyro de pollo, res o cordero, keftedes, pan pita caliente, verduras frescas o papas al horno. También puede utilizarse como aderezo para ensaladas y sándwiches.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Tzatziki",
+    "url": ""
+  }
 }
 ],
   "bebidas": [
