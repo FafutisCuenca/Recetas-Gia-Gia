@@ -135,17 +135,17 @@ function construirNavegacion() {
 
       <div class="nav-links">
         <a href="index.html">Inicio</a>
-        <a href="seccion.html?tipo=gia-gia">Gia Gia</a>
+        <a href="seccion.html?tipo=gia-gia">Historia</a>
         <a href="recetario.html">Recetario</a>
         <a href="seccion.html?tipo=publicaciones">Publicaciones</a>
         <a href="seccion.html?tipo=eventos">Eventos</a>
         <a href="seccion.html?tipo=reconocimientos">Reconocimientos</a>
-        <a href="seccion.html?tipo=bebidas">Bebidas</a>
       </div>
 
     </nav>
   `;
 }
+
 
 // ------------------------------------------------------------
 // PIE DE PÁGINA
