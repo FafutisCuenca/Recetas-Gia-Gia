@@ -1310,3 +1310,86 @@ img { max-width: 100%; display: block; }
   }
 }
 
+/* ============================================================
+   VALORACIÓN EDITORIAL DE LAS RECETAS
+   ============================================================ */
+
+/* Contenedor general */
+
+.editorial-rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Estrellas */
+
+.editorial-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.editorial-stars span {
+  line-height: 1;
+}
+
+.star-filled {
+  color: var(--gold);
+}
+
+.star-empty {
+  color: #c9c4b9;
+}
+
+/* Leyenda */
+
+.editorial-rating-label {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: .4px;
+}
+
+/* Presentación en tarjetas */
+
+.editorial-rating--card {
+  margin: 8px 0 13px;
+}
+
+.editorial-rating--card .editorial-stars {
+  font-size: 17px;
+}
+
+.editorial-rating--card .editorial-rating-label {
+  font-size: 9px;
+}
+
+/* Presentación en receta individual */
+
+.editorial-rating--detail {
+  margin: 12px 0 20px;
+}
+
+.editorial-rating--detail .editorial-stars {
+  font-size: 23px;
+}
+
+.editorial-rating--detail .editorial-rating-label {
+  font-size: 11px;
+}
+
+/* Adaptación para pantallas pequeñas */
+
+@media (max-width: 580px) {
+
+  .editorial-rating--detail {
+    margin: 10px 0 16px;
+  }
+
+  .editorial-rating--detail .editorial-stars {
+    font-size: 21px;
+  }
+
+}
