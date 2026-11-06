@@ -231,6 +231,25 @@ img { max-width: 100%; display: block; }
 
 .section-heading h2 { margin: 8px 0 0; }
 
+/* AGRUPACIÓN DE RECETAS POR CATEGORÍA */
+
+.category-group {
+  margin-top: 42px;
+}
+
+.category-group + .category-group {
+  margin-top: 58px;
+}
+
+.category-group .section-heading {
+  margin-bottom: 24px;
+}
+
+.category-group .section-heading h2,
+.category-group .section-heading h3 {
+  margin: 8px 0 0;
+}
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1289,18 +1308,5 @@ img { max-width: 100%; display: block; }
   .admin-form-actions .btn {
     width: 100%;
   }
-
-}
-/* ESPACIADO ENTRE CATEGORÍAS EN LA PORTADA */
-
-.category-group {
-  margin-top: 48px;
 }
 
-.category-group + .category-group {
-  margin-top: 56px;
-}
-
-.category-group .section-heading {
-  margin-bottom: 24px;
-}
