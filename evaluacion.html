@@ -1,0 +1,870 @@
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce el modelo editorial de evaluación de Las Recetas de Gia Gia: tradición, técnica, especialistas y reconocimiento gastronómico.">
+  <title>Modelo de evaluación | Las Recetas de Gia Gia</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .evaluation-hero {
+      padding: 75px 25px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(120deg, #10334f, #17466c);
+    }
+
+    .evaluation-hero .eyebrow { color: #e4c797; }
+
+    .evaluation-hero h1 {
+      color: white;
+      margin: 15px 0;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .evaluation-hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #e8edf0;
+    }
+
+    .evaluation-section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 65px 25px;
+    }
+
+    .evaluation-section h2 {
+      margin-top: 0;
+    }
+
+    .evaluation-intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .evaluation-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .evaluation-card {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      box-shadow: var(--shadow);
+    }
+
+    .evaluation-card h3 {
+      margin: 8px 0 12px;
+    }
+
+    .evaluation-number {
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+
+    .evaluation-weight {
+      display: inline-block;
+      padding: 4px 10px;
+      color: var(--blue);
+      background: var(--blue-light);
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .evaluation-bar {
+      height: 8px;
+      margin-top: 15px;
+      overflow: hidden;
+      background: var(--sand);
+      border-radius: 10px;
+    }
+
+    .evaluation-bar span {
+      display: block;
+      height: 100%;
+      background: var(--gold);
+    }
+
+    .evaluation-note {
+      margin: 30px 0;
+      padding: 25px;
+      background: var(--sand);
+      border-left: 4px solid var(--gold);
+    }
+
+    .evaluation-scale {
+      display: grid;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .scale-row {
+      display: grid;
+      grid-template-columns: 135px 1fr;
+      gap: 15px;
+      align-items: center;
+      padding: 15px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+    }
+
+    .scale-stars {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .evaluation-sources {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .source-card {
+      padding: 23px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .source-card h3 {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+
+    .source-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .source-card a {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .recipe-evaluation-tools {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .recipe-evaluation-tools input,
+    .recipe-evaluation-tools select {
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: white;
+    }
+
+    .recipe-evaluation-tools input {
+      flex: 1;
+    }
+
+    .evaluation-recipe-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .evaluation-recipe {
+      padding: 20px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .evaluation-recipe h3 {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+
+    .evaluation-recipe p {
+      margin: 5px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .evaluation-stars {
+      color: var(--gold);
+      font-size: 21px;
+      letter-spacing: 2px;
+    }
+
+    .evaluation-pending {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 8px;
+      color: #775c2f;
+      background: #f5eddb;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .evaluation-verified {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 8px;
+      color: #35614b;
+      background: #e8f1eb;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .evaluation-disclaimer {
+      padding: 25px;
+      color: #e8edf0;
+      background: var(--blue-dark);
+      border-radius: 6px;
+    }
+
+    .evaluation-disclaimer h3 {
+      color: white;
+    }
+
+    .evaluation-disclaimer p {
+      color: #e0e7eb;
+      font-size: 13px;
+    }
+
+    .evaluation-back {
+      display: inline-block;
+      margin-top: 25px;
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .evaluation-empty {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      .evaluation-grid,
+      .evaluation-sources,
+      .evaluation-recipe-list {
+        grid-template-columns: 1fr;
+      }
+
+      .scale-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .evaluation-section {
+        padding: 45px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header id="site-header"></header>
+
+<main>
+
+  <section class="evaluation-hero">
+    <span class="eyebrow">NUESTRO COMPROMISO CON LA COCINA GRIEGA</span>
+    <h1>El valor detrás de cada estrella</h1>
+    <p>
+      Un modelo editorial para reconocer la tradición, la calidad
+      culinaria y el prestigio de las recetas que forman parte
+      de nuestra cocina.
+    </p>
+  </section>
+
+  <section class="evaluation-section">
+    <div class="evaluation-intro">
+      <span class="eyebrow">NUESTRA FILOSOFÍA</span>
+      <h2>Una estrella debe tener una razón</h2>
+
+      <p>
+        En Las Recetas de Gia Gia creemos que una calificación
+        gastronómica debe ir más allá de una impresión personal.
+        Cada estrella debe tener fundamentos: tradición,
+        investigación, técnica culinaria, reconocimiento y
+        valoración de quienes conocen y disfrutan la gastronomía.
+      </p>
+
+      <p>
+        Nuestro propósito es ofrecer al lector una evaluación
+        editorial razonada, transparente y abierta a revisión.
+      </p>
+    </div>
+  </section>
+
+  <section class="evaluation-section" style="background:var(--sand);max-width:none">
+    <div style="max-width:1150px;margin:auto">
+      <span class="eyebrow">EL MODELO GIA GIA</span>
+      <h2>Los cinco pilares de evaluación</h2>
+
+      <p>
+        Cada receta se analiza desde cinco dimensiones.
+        Los porcentajes representan la importancia relativa
+        de cada dimensión en nuestro dictamen editorial.
+      </p>
+
+      <div class="evaluation-grid">
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">01</span>
+          <span class="evaluation-weight">30%</span>
+          <h3>Tradición y autenticidad</h3>
+          <p>
+            Origen del platillo, relación con la cultura griega,
+            historia, ingredientes característicos, variantes
+            regionales y fidelidad a las preparaciones tradicionales.
+          </p>
+          <div class="evaluation-bar"><span style="width:30%"></span></div>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">02</span>
+          <span class="evaluation-weight">25%</span>
+          <h3>Calidad y técnica culinaria</h3>
+          <p>
+            Equilibrio de sabores, selección de ingredientes,
+            dominio de las técnicas, coherencia de la preparación,
+            dificultad y claridad de las instrucciones.
+          </p>
+          <div class="evaluation-bar"><span style="width:25%"></span></div>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">03</span>
+          <span class="evaluation-weight">20%</span>
+          <h3>Reconocimiento gastronómico</h3>
+          <p>
+            Presencia y reconocimiento del platillo en libros,
+            publicaciones, revistas, guías, medios especializados
+            y sitios gastronómicos de trayectoria.
+          </p>
+          <div class="evaluation-bar"><span style="width:20%"></span></div>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">04</span>
+          <span class="evaluation-weight">15%</span>
+          <h3>Opinión de especialistas</h3>
+          <p>
+            Aportaciones de chefs, cocineros profesionales,
+            investigadores culinarios, críticos gastronómicos
+            y especialistas en cocina griega.
+          </p>
+          <div class="evaluation-bar"><span style="width:15%"></span></div>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">05</span>
+          <span class="evaluation-weight">10%</span>
+          <h3>Recepción del público</h3>
+          <p>
+            Opiniones de comensales, valoraciones de usuarios,
+            foros gastronómicos y comunidades culinarias.
+            Se considera el volumen, la consistencia y el contexto
+            de las opiniones.
+          </p>
+          <div class="evaluation-bar"><span style="width:10%"></span></div>
+        </article>
+
+      </div>
+
+      <div class="evaluation-note">
+        <strong>Una regla fundamental:</strong>
+        la popularidad no sustituye a la autenticidad, y una
+        calificación elevada de usuarios no demuestra por sí sola
+        que una receta sea tradicional o técnicamente correcta.
+        Cada dimensión se analiza por separado.
+      </div>
+    </div>
+  </section>
+
+  <section class="evaluation-section">
+    <span class="eyebrow">NUESTRA ESCALA</span>
+    <h2>¿Qué significan nuestras estrellas?</h2>
+
+    <p>
+      Utilizamos una escala editorial de cinco estrellas.
+      La puntuación resume el análisis de los cinco pilares,
+      pero no representa una distinción oficial ni una evaluación
+      realizada por una guía externa.
+    </p>
+
+    <div class="evaluation-scale">
+
+      <div class="scale-row">
+        <div class="scale-stars">★★★★★</div>
+        <div>
+          <strong>5 estrellas · Excelencia editorial</strong>
+          <p>Receta de identidad gastronómica sobresaliente,
+          con fundamentos sólidos de tradición, técnica y reconocimiento.</p>
+        </div>
+      </div>
+
+      <div class="scale-row">
+        <div class="scale-stars">★★★★☆</div>
+        <div>
+          <strong>4 estrellas · Muy destacada</strong>
+          <p>Receta de gran calidad y atractivo culinario,
+          con algún aspecto de adaptación, documentación o
+          reconocimiento que la distingue de la máxima categoría.</p>
+        </div>
+      </div>
+
+      <div class="scale-row">
+        <div class="scale-stars">★★★☆☆</div>
+        <div>
+          <strong>3 estrellas · Buena</strong>
+          <p>Preparación correcta que requiere mayor desarrollo
+          o respaldo para alcanzar una valoración superior.</p>
+        </div>
+      </div>
+
+      <div class="scale-row">
+        <div class="scale-stars">★★☆☆☆</div>
+        <div>
+          <strong>2 estrellas · En revisión</strong>
+          <p>Presenta aspectos relevantes que deben corregirse
+          o documentarse.</p>
+        </div>
+      </div>
+
+      <div class="scale-row">
+        <div class="scale-stars">★☆☆☆☆</div>
+        <div>
+          <strong>1 estrella · No recomendada editorialmente</strong>
+          <p>No cumple todavía los criterios mínimos del modelo.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="evaluation-note">
+      <strong>Aplicación en nuestro recetario:</strong>
+      las calificaciones públicas actuales se encuentran
+      entre cuatro y cinco estrellas. La escala completa se
+      conserva para que el método pueda evaluar futuras recetas
+      sin modificar sus principios.
+    </div>
+  </section>
+
+  <section class="evaluation-section" style="background:var(--sand);max-width:none">
+    <div style="max-width:1150px;margin:auto">
+      <span class="eyebrow">INVESTIGACIÓN Y REFERENCIAS</span>
+      <h2>¿Dónde buscamos respaldo?</h2>
+
+      <p>
+        Consultamos fuentes de distinta naturaleza. No todas
+        cumplen la misma función: unas documentan técnicas,
+        otras reflejan el reconocimiento profesional y otras
+        recogen la opinión de los consumidores.
+      </p>
+
+      <div class="evaluation-sources">
+
+        <article class="source-card">
+          <h3>Guías gastronómicas internacionales</h3>
+          <p>
+            Referencias sobre calidad de ingredientes, técnica,
+            armonía de sabores, personalidad culinaria y consistencia.
+          </p>
+          <a href="https://guide.michelin.com/"
+             target="_blank" rel="noopener noreferrer">
+            Consultar Guía MICHELIN ↗
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>Premios gastronómicos de Grecia</h3>
+          <p>
+            Referencias especializadas en cocina griega,
+            con criterios de materias primas, técnica,
+            equilibrio, creatividad y presentación.
+          </p>
+          <a href="https://en.greekcuisineawards.gr/thesmos/procedure.aspx"
+             target="_blank" rel="noopener noreferrer">
+            Greek Cuisine Awards ↗
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>Atlas y rankings gastronómicos</h3>
+          <p>
+            Plataformas que reúnen valoraciones de usuarios
+            y documentan alimentos, preparaciones y tradiciones
+            culinarias de distintas regiones.
+          </p>
+          <a href="https://www.tasteatlas.com/"
+             target="_blank" rel="noopener noreferrer">
+            Consultar TasteAtlas ↗
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>Revistas y publicaciones especializadas</h3>
+          <p>
+            Investigaciones, recetas probadas, análisis de técnicas,
+            artículos de cocina y criterios editoriales.
+          </p>
+          <a href="https://www.seriouseats.com/"
+             target="_blank" rel="noopener noreferrer">
+            Serious Eats ↗
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>Instituciones de formación culinaria</h3>
+          <p>
+            Material sobre pruebas de recetas, técnicas,
+            evaluación sensorial y procesos profesionales
+            de desarrollo culinario.
+          </p>
+          <a href="https://www.ice.edu/"
+             target="_blank" rel="noopener noreferrer">
+            Institute of Culinary Education ↗
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>Chefs, autores y especialistas</h3>
+          <p>
+            Libros, entrevistas, publicaciones, demostraciones
+            y trabajos de profesionales con experiencia
+            documentada en cocina griega y mediterránea.
+          </p>
+          <p>
+            Sus aportaciones se registrarán individualmente
+            cuando exista una referencia verificable.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="evaluation-section">
+    <span class="eyebrow">TRANSPARENCIA EDITORIAL</span>
+    <h2>Cómo tratamos las fuentes</h2>
+
+    <div class="evaluation-grid">
+
+      <article class="evaluation-card">
+        <h3>Fuentes primarias</h3>
+        <p>
+          Libros de cocina, documentos culturales, recetarios
+          regionales, entrevistas y testimonios identificables.
+          Son especialmente importantes para establecer tradición
+          y origen.
+        </p>
+      </article>
+
+      <article class="evaluation-card">
+        <h3>Fuentes profesionales</h3>
+        <p>
+          Guías, premios, revistas, críticos y chefs.
+          Se identifica quién emite la valoración y qué
+          criterios utiliza.
+        </p>
+      </article>
+
+      <article class="evaluation-card">
+        <h3>Opiniones de usuarios</h3>
+        <p>
+          Se consideran como una muestra de recepción popular.
+          Se registra la plataforma, la fecha, el número de
+          opiniones y la calificación disponible.
+        </p>
+      </article>
+
+      <article class="evaluation-card">
+        <h3>Foros y comunidades</h3>
+        <p>
+          Se utilizan para identificar experiencias, variantes
+          familiares y debates culinarios. No se consideran
+          por sí solos una autoridad gastronómica.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="evaluation-note">
+      <strong>Independencia:</strong>
+      no asignamos estrellas por publicidad, patrocinio,
+      popularidad comercial o acuerdos con terceros.
+      Las fuentes se citan para que el lector pueda consultar
+      su contenido original.
+    </div>
+  </section>
+
+  <section class="evaluation-section" style="background:var(--sand);max-width:none">
+    <div style="max-width:1150px;margin:auto">
+
+      <span class="eyebrow">EL CATÁLOGO BAJO NUESTRO MODELO</span>
+      <h2>Evaluación de nuestras recetas</h2>
+
+      <p>
+        Consulta las recetas incorporadas y la valoración editorial
+        registrada en el catálogo. El estado de documentación
+        permite distinguir una calificación asignada de una ficha
+        respaldada por fuentes verificables.
+      </p>
+
+      <div class="recipe-evaluation-tools">
+        <input
+          type="search"
+          id="evaluation-search"
+          placeholder="Buscar una receta..."
+          aria-label="Buscar receta">
+
+        <select id="evaluation-filter" aria-label="Filtrar por valoración">
+          <option value="todas">Todas las recetas</option>
+          <option value="5">Cinco estrellas</option>
+          <option value="4">Cuatro estrellas</option>
+          <option value="pendiente">Sin valoración registrada</option>
+        </select>
+      </div>
+
+      <p id="evaluation-count" class="result-count">
+        Cargando recetas...
+      </p>
+
+      <div id="evaluation-recipes" class="evaluation-recipe-list">
+        <div class="evaluation-empty">Cargando catálogo...</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="evaluation-section">
+    <div class="evaluation-disclaimer">
+      <h3>Nuestro compromiso con la honestidad editorial</h3>
+      <p>
+        Las estrellas de Las Recetas de Gia Gia representan
+        un dictamen editorial propio. No son estrellas MICHELIN,
+        premios oficiales, calificaciones de TasteAtlas ni
+        puntuaciones otorgadas por chefs o instituciones externas.
+      </p>
+      <p>
+        Las valoraciones podrán revisarse cuando se incorporen
+        nuevas fuentes, se documenten mejor las recetas o se
+        obtengan nuevas evidencias. La fecha y el fundamento
+        de cada revisión deberán conservarse en el expediente
+        editorial correspondiente.
+      </p>
+      <p>
+        Queremos que cada estrella tenga una explicación,
+        que cada explicación tenga respaldo y que cada lector
+        pueda conocer cómo llegamos a nuestra conclusión.
+      </p>
+    </div>
+
+    <a href="index.html" class="evaluation-back">
+      ← Volver a Las Recetas de Gia Gia
+    </a>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script>
+"use strict";
+
+const DATA_URL = "data/contenido.json";
+
+const buscar = document.getElementById("evaluation-search");
+const filtro = document.getElementById("evaluation-filter");
+const lista = document.getElementById("evaluation-recipes");
+const contador = document.getElementById("evaluation-count");
+
+function escaparHTML(valor = "") {
+  return String(valor)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function construirNavegacion() {
+  document.getElementById("site-header").innerHTML = `
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-symbol">ΓΓ</span>
+        <span class="brand-name">
+          Las Recetas de Gia Gia
+          <small>EL SABOR DEBE SER AUTÉNTICO · EL SABOR DE GRECIA</small>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="seccion.html?tipo=gia-gia">Gia Gia</a>
+        <a href="recetario.html">Recetario</a>
+        <a href="evaluacion.html">Evaluación editorial</a>
+        <a href="seccion.html?tipo=publicaciones">Publicaciones</a>
+        <a href="seccion.html?tipo=bebidas">Bebidas</a>
+      </div>
+    </nav>
+  `;
+}
+
+function construirPie() {
+  document.getElementById("site-footer").innerHTML = `
+    <div class="site-footer">
+      <h2>Las Recetas de Gia Gia</h2>
+      <p>Sabores, historias y tradiciones de Grecia.</p>
+      <p class="footer-motto">El sabor debe ser auténtico.</p>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="recetario.html">Recetario</a>
+        <a href="evaluacion.html">Modelo de evaluación</a>
+      </div>
+      <p>© ${new Date().getFullYear()} Las Recetas de Gia Gia</p>
+    </div>
+  `;
+}
+
+function mostrarEstrellas(valor) {
+  const n = Number(valor);
+
+  if (!Number.isInteger(n) || n < 1 || n > 5) {
+    return "";
+  }
+
+  return "★".repeat(n) + "☆".repeat(5 - n);
+}
+
+function mostrarRecetas(recetas) {
+  const texto = buscar.value.toLowerCase().trim();
+  const seleccion = filtro.value;
+
+  const resultados = recetas.filter(r => {
+    const nombre = String(r.nombre || "").toLowerCase();
+    const griego = String(r.nombreGriego || "").toLowerCase();
+    const estrellas = Number(r.valoracionEditorial?.estrellas || 0);
+
+    const coincideTexto =
+      nombre.includes(texto) || griego.includes(texto);
+
+    let coincideFiltro = true;
+
+    if (seleccion === "5") coincideFiltro = estrellas === 5;
+    if (seleccion === "4") coincideFiltro = estrellas === 4;
+    if (seleccion === "pendiente") coincideFiltro = !estrellas;
+
+    return coincideTexto && coincideFiltro;
+  });
+
+  contador.textContent =
+    `${resultados.length} de ${recetas.length} recetas publicadas.`;
+
+  if (!resultados.length) {
+    lista.innerHTML = `
+      <div class="evaluation-empty">
+        No se encontraron recetas con esos criterios.
+      </div>
+    `;
+    return;
+  }
+
+  lista.innerHTML = resultados.map(r => {
+    const estrellas = Number(r.valoracionEditorial?.estrellas || 0);
+    const estado = r.valoracionEditorial?.estadoDocumentacion || "";
+
+    const estadoHTML = estado === "documentada"
+      ? '<span class="evaluation-verified">Documentación respaldada</span>'
+      : '<span class="evaluation-pending">Documentación por completar</span>';
+
+    return `
+      <article class="evaluation-recipe">
+        <span class="eyebrow">${escaparHTML(r.categoria || "")}</span>
+
+        <h3>${escaparHTML(r.nombre || "")}</h3>
+
+        ${r.nombreGriego
+          ? `<p>${escaparHTML(r.nombreGriego)}</p>`
+          : ""}
+
+        ${estrellas
+          ? `<div class="evaluation-stars"
+              aria-label="${estrellas} de 5 estrellas">
+              ${mostrarEstrellas(estrellas)}
+             </div>
+             <p><strong>Valoración editorial: ${estrellas}/5</strong></p>`
+          : `<p><strong>Valoración pendiente de registro</strong></p>`
+        }
+
+        ${estadoHTML}
+
+        <p>
+          <a href="receta.html?id=${encodeURIComponent(r.id)}">
+            Consultar receta →
+          </a>
+        </p>
+      </article>
+    `;
+  }).join("");
+}
+
+async function iniciarEvaluacion() {
+  construirNavegacion();
+  construirPie();
+
+  try {
+    const respuesta = await fetch(DATA_URL, { cache: "no-store" });
+
+    if (!respuesta.ok) {
+      throw new Error("No se pudo cargar contenido.json");
+    }
+
+    const contenido = await respuesta.json();
+
+    const recetas = (contenido.recetas || [])
+      .filter(r => r.estadoPublicacion === "publicada");
+
+    mostrarRecetas(recetas);
+
+    buscar.addEventListener("input", () => mostrarRecetas(recetas));
+    filtro.addEventListener("change", () => mostrarRecetas(recetas));
+
+  } catch (error) {
+    console.error(error);
+
+    contador.textContent = "No fue posible cargar el catálogo.";
+
+    lista.innerHTML = `
+      <div class="evaluation-empty">
+        No se pudo leer data/contenido.json.
+        Verifica que el archivo exista y que su formato sea válido.
+      </div>
+    `;
+  }
+}
+
+iniciarEvaluacion();
+</script>
+
+</body>
+</html>
