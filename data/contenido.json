@@ -1983,7 +1983,85 @@
     "nombre": "Traditional Greek Roast Lamb with Potatoes",
     "url": "https://veritaspress.com/resourcefFiles/PentecostRecipes.pdf"
   }
+},
+    
+{
+  "id": "ensalada-sandia-feta-miel",
+  "nombre": "Ensalada de sandía con queso feta y miel",
+  "nombreGriego": "Καρπούζι με φέτα και μέλι",
+  "pronunciacionGriega": "Karpúzi me féta ke méli",
+  "categoria": "Ensalada",
+  "categoriaId": "ensalada",
+  "descripcion": "Una ensalada mediterránea de verano que combina la dulzura jugosa de la sandía con el carácter salado del queso feta, un delicado toque de miel y la frescura de la menta.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 4,
+  "tiempoPreparacion": 15,
+  "tiempoCoccion": 0,
+  "tiempoTotal": 15,
+  "historia": {
+    "titulo": "El verano servido en un plato",
+    "texto": "La sandía y el queso feta forman una combinación especialmente agradable en la cocina mediterránea: el dulzor y la frescura de la fruta contrastan con el sabor salado y ligeramente ácido del queso. La miel aporta un matiz suave, mientras que la menta y el aceite de oliva completan esta ensalada ligera, ideal para compartir durante los días cálidos."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "800 g",
+      "nombre": "sandía sin semillas, cortada en cubos"
+    },
+    {
+      "cantidad": "200 g",
+      "nombre": "queso feta, desmenuzado o cortado en cubos"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "miel de abeja"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "jugo de limón"
+    },
+    {
+      "cantidad": "10 hojas",
+      "nombre": "menta fresca"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "ralladura de limón"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "pimienta negra recién molida"
+    }
+  ],
+  "preparacion": [
+    "Corta la sandía en cubos medianos y retira cualquier semilla que encuentres.",
+    "Coloca los cubos de sandía en una fuente amplia y refrigéralos unos minutos para servir la ensalada bien fresca.",
+    "Distribuye el queso feta sobre la sandía, procurando que los trozos queden repartidos por toda la fuente.",
+    "Mezcla el aceite de oliva con el jugo de limón y la ralladura de limón.",
+    "Vierte suavemente el aderezo sobre la sandía y el queso feta.",
+    "Añade la miel en forma de hilo fino, distribuyéndola por toda la ensalada.",
+    "Incorpora las hojas de menta fresca y termina con un poco de pimienta negra.",
+    "Sirve inmediatamente para conservar la textura y frescura de la sandía."
+  ],
+  "consejo": "Utiliza una sandía madura, dulce y bien fría. Añade la miel poco a poco: el queso feta ya aporta suficiente salinidad y el equilibrio entre ambos sabores es lo que hace especial a esta ensalada.",
+  "consejoValidado": false,
+  "acompanamiento": "Ideal como entrada fresca, guarnición para pescado a la parrilla o acompañamiento de souvlaki.",
+  "bebidas": [
+    "Agua fresca con limón y menta",
+    "Limonada griega"
+  ],
+  "fuente": {
+    "nombre": "",
+    "url": ""
+  }
 }
+
 ],
   "bebidas": [
     {
