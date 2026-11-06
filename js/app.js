@@ -224,28 +224,33 @@ function mostrarInicio() {
   // RECETAS PUBLICADAS AGRUPADAS POR CATEGORÍA
   // ----------------------------------------------------------
 
-  const categoriasInicio = [
-    {
-      nombre: "Entradas",
-      aliases: ["entrada", "entradas"]
-    },
-    {
-      nombre: "Ensaladas",
-      aliases: ["ensalada", "ensaladas"]
-    },
-    {
-      nombre: "Platos fuertes",
-      aliases: ["plato fuerte", "platos fuertes"]
-    },
-    {
-      nombre: "Postres",
-      aliases: ["postre", "postres"]
-    },
-{
-  nombre: "Aderezos",
-  aliases: ["aderezo", "aderezos"]
-}
-  ];
+  
+const categoriasInicio = [
+  {
+    nombre: "Entradas",
+    aliases: ["entrada", "entradas"]
+  },
+  {
+    nombre: "Ensaladas",
+    aliases: ["ensalada", "ensaladas"]
+  },
+  {
+    nombre: "Sopas",
+    aliases: ["sopa", "sopas"]
+  },
+  {
+    nombre: "Platos fuertes",
+    aliases: ["plato fuerte", "platos fuertes"]
+  },
+  {
+    nombre: "Postres",
+    aliases: ["postre", "postres"]
+  },
+  {
+    nombre: "Aderezos",
+    aliases: ["aderezo", "aderezos"]
+  }
+];
 
   function normalizarCategoria(valor) {
     return String(valor || "")
@@ -339,28 +344,33 @@ function mostrarRecetario() {
   const contador = $("recipe-count");
 
   // Categorías y sus posibles identificadores
-  const categoriasRecetario = [
-    {
-      nombre: "Entradas",
-      aliases: ["entrada", "entradas"]
-    },
-    {
-      nombre: "Ensaladas",
-      aliases: ["ensalada", "ensaladas"]
-    },
-    {
-      nombre: "Platos fuertes",
-      aliases: ["plato fuerte", "platos fuertes"]
-    },
-    {
-      nombre: "Postres",
-      aliases: ["postre", "postres"]
-    },
-{
-  nombre: "Aderezos",
-  aliases: ["aderezo", "aderezos"]
-}
-  ];
+ 
+const categoriasRecetario = [
+  {
+    nombre: "Entradas",
+    aliases: ["entrada", "entradas"]
+  },
+  {
+    nombre: "Ensaladas",
+    aliases: ["ensalada", "ensaladas"]
+  },
+  {
+    nombre: "Sopas",
+    aliases: ["sopa", "sopas"]
+  },
+  {
+    nombre: "Platos fuertes",
+    aliases: ["plato fuerte", "platos fuertes"]
+  },
+  {
+    nombre: "Postres",
+    aliases: ["postre", "postres"]
+  },
+  {
+    nombre: "Aderezos",
+    aliases: ["aderezo", "aderezos"]
+  }
+];
 
   // Normalizar nombres e identificadores
   function normalizarCategoria(valor) {
