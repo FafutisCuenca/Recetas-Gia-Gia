@@ -630,6 +630,110 @@
     "nombre": "Diane Kochilas - The Authentic Greek Baklava Recipe",
     "url": "https://www.dianekochilas.com/greek-baklava/"
   }
+},
+    {
+  "id": "kritharaki",
+  "nombre": "Kritharaki con carne al horno",
+  "nombreGriego": "Κριθαράκι με μοσχάρι",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Una deliciosa preparación griega de pasta kritharaki cocinada lentamente con carne de res, tomate, hierbas aromáticas y caldo, hasta conseguir una textura suave y llena de sabor.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "25 minutos",
+  "tiempoCoccion": "1 hora 30 minutos",
+  "tiempoTotal": "1 hora 55 minutos",
+  "historia": {
+    "titulo": "Un clásico de la cocina familiar griega",
+    "texto": "El kritharaki es una pasta tradicional griega de pequeño tamaño, semejante a los granos de cebada. Una de sus preparaciones más conocidas es el giouvetsi, un platillo que combina esta pasta con carne, tomate y hierbas aromáticas. Se cocina lentamente en el horno, permitiendo que la pasta absorba los sabores de la salsa y del caldo. Es una comida reconfortante, muy apreciada en los hogares griegos y especialmente adecuada para compartir en familia."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "1 kg",
+      "nombre": "carne de res para guisar, cortada en cubos"
+    },
+    {
+      "cantidad": "500 g",
+      "nombre": "pasta kritharaki"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla grande finamente picada"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "dientes de ajo picados"
+    },
+    {
+      "cantidad": "400 g",
+      "nombre": "tomate triturado"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "pasta de tomate"
+    },
+    {
+      "cantidad": "150 ml",
+      "nombre": "vino tinto seco"
+    },
+    {
+      "cantidad": "1.5 litros",
+      "nombre": "caldo de res caliente, aproximadamente"
+    },
+    {
+      "cantidad": "80 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "rama de canela"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "hojas de laurel"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "orégano seco"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "pimienta negra molida"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "queso kefalotyri o queso duro rallado para servir"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 180 °C. Secar los cubos de carne con papel de cocina y sazonarlos con sal y pimienta.",
+    "Calentar el aceite de oliva en una cazuela apta para horno. Dorar la carne por todos sus lados, trabajando en tandas si es necesario. Retirar y reservar.",
+    "En la misma cazuela, incorporar la cebolla y cocinar durante 5 minutos hasta que esté suave. Agregar el ajo y cocinar durante un minuto más.",
+    "Añadir la pasta de tomate y mezclar durante un par de minutos para intensificar su sabor.",
+    "Incorporar el vino tinto y dejar que reduzca ligeramente, raspando el fondo de la cazuela para recuperar los sabores de la carne.",
+    "Agregar el tomate triturado, la rama de canela, las hojas de laurel, el orégano y la carne previamente dorada. Mezclar y añadir suficiente caldo caliente para cubrir parcialmente la carne.",
+    "Tapar la cazuela y llevar al horno durante aproximadamente 1 hora, o hasta que la carne esté tierna.",
+    "Retirar la cazuela del horno. Incorporar la pasta kritharaki y mezclar cuidadosamente. Añadir más caldo caliente si es necesario: la pasta debe quedar cubierta por suficiente líquido para cocinarse.",
+    "Regresar la cazuela al horno, ahora destapada, durante aproximadamente 20 a 30 minutos. Remover una o dos veces durante la cocción y agregar un poco más de caldo caliente si la preparación se seca demasiado.",
+    "Cuando la pasta esté cocida y la salsa tenga una consistencia cremosa, retirar del horno. El kritharaki debe quedar jugoso, ya que continuará absorbiendo líquido durante el reposo.",
+    "Retirar la rama de canela y las hojas de laurel. Dejar reposar entre 5 y 10 minutos antes de servir.",
+    "Servir caliente y terminar con queso kefalotyri o queso duro rallado."
+  ],
+  "consejo": "El secreto del giouvetsi está en conseguir que la carne quede muy tierna y que el kritharaki absorba lentamente el sabor de la salsa. Es importante vigilar el líquido durante la cocción: la pasta debe quedar jugosa y no seca. Si es necesario, agregar pequeñas cantidades de caldo caliente.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir caliente, acompañado de una ensalada griega de tomate, pepino, aceitunas y queso feta. También puede acompañarse con un poco de pan rústico.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Giouvetsi",
+    "url": ""
+  }
 }
 ],
   "bebidas": [
