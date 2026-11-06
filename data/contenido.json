@@ -1218,7 +1218,120 @@
     "nombre": "Preparación tradicional griega de Tzatziki",
     "url": ""
   }
+},
+    
+{
+  "id": "souvlaki",
+  "nombre": "Souvlaki griego",
+  "nombreGriego": "Σουβλάκι",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Tradicionales brochetas griegas de carne marinada con aceite de oliva, limón, ajo y orégano, asadas a la parrilla hasta quedar doradas y jugosas. Pueden prepararse con pollo, res o cordero y se sirven con pan pita, tzatziki y verduras frescas.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "25 minutos",
+  "tiempoCoccion": "15 minutos",
+  "tiempoTotal": "2 horas 40 minutos, incluyendo el marinado",
+  "historia": {
+    "titulo": "El aroma de las brochetas en las tabernas griegas",
+    "texto": "El souvlaki es uno de los platillos más populares de Grecia y forma parte de su tradición gastronómica desde hace generaciones. Su nombre está relacionado con el término souvla, que significa brocheta o espetón. Consiste en pequeños trozos de carne sazonados y ensartados en palillos, que se cocinan sobre brasas o parrilla. Se disfruta en tabernas, puestos callejeros y hogares griegos, servido directamente en la brocheta o acompañado de pan pita, tzatziki, jitomate, cebolla y limón. Aunque existen distintas variantes regionales, su esencia está en la sencillez de sus ingredientes y el sabor de la carne asada."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "1 kg",
+      "nombre": "de una proteína a elegir: pechuga o muslo de pollo deshuesado, carne de res para asar o pierna de cordero deshuesada"
+    },
+    {
+      "cantidad": "80 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "limones, el jugo"
+    },
+    {
+      "cantidad": "4",
+      "nombre": "dientes de ajo finamente picados"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "orégano seco"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "tomillo seco"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "romero seco triturado"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "sal"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "pimienta negra recién molida"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "pimientos morrones cortados en cuadros grandes, opcional"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla morada cortada en cuadros grandes, opcional"
+    },
+    {
+      "cantidad": "12",
+      "nombre": "brochetas de madera o metal"
+    },
+    {
+      "cantidad": "6",
+      "nombre": "panes pita griegos para acompañar"
+    },
+    {
+      "cantidad": "300 g",
+      "nombre": "tzatziki tradicional"
+    },
+    {
+      "cantidad": "3",
+      "nombre": "jitomates cortados en rodajas"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla morada cortada en rodajas finas"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "limones cortados en cuartos para servir"
+    }
+  ],
+  "preparacion": [
+    "Elegir una de las tres proteínas: pollo, res o cordero. Cortar la carne en cubos de aproximadamente 3 centímetros, procurando que tengan un tamaño uniforme.",
+    "En un recipiente amplio mezclar el aceite de oliva, el jugo de limón, el ajo, el orégano, el tomillo, el romero, la sal y la pimienta.",
+    "Agregar los cubos de carne y mezclar hasta que queden completamente cubiertos con la marinada. Tapar y refrigerar durante aproximadamente 2 horas.",
+    "Si se utilizan brochetas de madera, sumergirlas en agua durante al menos 30 minutos antes de utilizarlas para evitar que se quemen durante la cocción.",
+    "Retirar la carne del refrigerador. Ensartar los cubos en las brochetas, dejando un pequeño espacio entre ellos para permitir que el calor circule. Si se desea, alternar con trozos de pimiento y cebolla.",
+    "Precalentar una parrilla o plancha a temperatura media-alta y engrasar ligeramente la superficie.",
+    "Colocar las brochetas sobre la parrilla y cocinarlas girándolas periódicamente para conseguir un dorado uniforme por todos sus lados.",
+    "Cocinar el pollo hasta alcanzar una temperatura interna de 74 °C. Para res y cordero, verificar la temperatura según el corte y el punto de cocción deseado, utilizando un termómetro para mayor seguridad.",
+    "Retirar las brochetas de la parrilla y dejarlas reposar durante unos minutos para conservar sus jugos.",
+    "Calentar los panes pita en la parrilla o en una sartén con unas gotas de aceite de oliva, hasta que estén suaves y ligeramente dorados.",
+    "Servir las brochetas calientes, acompañadas de pan pita, tzatziki, jitomate, cebolla morada y cuartos de limón."
+  ],
+  "consejo": "El secreto de un buen souvlaki está en cortar la carne en cubos uniformes, respetar el tiempo de marinado y evitar cocinar las brochetas a fuego demasiado alto. El pollo queda especialmente jugoso con muslo deshuesado; la res ofrece un sabor intenso y el cordero aporta un carácter mediterráneo muy especial. No amontonar los trozos en las brochetas permite que se doren correctamente.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir con pan pita caliente, tzatziki, jitomate fresco, cebolla morada, limón y papas fritas al estilo griego. También puede acompañarse con ensalada horiatiki y aceitunas Kalamata.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Souvlaki",
+    "url": ""
+  }
 }
+
 ],
   "bebidas": [
     {
