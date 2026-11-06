@@ -146,7 +146,6 @@ function construirNavegacion() {
   `;
 }
 
-
 // ------------------------------------------------------------
 // PIE DE PÁGINA
 // ------------------------------------------------------------
@@ -221,23 +220,23 @@ function recetaCard(r) {
             ${escapar(r.categoria || "")}
           </span>
 
-<h3>${escapar(r.nombre)}</h3>
+          <h3>${escapar(r.nombre)}</h3>
 
-${valoracionEditorialHTML(r, "card")}
+          ${valoracionEditorialHTML(r, "card")}
 
-${r.nombreGriego ? `
-  <p class="recipe-greek-name">
-    ${escapar(r.nombreGriego)}
-  </p>
-` : ""}
+          ${r.nombreGriego ? `
+            <p class="recipe-greek-name">
+              ${escapar(r.nombreGriego)}
+            </p>
+          ` : ""}
 
-${r.pronunciacionGriega ? `
-  <p class="recipe-pronunciation">
-    Se pronuncia: ${escapar(r.pronunciacionGriega)}
-  </p>
-` : ""}
+          ${r.pronunciacionGriega ? `
+            <p class="recipe-pronunciation">
+              Se pronuncia: ${escapar(r.pronunciacionGriega)}
+            </p>
+          ` : ""}
 
-<p>${escapar(r.descripcion || "")}</p>
+          <p>${escapar(r.descripcion || "")}</p>
 
           <div class="recipe-meta">
             <span>${escapar(r.tiempoTotal || "")}</span>
@@ -260,40 +259,38 @@ ${r.pronunciacionGriega ? `
 // PÁGINA DE INICIO
 // ------------------------------------------------------------
 
-
 function mostrarInicio() {
 
   // ----------------------------------------------------------
   // RECETAS PUBLICADAS AGRUPADAS POR CATEGORÍA
   // ----------------------------------------------------------
 
-  
-const categoriasInicio = [
-  {
-    nombre: "Entradas",
-    aliases: ["entrada", "entradas"]
-  },
-  {
-    nombre: "Ensaladas",
-    aliases: ["ensalada", "ensaladas"]
-  },
-  {
-    nombre: "Sopas",
-    aliases: ["sopa", "sopas"]
-  },
-  {
-    nombre: "Platos fuertes",
-    aliases: ["plato fuerte", "platos fuertes"]
-  },
-  {
-    nombre: "Postres",
-    aliases: ["postre", "postres"]
-  },
-  {
-    nombre: "Aderezos",
-    aliases: ["aderezo", "aderezos"]
-  }
-];
+  const categoriasInicio = [
+    {
+      nombre: "Entradas",
+      aliases: ["entrada", "entradas"]
+    },
+    {
+      nombre: "Ensaladas",
+      aliases: ["ensalada", "ensaladas"]
+    },
+    {
+      nombre: "Sopas",
+      aliases: ["sopa", "sopas"]
+    },
+    {
+      nombre: "Platos fuertes",
+      aliases: ["plato fuerte", "platos fuertes"]
+    },
+    {
+      nombre: "Postres",
+      aliases: ["postre", "postres"]
+    },
+    {
+      nombre: "Aderezos",
+      aliases: ["aderezo", "aderezos"]
+    }
+  ];
 
   function normalizarCategoria(valor) {
     return String(valor || "")
@@ -320,9 +317,6 @@ const categoriasInicio = [
 
     });
 
-    // No mostrar categorías que todavía no tengan
-    // recetas publicadas.
-
     if (recetasCategoria.length === 0) {
       return "";
     }
@@ -345,7 +339,6 @@ const categoriasInicio = [
     `;
 
   }).join("");
-
 
   // ----------------------------------------------------------
   // SECCIONES EDITORIALES DE LA PORTADA
@@ -386,36 +379,33 @@ function mostrarRecetario() {
   const lista = $("recipe-list");
   const contador = $("recipe-count");
 
-  // Categorías y sus posibles identificadores
- 
-const categoriasRecetario = [
-  {
-    nombre: "Entradas",
-    aliases: ["entrada", "entradas"]
-  },
-  {
-    nombre: "Ensaladas",
-    aliases: ["ensalada", "ensaladas"]
-  },
-  {
-    nombre: "Sopas",
-    aliases: ["sopa", "sopas"]
-  },
-  {
-    nombre: "Platos fuertes",
-    aliases: ["plato fuerte", "platos fuertes"]
-  },
-  {
-    nombre: "Postres",
-    aliases: ["postre", "postres"]
-  },
-  {
-    nombre: "Aderezos",
-    aliases: ["aderezo", "aderezos"]
-  }
-];
+  const categoriasRecetario = [
+    {
+      nombre: "Entradas",
+      aliases: ["entrada", "entradas"]
+    },
+    {
+      nombre: "Ensaladas",
+      aliases: ["ensalada", "ensaladas"]
+    },
+    {
+      nombre: "Sopas",
+      aliases: ["sopa", "sopas"]
+    },
+    {
+      nombre: "Platos fuertes",
+      aliases: ["plato fuerte", "platos fuertes"]
+    },
+    {
+      nombre: "Postres",
+      aliases: ["postre", "postres"]
+    },
+    {
+      nombre: "Aderezos",
+      aliases: ["aderezo", "aderezos"]
+    }
+  ];
 
-  // Normalizar nombres e identificadores
   function normalizarCategoria(valor) {
     return String(valor || "")
       .normalize("NFD")
@@ -426,7 +416,6 @@ const categoriasRecetario = [
       .trim();
   }
 
-  // Comprobar si una receta pertenece a una categoría
   function perteneceCategoria(receta, categoriaActual) {
 
     const id = normalizarCategoria(receta.categoriaId);
@@ -441,7 +430,6 @@ const categoriasRecetario = [
     const texto = buscar.value.toLowerCase().trim();
     const cat = normalizarCategoria(categoria.value);
 
-    // Primero se aplican los filtros de búsqueda
     const resultados = recetasPublicadas().filter(receta => {
 
       const ingredientes = (receta.ingredientes || [])
@@ -449,12 +437,12 @@ const categoriasRecetario = [
         .join(" ");
 
       const textoReceta = [
-  receta.nombre,
-  receta.nombreGriego,
-  receta.pronunciacionGriega,
-  receta.descripcion,
-  ingredientes
-].join(" ").toLowerCase();
+        receta.nombre,
+        receta.nombreGriego,
+        receta.pronunciacionGriega,
+        receta.descripcion,
+        ingredientes
+      ].join(" ").toLowerCase();
 
       const coincideTexto = textoReceta.includes(texto);
 
@@ -468,18 +456,15 @@ const categoriasRecetario = [
       return coincideTexto && coincideCategoria;
     });
 
-    // Actualizar contador
     contador.textContent =
       `${resultados.length} receta(s) encontrada(s).`;
 
-    // Construir una sección independiente por categoría
     const gruposHTML = categoriasRecetario.map(categoriaActual => {
 
       const recetasCategoria = resultados.filter(receta =>
         perteneceCategoria(receta, categoriaActual)
       );
 
-      // Ocultar categorías sin resultados
       if (recetasCategoria.length === 0) {
         return "";
       }
@@ -560,7 +545,6 @@ function mostrarReceta() {
 
   main.innerHTML = `
 
-  
     <!-- VISTA NORMAL DE LA RECETA -->
 
     <section class="recipe-hero">
@@ -569,27 +553,28 @@ function mostrarReceta() {
 
       <div class="recipe-hero-content">
 
-<span class="eyebrow">
-  ${escapar(r.categoria || "")}
-</span>
+        <span class="eyebrow">
+          ${escapar(r.categoria || "")}
+        </span>
 
-<h1>${escapar(r.nombre)}</h1>
+        <h1>${escapar(r.nombre)}</h1>
 
-${valoracionEditorialHTML(r, "detail")}
+        ${valoracionEditorialHTML(r, "detail")}
 
-${r.nombreGriego ? `
-  <p class="recipe-greek-name">
-    ${escapar(r.nombreGriego)}
-  </p>
-` : ""}
+        ${r.nombreGriego ? `
+          <p class="recipe-greek-name">
+            ${escapar(r.nombreGriego)}
+          </p>
+        ` : ""}
 
-${r.pronunciacionGriega ? `
-  <p class="recipe-pronunciation">
-    Se pronuncia: ${escapar(r.pronunciacionGriega)}
-  </p>
-` : ""}
+        ${r.pronunciacionGriega ? `
+          <p class="recipe-pronunciation">
+            Se pronuncia: ${escapar(r.pronunciacionGriega)}
+          </p>
+        ` : ""}
 
-<p>${escapar(r.descripcion || "")}</p>
+        <p>${escapar(r.descripcion || "")}</p>
+
         <div class="recipe-meta">
           <span>◷ ${escapar(r.tiempoPreparacion || "")} preparación</span>
           <span>◷ ${escapar(r.tiempoCoccion || "")} cocción</span>
@@ -744,16 +729,9 @@ ${r.pronunciacionGriega ? `
 const secciones = {
 
   "gia-gia": {
-    titulo: "Conoce a Gia Gia",
-    subtitulo: "La historia detrás de nuestra cocina",
-    descripcion: "Una historia familiar que merece conservarse y compartirse.",
-    contenido: "Aquí compartiremos la biografía de Gia Gia, sus raíces, sus recuerdos, su relación con Grecia y las historias que han acompañado su cocina.",
-    pendientes: [
-      "Fotografía principal",
-      "Biografía familiar",
-      "Recuerdos y anécdotas",
-      "Trayectoria culinaria"
-    ]
+    titulo: "Sra. Fafutis",
+    subtitulo: "Una historia de raíces, memoria y tradición",
+    descripcion: "Conocida cariñosamente como Gia Gia, una vida entre dos culturas y una pasión por compartir la cocina griega."
   },
 
   "publicaciones": {
@@ -793,24 +771,38 @@ const secciones = {
 
 };
 
+// ------------------------------------------------------------
+// HISTORIA DE LA SRA. FAFUTIS
+// CONOCIDA CARIÑOSAMENTE COMO GIA GIA
+// ------------------------------------------------------------
 
 function renderHistoriaGiaGia() {
+
   return `
     <article class="gia-story">
 
       <header class="gia-story-intro">
-        <span class="gia-story-kicker">LAS RAÍCES DE NUESTRA COCINA</span>
+
+        <span class="gia-story-kicker">
+          LAS RAÍCES DE NUESTRA COCINA
+        </span>
+
         <h2>Una historia que se cocina con el corazón</h2>
+
         <p class="gia-story-lead">
           Hay recetas que se aprenden siguiendo instrucciones y otras
           que se aprenden mirando, escuchando y compartiendo la vida.
           La historia de la Sra. Fafutis pertenece a estas últimas.
         </p>
+
       </header>
 
       <section class="gia-story-section">
+
         <span class="gia-story-number">01</span>
+
         <div>
+
           <h2>De Evia a México: el origen de nuestras raíces</h2>
 
           <p>
@@ -846,12 +838,17 @@ function renderHistoriaGiaGia() {
             Es el origen de una herencia cultural que, generación
             tras generación, encontró un lugar en nuestro país.
           </p>
+
         </div>
+
       </section>
 
       <section class="gia-story-section">
+
         <span class="gia-story-number">02</span>
+
         <div>
+
           <h2>Una infancia entre dos culturas</h2>
 
           <p>
@@ -877,27 +874,39 @@ function renderHistoriaGiaGia() {
             ambas tradiciones. Esa convivencia culinaria se convirtió
             en una parte esencial de su propia historia.
           </p>
+
         </div>
+
       </section>
 
       <section class="gia-story-highlight">
-        <span class="gia-story-kicker">LOS PRIMEROS GRANDES APRENDIZAJES</span>
+
+        <span class="gia-story-kicker">
+          LOS PRIMEROS GRANDES APRENDIZAJES
+        </span>
+
         <h2>Moussaka y Pastitsio</h2>
+
         <p>
           Entre los primeros platillos griegos que aprendió a preparar
           y perfeccionó destacan dos grandes clásicos de la cocina
           helénica: la Moussaka (Μουσακάς) y el Pastitsio (Παστίτσιο).
         </p>
+
         <p>
           Dos recetas que representan mucho más que una preparación:
           son parte de aquella cocina familiar que observó desde niña
           y que, con dedicación y práctica, hizo suya.
         </p>
+
       </section>
 
       <section class="gia-story-section">
+
         <span class="gia-story-number">03</span>
+
         <div>
+
           <h2>Grecia: volver a las raíces para seguir aprendiendo</h2>
 
           <p>
@@ -920,12 +929,17 @@ function renderHistoriaGiaGia() {
             también ha compartido recetas, conocimientos y formas
             de preparación que enriquecen su repertorio culinario.
           </p>
+
         </div>
+
       </section>
 
       <section class="gia-story-section">
+
         <span class="gia-story-number">04</span>
+
         <div>
+
           <h2>Una cocina que reúne y se comparte</h2>
 
           <p>
@@ -948,12 +962,17 @@ function renderHistoriaGiaGia() {
             Porque cocinar, para ella, sigue siendo una forma
             de reunir a las personas y mantener vivas las tradiciones.
           </p>
+
         </div>
+
       </section>
 
       <section class="gia-story-section">
+
         <span class="gia-story-number">05</span>
+
         <div>
+
           <h2>Las Recetas de Gia Gia: una herencia para compartir</h2>
 
           <p>
@@ -976,26 +995,37 @@ function renderHistoriaGiaGia() {
             para conservar una parte de la memoria familiar y
             compartirla con quienes vienen después.
           </p>
+
         </div>
+
       </section>
 
       <footer class="gia-story-closing">
-        <span class="gia-story-greek">Η παράδοση συνεχίζεται</span>
+
+        <span class="gia-story-greek">
+          Η παράδοση συνεχίζεται
+        </span>
+
         <h2>Una herencia que continúa</h2>
+
         <p>
           Las recetas pueden escribirse, los ingredientes pueden
           medirse y las técnicas pueden enseñarse. Pero el verdadero
           sabor de una tradición vive en las personas que la conservan,
           la preparan y la comparten.
         </p>
+
         <p class="gia-story-signature">
           Sra. Fafutis
           <span>Conocida cariñosamente como Gia Gia</span>
         </p>
+
       </footer>
 
       <section class="gia-story-sources">
+
         <h2>Para conocer más sobre la historia griega en México</h2>
+
         <p>
           La historia familiar se complementa con investigaciones
           y publicaciones que documentan la migración griega y
@@ -1005,40 +1035,65 @@ function renderHistoriaGiaGia() {
         </p>
 
         <ol>
+
           <li>
-            <strong>Una minoría olvidada: Griegos en México (1903-1942)</strong>
+
+            <strong>
+              Una minoría olvidada: Griegos en México (1903-1942)
+            </strong>
+
             <span>
               José Gabriel Baeza Espejel. Instituto Nacional de Migración,
               2006.
             </span>
-            <a href="https://www.inm.gob.mx/static/SEGOB/Archivos_CEM/Publicaciones/pdf/Una_minoria_olvidada.pdf"
-               target="_blank" rel="noopener">
+
+            <a
+              href="https://www.inm.gob.mx/static/SEGOB/Archivos_CEM/Publicaciones/pdf/Una_minoria_olvidada.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
               Consultar publicación en PDF ↗
             </a>
+
           </li>
 
           <li>
-            <strong>Inmigración griega y empresa agrícola en Sinaloa (1927-1971): éxitos y fracasos</strong>
+
+            <strong>
+              Inmigración griega y empresa agrícola en Sinaloa (1927-1971): éxitos y fracasos
+            </strong>
+
             <span>
               Gustavo Aguilar Aguilar. Revista Secuencia, 2006.
             </span>
-            <a href="https://www.scielo.org.mx/scielo.php?pid=S0186-03482006000100145&script=sci_arttext"
-               target="_blank" rel="noopener">
+
+            <a
+              href="https://www.scielo.org.mx/scielo.php?pid=S0186-03482006000100145&script=sci_arttext"
+              target="_blank"
+              rel="noopener noreferrer">
               Consultar artículo ↗
             </a>
+
           </li>
 
           <li>
+
             <strong>Del Olimpo al barrio</strong>
+
             <span>
               Susana A. Ramírez Bello. Relatos e Historias en México.
             </span>
-            <a href="https://relatosehistorias.mx/node/580"
-               target="_blank" rel="noopener">
+
+            <a
+              href="https://relatosehistorias.mx/node/580"
+              target="_blank"
+              rel="noopener noreferrer">
               Leer artículo ↗
             </a>
+
           </li>
+
         </ol>
+
       </section>
 
     </article>
@@ -1072,10 +1127,18 @@ function mostrarSeccion() {
   let contenidoHTML = "";
 
   // ----------------------------------------------------------
+  // HISTORIA DE LA SRA. FAFUTIS
+  // ----------------------------------------------------------
+
+  if (tipo === "gia-gia") {
+
+    contenidoHTML = renderHistoriaGiaGia();
+
+  // ----------------------------------------------------------
   // CATÁLOGO DE BEBIDAS
   // ----------------------------------------------------------
 
-  if (tipo === "bebidas") {
+  } else if (tipo === "bebidas") {
 
     contenidoHTML = `
       <div class="drink-grid">
@@ -1166,19 +1229,19 @@ function mostrarSeccion() {
       `;
 
   // ----------------------------------------------------------
-  // SECCIONES EDITORIALES
+  // OTRAS SECCIONES EDITORIALES
   // ----------------------------------------------------------
 
   } else {
 
     contenidoHTML = `
       <div class="story-box">
-        <p>${escapar(s.contenido)}</p>
+        <p>${escapar(s.contenido || "")}</p>
       </div>
 
       <div class="editorial-grid">
 
-        ${s.pendientes.map(p => `
+        ${(s.pendientes || []).map(p => `
           <div class="editorial-card">
             <h3>${escapar(p)}</h3>
             <p>Contenido pendiente de incorporar.</p>
