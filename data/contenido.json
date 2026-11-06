@@ -1330,6 +1330,86 @@
     "nombre": "Preparación tradicional griega de Souvlaki",
     "url": ""
   }
+},
+    
+{
+  "id": "pollo-al-limon",
+  "nombre": "Pollo al limón griego",
+  "nombreGriego": "Κοτόπουλο λεμονάτο",
+  "pronunciacionGriega": "Kotópulo lemonáto",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Pollo horneado con limón, ajo, aceite de oliva y orégano, acompañado de papas doradas que absorben los aromas y jugos de la cocción. Un clásico de la mesa familiar griega.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "20 minutos",
+  "tiempoCoccion": "1 hora y 30 minutos",
+  "tiempoTotal": "1 hora y 50 minutos",
+  "historia": {
+    "titulo": "El aroma del limón en la cocina griega",
+    "texto": "El pollo al limón, conocido en Grecia como kotopoulo lemonato, es una preparación muy apreciada en los hogares griegos. Su carácter está en la sencillez de sus ingredientes: limón, aceite de oliva, ajo y orégano, que se combinan para dar sabor al pollo durante el horneado. En muchas cocinas familiares se prepara junto con papas, que se cocinan en la misma fuente y absorben los jugos, el aceite y el aroma cítrico. Es un platillo reconfortante, habitual en las comidas familiares y perfecto para compartir."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "1",
+      "nombre": "pollo entero de aproximadamente 1.8 a 2 kg, cortado en piezas"
+    },
+    {
+      "cantidad": "1.2 kg",
+      "nombre": "papas peladas y cortadas en gajos grandes"
+    },
+    {
+      "cantidad": "120 ml",
+      "nombre": "jugo de limón recién exprimido"
+    },
+    {
+      "cantidad": "100 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "4",
+      "nombre": "dientes de ajo finamente picados"
+    },
+    {
+      "cantidad": "2 cucharaditas",
+      "nombre": "orégano seco griego"
+    },
+    {
+      "cantidad": "250 ml",
+      "nombre": "caldo de pollo"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "mostaza, opcional"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra recién molida"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 190 °C.",
+    "En un recipiente mezclar el jugo de limón, el aceite de oliva, el ajo, el orégano, la mostaza opcional, la sal y la pimienta.",
+    "Colocar las piezas de pollo en una fuente amplia para horno y distribuir las papas alrededor.",
+    "Verter la mezcla de limón y aceite sobre el pollo y las papas, procurando que todos los ingredientes queden bien impregnados.",
+    "Agregar el caldo de pollo en el fondo de la fuente, sin retirar el aderezo que cubre las piezas.",
+    "Hornear durante aproximadamente 1 hora y 30 minutos, bañando ocasionalmente el pollo con sus propios jugos.",
+    "Si el pollo se dora demasiado pronto, cubrir ligeramente con papel aluminio durante parte de la cocción.",
+    "Retirar el papel durante los últimos minutos para conseguir una piel dorada y crujiente.",
+    "Comprobar que la parte más gruesa del pollo alcance una temperatura interna segura de 74 °C.",
+    "Dejar reposar unos minutos antes de servir junto con las papas y los jugos de limón de la fuente."
+  ],
+  "consejo": "El secreto está en utilizar limones frescos, buen aceite de oliva y orégano aromático. No escatimar en los jugos de la cocción: las papas deben absorberlos lentamente y quedar suaves por dentro y doradas por fuera.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir con ensalada horiatiki, tzatziki y pan para aprovechar los jugos de limón y aceite de oliva. También combina muy bien con vino blanco seco.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación familiar griega de Kotopoulo Lemonato",
+    "url": ""
+  }
 }
 
 ],
