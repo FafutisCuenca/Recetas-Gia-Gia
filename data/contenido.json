@@ -2060,7 +2060,222 @@
     "nombre": "",
     "url": ""
   }
+},
+    
+{
+  "id": "melomakarona",
+  "nombre": "Melomakarona, galletas griegas de miel",
+  "nombreGriego": "Μελομακάρονα",
+  "pronunciacionGriega": "Melomakárona",
+  "categoria": "Postre",
+  "categoriaId": "postre",
+  "descripcion": "Tradicionales galletas navideñas griegas elaboradas con aceite de oliva, naranja y especias, bañadas en almíbar de miel y terminadas con nueces picadas y canela.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 35,
+  "tiempoPreparacion": 35,
+  "tiempoCoccion": 25,
+  "tiempoTotal": 60,
+  "historia": {
+    "titulo": "El aroma de la Navidad griega",
+    "texto": "Las Melomakarona son uno de los dulces más queridos de la Navidad en Grecia. Su aroma a naranja, canela y clavo anuncia las fiestas en los hogares griegos. Se elaboran con aceite de oliva, se hornean hasta adquirir un tono dorado y después se sumergen en un almíbar de miel. Las nueces picadas completan esta preparación que reúne sabores profundamente mediterráneos y una tradición familiar que se comparte generación tras generación."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "180 ml",
+      "nombre": "aceite de oliva suave"
+    },
+    {
+      "cantidad": "120 ml",
+      "nombre": "aceite vegetal"
+    },
+    {
+      "cantidad": "120 g",
+      "nombre": "azúcar"
+    },
+    {
+      "cantidad": "150 ml",
+      "nombre": "jugo de naranja natural"
+    },
+    {
+      "cantidad": "Ralladura de 2",
+      "nombre": "naranjas"
+    },
+    {
+      "cantidad": "40 ml",
+      "nombre": "brandy o coñac, opcional"
+    },
+    {
+      "cantidad": "500 g",
+      "nombre": "harina de trigo"
+    },
+    {
+      "cantidad": "100 g",
+      "nombre": "sémola fina"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "polvo para hornear"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "bicarbonato de sodio"
+    },
+    {
+      "cantidad": "2 cucharaditas",
+      "nombre": "canela molida"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "clavo molido"
+    },
+    {
+      "cantidad": "250 g",
+      "nombre": "miel de abeja"
+    },
+    {
+      "cantidad": "180 g",
+      "nombre": "azúcar para el almíbar"
+    },
+    {
+      "cantidad": "250 ml",
+      "nombre": "agua para el almíbar"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "rama de canela para el almíbar"
+    },
+    {
+      "cantidad": "1 tira",
+      "nombre": "cáscara de naranja para el almíbar"
+    },
+    {
+      "cantidad": "120 g",
+      "nombre": "nueces picadas para decorar"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "canela molida para decorar"
+    }
+  ],
+  "preparacion": [
+    "Precalienta el horno a 180 °C y prepara dos charolas con papel para hornear.",
+    "En un recipiente mezcla el aceite de oliva, el aceite vegetal y el azúcar.",
+    "Incorpora el jugo y la ralladura de naranja, el brandy si lo utilizas, la canela y el clavo.",
+    "Disuelve el bicarbonato en el jugo de naranja antes de incorporarlo a la mezcla líquida.",
+    "En otro recipiente combina la harina, la sémola y el polvo para hornear.",
+    "Agrega los ingredientes secos poco a poco a la mezcla líquida. Integra suavemente hasta obtener una masa blanda. No la amases en exceso.",
+    "Toma pequeñas porciones y forma galletas ovaladas. Presiona ligeramente la superficie con un tenedor para crear el dibujo tradicional.",
+    "Colócalas en las charolas y hornea de 22 a 25 minutos, hasta que estén firmes y ligeramente doradas.",
+    "Mientras se hornean, prepara el almíbar. Hierve el agua con el azúcar, la rama de canela y la cáscara de naranja durante aproximadamente 5 minutos. Retira del fuego e incorpora la miel.",
+    "Deja enfriar el almíbar. Sumerge las galletas recién horneadas, todavía calientes, durante unos segundos por cada lado para que absorban la miel.",
+    "Colócalas en una fuente y espolvorea inmediatamente con nueces picadas y un poco de canela.",
+    "Deja enfriar completamente antes de servir."
+  ],
+  "consejo": "El secreto de unas buenas Melomakarona está en no trabajar demasiado la masa y controlar el tiempo de inmersión en el almíbar. Deben quedar impregnadas de miel, pero conservar su forma y una textura ligeramente crujiente por fuera y suave por dentro.",
+  "consejoValidado": false,
+  "acompanamiento": "Se disfrutan con café griego, té o como parte de una bandeja de dulces navideños.",
+  "bebidas": [
+    "Café griego",
+    "Té de montaña griego"
+  ],
+  "fuente": {
+    "nombre": "Visit Greece - Melomakarona",
+    "url": "https://www.visitgreece.gr/en/experiences/gastronomy/recipes/melomakarona"
+  }
+},
+{
+  "id": "kourabiedes",
+  "nombre": "Kourabiedes, galletas griegas de almendra",
+  "nombreGriego": "Κουραμπιέδες",
+  "pronunciacionGriega": "Kurabiédes",
+  "categoria": "Postre",
+  "categoriaId": "postre",
+  "descripcion": "Delicadas galletas navideñas de mantequilla y almendras tostadas, de textura suave y quebradiza, cubiertas generosamente con azúcar glass.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 30,
+  "tiempoPreparacion": 30,
+  "tiempoCoccion": 25,
+  "tiempoTotal": 55,
+  "historia": {
+    "titulo": "Pequeños copos de nieve en la Navidad griega",
+    "texto": "Las Kourabiedes son otro de los grandes símbolos de la Navidad en Grecia. Estas galletas de mantequilla y almendras se preparan en los hogares durante las fiestas y suelen ofrecerse a familiares e invitados. Su característica más reconocible es la generosa capa de azúcar glass que las cubre, dándoles la apariencia de pequeños copos de nieve. Cada familia conserva su propia versión, algunas con brandy, vainilla o agua de rosas."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "250 g",
+      "nombre": "mantequilla sin sal, a temperatura ambiente"
+    },
+    {
+      "cantidad": "80 g",
+      "nombre": "azúcar glass"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "yemas de huevo"
+    },
+    {
+      "cantidad": "30 ml",
+      "nombre": "brandy o coñac"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "extracto de vainilla"
+    },
+    {
+      "cantidad": "400 g",
+      "nombre": "harina de trigo, aproximadamente"
+    },
+    {
+      "cantidad": "120 g",
+      "nombre": "almendras tostadas y picadas"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "polvo para hornear"
+    },
+    {
+      "cantidad": "1 pizca",
+      "nombre": "sal"
+    },
+    {
+      "cantidad": "250 g",
+      "nombre": "azúcar glass adicional para cubrir"
+    }
+  ],
+  "preparacion": [
+    "Precalienta el horno a 170 °C y prepara una charola con papel para hornear.",
+    "Coloca las almendras en una charola y tuéstalas durante aproximadamente 8 a 10 minutos, hasta que desprendan su aroma. Déjalas enfriar y pícalas en trozos pequeños.",
+    "Bate la mantequilla con los 80 g de azúcar glass durante 10 a 15 minutos, hasta obtener una crema muy suave, pálida y esponjosa.",
+    "Agrega las yemas de huevo una por una, incorporando bien cada una.",
+    "Añade el brandy y la vainilla. Mezcla hasta integrar.",
+    "Combina la harina con el polvo para hornear y la pizca de sal. Incorpora poco a poco a la mezcla de mantequilla.",
+    "Agrega las almendras tostadas y mezcla suavemente. La masa debe quedar tierna, manejable y sin exceso de humedad. Evita amasarla demasiado.",
+    "Forma pequeñas medias lunas o bolitas de aproximadamente 25 a 30 gramos y colócalas separadas en la charola.",
+    "Hornea durante 20 a 25 minutos, hasta que la base esté ligeramente dorada. La superficie debe conservar un tono claro.",
+    "Retira del horno y deja reposar unos 5 minutos, hasta que estén suficientemente firmes para manipularlas sin romperlas.",
+    "Mientras todavía están tibias, pásalas cuidadosamente por azúcar glass hasta cubrirlas por completo.",
+    "Una vez frías, espolvorea nuevamente con azúcar glass para conseguir su característica apariencia blanca y nevada."
+  ],
+  "consejo": "El secreto de las Kourabiedes está en batir muy bien la mantequilla y no trabajar demasiado la harina. Las almendras deben estar tostadas y completamente frías antes de incorporarlas. No esperes a que las galletas se doren demasiado: su color tradicional es claro.",
+  "consejoValidado": false,
+  "acompanamiento": "Se sirven en una fuente o en pequeñas torres, como parte de la mesa de dulces navideños griegos.",
+  "bebidas": [
+    "Café griego",
+    "Café helénico con leche",
+    "Té de montaña griego"
+  ],
+  "fuente": {
+    "nombre": "Argiro - Kourabiedes, Greek Christmas Butter Cookies",
+    "url": "https://www.argiro.gr/en/recipe/kourabiedes-greek-christmas-butter-cookies/"
+  }
 }
+
 
 ],
   "bebidas": [
