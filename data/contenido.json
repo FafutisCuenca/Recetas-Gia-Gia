@@ -512,8 +512,126 @@
         "url": "https://www.getgreece.com/recipes/horiatiki"
       },
       "estadoPublicacion": "publicada"
+    },
+    
+{
+  "id": "baklava",
+  "nombre": "Baklava",
+  "nombreGriego": "Μπακλαβάς",
+  "categoria": "Postre",
+  "categoriaId": "postre",
+  "descripcion": "Delicadas capas de pasta filo crujiente, rellenas de nueces y pistaches, bañadas con un aromático jarabe de miel, limón y especias.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 12,
+  "tiempoPreparacion": "45 minutos",
+  "tiempoCoccion": "1 hora 45 minutos",
+  "tiempoTotal": "2 horas 30 minutos",
+  "historia": {
+    "titulo": "Un dulce símbolo de hospitalidad griega",
+    "texto": "El baklava es uno de los postres más reconocidos de la tradición gastronómica griega. Se prepara con finas hojas de pasta filo, frutos secos y un jarabe aromático de miel, azúcar y especias. Su elaboración tiene variantes en distintas regiones de Grecia y del Mediterráneo oriental. Se comparte especialmente en celebraciones, reuniones familiares y ocasiones especiales, donde cada pieza representa una pequeña muestra de hospitalidad."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "450 g",
+      "nombre": "pasta filo descongelada"
+    },
+    {
+      "cantidad": "220 g",
+      "nombre": "mantequilla sin sal derretida"
+    },
+    {
+      "cantidad": "500 g",
+      "nombre": "nueces de Castilla picadas en trozos pequeños"
+    },
+    {
+      "cantidad": "100 g",
+      "nombre": "pistaches sin sal picados"
+    },
+    {
+      "cantidad": "80 g",
+      "nombre": "pan molido fino o galleta tipo rusk triturada"
+    },
+    {
+      "cantidad": "50 g",
+      "nombre": "azúcar"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "canela molida"
+    },
+    {
+      "cantidad": "1/4 cucharadita",
+      "nombre": "clavo molido"
+    },
+    {
+      "cantidad": "1/4 cucharadita",
+      "nombre": "nuez moscada"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "naranja, ralladura de su cáscara"
+    },
+    {
+      "cantidad": "500 ml",
+      "nombre": "agua"
+    },
+    {
+      "cantidad": "350 g",
+      "nombre": "azúcar para el jarabe"
+    },
+    {
+      "cantidad": "120 g",
+      "nombre": "miel"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "rama de canela para el jarabe"
+    },
+    {
+      "cantidad": "4",
+      "nombre": "clavos de olor enteros"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "tira de cáscara de limón"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "tira de cáscara de naranja"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "jugo de limón"
     }
   ],
+  "preparacion": [
+    "Preparar primero el jarabe. Colocar en una cacerola el agua, el azúcar, la miel, la rama de canela, los clavos de olor y las cáscaras de limón y naranja.",
+    "Llevar a ebullición y cocinar a fuego bajo durante 10 a 12 minutos, hasta obtener un jarabe ligeramente espeso. Incorporar el jugo de limón, retirar del fuego y dejar enfriar completamente.",
+    "Precalentar el horno a 200 °C. Engrasar un refractario rectangular con un poco de mantequilla derretida.",
+    "Mezclar en un recipiente las nueces, los pistaches, el pan molido, el azúcar, la canela, el clavo, la nuez moscada y la ralladura de naranja.",
+    "Extender las hojas de pasta filo. Mantener cubiertas con un paño limpio ligeramente húmedo las hojas que no se estén utilizando para evitar que se resequen.",
+    "Colocar de cuatro a seis hojas de pasta filo en el fondo del refractario, pincelando cada una con mantequilla derretida.",
+    "Distribuir una capa delgada de la mezcla de nueces sobre la pasta filo.",
+    "Continuar formando capas alternadas de pasta filo, mantequilla y mezcla de nueces hasta terminar el relleno.",
+    "Cubrir con cuatro o cinco hojas finales de pasta filo, pincelando cada una generosamente con mantequilla.",
+    "Con un cuchillo afilado, marcar cortes diagonales o cuadrados para formar las porciones. Si se desea, colocar un clavo de olor entero en algunas piezas.",
+    "Hornear durante 10 minutos a 200 °C. Reducir la temperatura a 165 °C y continuar horneando aproximadamente 90 minutos, hasta que la superficie y las capas interiores estén bien cocidas y doradas.",
+    "Retirar el baklava del horno y, mientras todavía está caliente, distribuir lentamente el jarabe completamente frío sobre toda la superficie.",
+    "Dejar reposar hasta que el jarabe sea absorbido por las capas de pasta filo. Permitir que se enfríe antes de separar las porciones y servir."
+  ],
+  "consejo": "El secreto de un buen baklava está en trabajar rápidamente con la pasta filo para que no se reseque, pincelar bien las capas con mantequilla y respetar el contraste entre el jarabe frío y el baklava caliente. Así se consigue una superficie crujiente y un interior lleno de sabor.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir a temperatura ambiente, acompañado de un café griego (ellinikós kafés) o una taza de té. Es ideal para compartir después de una comida familiar.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Diane Kochilas - The Authentic Greek Baklava Recipe",
+    "url": "https://www.dianekochilas.com/greek-baklava/"
+  }
+}
+],
   "bebidas": [
     {
       "id": "ouzo",
