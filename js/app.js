@@ -34,6 +34,47 @@ function recetasPublicadas() {
 }
 
 // ------------------------------------------------------------
+// VALORACIÓN EDITORIAL DE LAS RECETAS
+// ------------------------------------------------------------
+
+function valoracionEditorialHTML(receta, contexto = "card") {
+  const estrellas = Number(
+    receta.valoracionEditorial?.estrellas
+  );
+
+  // Mostrar únicamente valoraciones válidas de 4 o 5 estrellas
+  if (![4, 5].includes(estrellas)) {
+    return "";
+  }
+
+  const estrellasHTML = Array.from(
+    { length: 5 },
+    (_, i) => `
+      <span class="${i < estrellas ? "star-filled" : "star-empty"}"
+            aria-hidden="true">
+        ${i < estrellas ? "★" : "☆"}
+      </span>
+    `
+  ).join("");
+
+  return `
+    <div class="editorial-rating editorial-rating--${contexto}"
+         role="img"
+         aria-label="Valoración editorial: ${estrellas} de 5 estrellas">
+
+      <span class="editorial-stars">
+        ${estrellasHTML}
+      </span>
+
+      <span class="editorial-rating-label">
+        Valoración editorial
+      </span>
+
+    </div>
+  `;
+}
+
+// ------------------------------------------------------------
 // CARGA DEL CONTENIDO
 // ------------------------------------------------------------
 
@@ -180,7 +221,9 @@ function recetaCard(r) {
             ${escapar(r.categoria || "")}
           </span>
 
-      <h3>${escapar(r.nombre)}</h3>
+<h3>${escapar(r.nombre)}</h3>
+
+${valoracionEditorialHTML(r, "card")}
 
 ${r.nombreGriego ? `
   <p class="recipe-greek-name">
