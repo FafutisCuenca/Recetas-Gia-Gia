@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>El Recetario | Las Recetas de Gia Gia</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/app.js" defer></script>
+  <script src="js/app.js?v=20261105-5" defer></script>
 </head>
 <body data-page="recetario">
   <header id="site-header"></header>
@@ -19,9 +19,11 @@
     </section>
 
     <section class="section-wrap">
+
       <div class="catalog-tools">
         <input id="recipe-search" type="search"
           placeholder="Buscar un platillo o ingrediente...">
+
         <select id="recipe-category">
           <option value="todos">Todas las categorías</option>
           <option value="entrada">Entradas</option>
@@ -30,8 +32,11 @@
           <option value="postre">Postres</option>
         </select>
       </div>
+
       <div id="recipe-count" class="result-count"></div>
-      <div id="recipe-list" class="recipe-grid"></div>
+
+      <div id="recipe-list"></div>
+
     </section>
   </main>
 
