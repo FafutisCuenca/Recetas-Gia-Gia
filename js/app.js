@@ -315,47 +315,126 @@ function mostrarInicio() {
 // CATÁLOGO DE RECETAS
 // ------------------------------------------------------------
 
+
 function mostrarRecetario() {
 
   const buscar = $("recipe-search");
   const categoria = $("recipe-category");
+  const lista = $("recipe-list");
+  const contador = $("recipe-count");
+
+  // Categorías y sus posibles identificadores
+  const categoriasRecetario = [
+    {
+      nombre: "Entradas",
+      aliases: ["entrada", "entradas"]
+    },
+    {
+      nombre: "Ensaladas",
+      aliases: ["ensalada", "ensaladas"]
+    },
+    {
+      nombre: "Platos fuertes",
+      aliases: ["plato fuerte", "platos fuertes"]
+    },
+    {
+      nombre: "Postres",
+      aliases: ["postre", "postres"]
+    }
+  ];
+
+  // Normalizar nombres e identificadores
+  function normalizarCategoria(valor) {
+    return String(valor || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[-_]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  // Comprobar si una receta pertenece a una categoría
+  function perteneceCategoria(receta, categoriaActual) {
+
+    const id = normalizarCategoria(receta.categoriaId);
+    const nombre = normalizarCategoria(receta.categoria);
+
+    return categoriaActual.aliases.includes(id) ||
+           categoriaActual.aliases.includes(nombre);
+  }
 
   function filtrar() {
 
     const texto = buscar.value.toLowerCase().trim();
-    const cat = categoria.value;
+    const cat = normalizarCategoria(categoria.value);
 
-    const resultados = recetasPublicadas().filter(r => {
+    // Primero se aplican los filtros de búsqueda
+    const resultados = recetasPublicadas().filter(receta => {
 
-      const ingredientes = (r.ingredientes || [])
+      const ingredientes = (receta.ingredientes || [])
         .map(i => i.nombre || "")
         .join(" ");
 
-      const coincideTexto = [
-        r.nombre,
-        r.nombreGriego,
-        r.descripcion,
+      const textoReceta = [
+        receta.nombre,
+        receta.nombreGriego,
+        receta.descripcion,
         ingredientes
-      ].join(" ").toLowerCase().includes(texto);
+      ].join(" ").toLowerCase();
 
-      const categoriaReceta = r.categoriaId || r.categoria;
+      const coincideTexto = textoReceta.includes(texto);
 
       const coincideCategoria =
-        cat === "todos" || categoriaReceta === cat;
+        cat === "todos" ||
+        categoriasRecetario.some(c =>
+          c.aliases.includes(cat) &&
+          perteneceCategoria(receta, c)
+        );
 
       return coincideTexto && coincideCategoria;
     });
 
-    $("recipe-count").textContent =
+    // Actualizar contador
+    contador.textContent =
       `${resultados.length} receta(s) encontrada(s).`;
 
-    $("recipe-list").innerHTML = resultados.length
-      ? resultados.map(recetaCard).join("")
-      : `
-        <div class="empty-state">
-          No encontramos recetas publicadas con esos criterios.
-        </div>
+    // Construir una sección independiente por categoría
+    const gruposHTML = categoriasRecetario.map(categoriaActual => {
+
+      const recetasCategoria = resultados.filter(receta =>
+        perteneceCategoria(receta, categoriaActual)
+      );
+
+      // Ocultar categorías sin resultados
+      if (recetasCategoria.length === 0) {
+        return "";
+      }
+
+      return `
+        <section class="category-group">
+
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">NUESTRA COCINA</span>
+              <h2>${categoriaActual.nombre}</h2>
+            </div>
+          </div>
+
+          <div class="recipe-grid">
+            ${recetasCategoria.map(recetaCard).join("")}
+          </div>
+
+        </section>
       `;
+
+    }).join("");
+
+    lista.innerHTML = gruposHTML || `
+      <div class="empty-state">
+        No encontramos recetas publicadas con esos criterios.
+      </div>
+    `;
   }
 
   buscar.addEventListener("input", filtrar);
@@ -363,7 +442,6 @@ function mostrarRecetario() {
 
   filtrar();
 }
-
 
 // ------------------------------------------------------------
 // PÁGINA INDIVIDUAL DE RECETA
