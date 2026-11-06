@@ -180,9 +180,21 @@ function recetaCard(r) {
             ${escapar(r.categoria || "")}
           </span>
 
-          <h3>${escapar(r.nombre)}</h3>
+      <h3>${escapar(r.nombre)}</h3>
 
-          <p>${escapar(r.descripcion || "")}</p>
+${r.nombreGriego ? `
+  <p class="recipe-greek-name">
+    ${escapar(r.nombreGriego)}
+  </p>
+` : ""}
+
+${r.pronunciacionGriega ? `
+  <p class="recipe-pronunciation">
+    Se pronuncia: ${escapar(r.pronunciacionGriega)}
+  </p>
+` : ""}
+
+<p>${escapar(r.descripcion || "")}</p>
 
           <div class="recipe-meta">
             <span>${escapar(r.tiempoTotal || "")}</span>
@@ -228,7 +240,11 @@ function mostrarInicio() {
     {
       nombre: "Postres",
       aliases: ["postre", "postres"]
-    }
+    },
+{
+  nombre: "Aderezos",
+  aliases: ["aderezo", "aderezos"]
+}
   ];
 
   function normalizarCategoria(valor) {
@@ -315,7 +331,6 @@ function mostrarInicio() {
 // CATÁLOGO DE RECETAS
 // ------------------------------------------------------------
 
-
 function mostrarRecetario() {
 
   const buscar = $("recipe-search");
@@ -340,7 +355,11 @@ function mostrarRecetario() {
     {
       nombre: "Postres",
       aliases: ["postre", "postres"]
-    }
+    },
+{
+  nombre: "Aderezos",
+  aliases: ["aderezo", "aderezos"]
+}
   ];
 
   // Normalizar nombres e identificadores
@@ -377,11 +396,12 @@ function mostrarRecetario() {
         .join(" ");
 
       const textoReceta = [
-        receta.nombre,
-        receta.nombreGriego,
-        receta.descripcion,
-        ingredientes
-      ].join(" ").toLowerCase();
+  receta.nombre,
+  receta.nombreGriego,
+  receta.pronunciacionGriega,
+  receta.descripcion,
+  ingredientes
+].join(" ").toLowerCase();
 
       const coincideTexto = textoReceta.includes(texto);
 
@@ -496,16 +516,25 @@ function mostrarReceta() {
 
       <div class="recipe-hero-content">
 
-        <span class="eyebrow">
-          ${escapar(r.nombreGriego || "")}
-          ·
-          ${escapar(r.categoria || "")}
-        </span>
+<span class="eyebrow">
+  ${escapar(r.categoria || "")}
+</span>
 
-        <h1>${escapar(r.nombre)}</h1>
+<h1>${escapar(r.nombre)}</h1>
 
-        <p>${escapar(r.descripcion || "")}</p>
+${r.nombreGriego ? `
+  <p class="recipe-greek-name">
+    ${escapar(r.nombreGriego)}
+  </p>
+` : ""}
 
+${r.pronunciacionGriega ? `
+  <p class="recipe-pronunciation">
+    Se pronuncia: ${escapar(r.pronunciacionGriega)}
+  </p>
+` : ""}
+
+<p>${escapar(r.descripcion || "")}</p>
         <div class="recipe-meta">
           <span>◷ ${escapar(r.tiempoPreparacion || "")} preparación</span>
           <span>◷ ${escapar(r.tiempoCoccion || "")} cocción</span>
