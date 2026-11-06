@@ -734,7 +734,105 @@
     "nombre": "Preparación tradicional griega de Giouvetsi",
     "url": ""
   }
+},
+    
+{
+  "id": "piperies-gemistes",
+  "nombre": "Pimientos rellenos al estilo griego",
+  "nombreGriego": "Πιπεριές γεμιστές",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Pimientos dulces rellenos de arroz, tomate, cebolla y hierbas aromáticas, cocinados lentamente al horno con aceite de oliva hasta quedar tiernos y llenos de sabor mediterráneo.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "30 minutos",
+  "tiempoCoccion": "1 hora 15 minutos",
+  "tiempoTotal": "1 hora 45 minutos",
+  "historia": {
+    "titulo": "El sabor de la cocina casera griega",
+    "texto": "Las piperies gemistes forman parte de la tradición de los gemista, nombre que se utiliza en Grecia para las verduras rellenas. Los pimientos se rellenan con una mezcla de arroz, tomate, cebolla y hierbas frescas, y se hornean lentamente con aceite de oliva. Es una preparación muy apreciada en los hogares griegos, especialmente durante los meses de verano, cuando los productos de la huerta están en su mejor momento. Cada familia tiene su propia manera de prepararlos y el resultado es un platillo sencillo, aromático y lleno de tradición."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "6",
+      "nombre": "pimientos morrones grandes, preferentemente rojos o verdes"
+    },
+    {
+      "cantidad": "250 g",
+      "nombre": "arroz de grano medio"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "cebollas medianas finamente picadas"
+    },
+    {
+      "cantidad": "3",
+      "nombre": "tomates maduros rallados o finamente picados"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "pasta de tomate"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "dientes de ajo picados"
+    },
+    {
+      "cantidad": "1/2 taza",
+      "nombre": "perejil fresco picado"
+    },
+    {
+      "cantidad": "1/4 taza",
+      "nombre": "hierbabuena fresca picada"
+    },
+    {
+      "cantidad": "100 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "200 ml",
+      "nombre": "agua o caldo de verduras"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "orégano seco"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra recién molida"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "papas medianas cortadas en gajos, para colocar entre los pimientos"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 180 °C. Lavar los pimientos y secarlos cuidadosamente.",
+    "Cortar la parte superior de cada pimiento, conservando la tapa como si fuera una pequeña cubierta. Retirar las semillas y las membranas interiores.",
+    "Calentar aproximadamente la mitad del aceite de oliva en una sartén amplia. Incorporar la cebolla y cocinar a fuego medio durante 5 minutos, hasta que esté suave y transparente.",
+    "Agregar el ajo y cocinar durante un minuto. Incorporar los tomates, la pasta de tomate y el orégano. Mezclar bien.",
+    "Añadir el arroz crudo, el perejil y la hierbabuena. Sazonar con sal y pimienta. Incorporar aproximadamente la mitad del agua o caldo y cocinar durante 5 minutos, removiendo para integrar los sabores. El arroz debe permanecer parcialmente crudo, pues terminará de cocinarse en el horno.",
+    "Retirar la mezcla del fuego y dejarla reposar unos minutos.",
+    "Rellenar cada pimiento con la preparación de arroz, dejando espacio libre en la parte superior para permitir que el arroz se expanda durante la cocción. Colocar nuevamente las tapas.",
+    "Acomodar los pimientos de pie en un refractario para horno. Distribuir los gajos de papa entre ellos para mantenerlos firmes y aprovechar los jugos de la cocción.",
+    "Mezclar el agua o caldo restante con el aceite de oliva restante y verterlo cuidadosamente en el fondo del refractario. Añadir un poco de sal y pimienta.",
+    "Cubrir el refractario con papel aluminio y hornear durante aproximadamente 45 minutos.",
+    "Retirar el papel aluminio y continuar horneando entre 25 y 30 minutos más, hasta que los pimientos estén suaves, ligeramente dorados y el arroz completamente cocido.",
+    "Retirar del horno y dejar reposar durante 10 minutos antes de servir, para que los sabores se integren."
+  ],
+  "consejo": "No llenar los pimientos hasta el borde: el arroz necesita espacio para crecer durante la cocción. La hierbabuena fresca aporta un aroma muy característico de la cocina griega. También es importante que los pimientos se cocinen lentamente y absorban el aceite de oliva y los jugos del tomate.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir tibios o a temperatura ambiente, acompañados de queso feta, aceitunas Kalamata y pan rústico. En Grecia es habitual disfrutarlos también con una cucharada de yogur griego natural.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Gemista",
+    "url": ""
+  }
 }
+
 ],
   "bebidas": [
     {
