@@ -1393,3 +1393,56 @@ img { max-width: 100%; display: block; }
   }
 
 }
+
+
+/* ============================================================
+   ACCESO AL MODELO DE EVALUACIÓN EDITORIAL
+   ============================================================ */
+
+.evaluation-home {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 35px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.evaluation-home-content h2 {
+  margin: 10px 0 18px;
+}
+
+.evaluation-home-content p {
+  max-width: 700px;
+  color: var(--muted);
+}
+
+.evaluation-home-symbol {
+  padding: 35px 20px;
+  text-align: center;
+  color: var(--gold);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: clamp(25px, 4vw, 38px);
+  letter-spacing: 5px;
+  box-shadow: var(--shadow);
+}
+
+.evaluation-home-symbol span {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+  .evaluation-home {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
