@@ -230,7 +230,7 @@
         "nombre": "Argiro Barbarigou - Greek Keftedes",
         "url": "https://www.argiro.gr/en/recipe/light-and-tender-greek-keftedes/"
       },
-      "estadoPublicacion": "borrador"
+      "estadoPublicacion": "publicada"
     },
     {
       "id": "moussaka",
@@ -342,7 +342,7 @@
         "nombre": "Diane Kochilas - Classic Moussaka",
         "url": "https://www.dianekochilas.com/classic-moussaka/"
       },
-      "estadoPublicacion": "borrador"
+      "estadoPublicacion": "publicada"
     },
     {
       "id": "spanakopitas",
@@ -428,7 +428,7 @@
         "nombre": "Diane Kochilas - Classic Spanakopita",
         "url": "https://www.youtube.com/watch?v=vzf87B0AEqA"
       },
-      "estadoPublicacion": "borrador"
+      "estadoPublicacion": "publicada"
     },
     {
       "id": "horiatiki",
@@ -511,7 +511,7 @@
         "nombre": "GetGreece - Horiatiki",
         "url": "https://www.getgreece.com/recipes/horiatiki"
       },
-      "estadoPublicacion": "borrador"
+      "estadoPublicacion": "publicada"
     }
   ],
   "bebidas": [
