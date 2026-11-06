@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Conoce cómo Las Recetas de Gia Gia valora la tradición, la calidad y el reconocimiento de la gastronomía griega.">
+
+  <title>Nuestro modelo de evaluación | Las Recetas de Gia Gia</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .evaluation-hero {
+      padding: 75px 25px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(120deg, #10334f, #17466c);
+    }
+
+    .evaluation-hero .eyebrow {
+      color: #e4c797;
+    }
+
+    .evaluation-hero h1 {
+      color: white;
+      margin: 15px 0;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .evaluation-hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #e8edf0;
+    }
+
+    .evaluation-section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 25px;
+    }
+
+    .evaluation-intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .evaluation-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .evaluation-card {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      box-shadow: var(--shadow);
+    }
+
+    .evaluation-card h3 {
+      margin: 8px 0 12px;
+    }
+
+    .evaluation-number {
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+
+    .evaluation-scale {
+      display: grid;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .scale-row {
+      display: grid;
+      grid-template-columns: 145px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 20px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .scale-stars {
+      color: var(--gold);
+      font-size: 23px;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .evaluation-sources {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .source-card {
+      padding: 23px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .source-card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .source-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .source-card a {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .evaluation-note {
+      margin-top: 30px;
+      padding: 25px;
+      background: var(--sand);
+      border-left: 4px solid var(--gold);
+    }
+
+    .evaluation-disclaimer {
+      padding: 28px;
+      color: #e8edf0;
+      background: var(--blue-dark);
+      border-radius: 6px;
+    }
+
+    .evaluation-disclaimer h3 {
+      color: white;
+    }
+
+    .evaluation-disclaimer p {
+      color: #e0e7eb;
+      font-size: 13px;
+    }
+
+    .evaluation-back {
+      display: inline-block;
+      margin-top: 25px;
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      .evaluation-grid,
+      .evaluation-sources {
+        grid-template-columns: 1fr;
+      }
+
+      .scale-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .evaluation-section {
+        padding: 45px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header id="site-header"></header>
+
+<main>
+
+  <!-- ENCABEZADO -->
+
+  <section class="evaluation-hero">
+    <span class="eyebrow">NUESTRO COMPROMISO CON LA COCINA GRIEGA</span>
+
+    <h1>El valor detrás de cada estrella</h1>
+
+    <p>
+      Una valoración editorial que reconoce la tradición,
+      la calidad culinaria y la riqueza gastronómica
+      de las recetas que compartimos.
+    </p>
+  </section>
+
+
+  <!-- NUESTRA FILOSOFÍA -->
+
+  <section class="evaluation-section">
+    <div class="evaluation-intro">
+
+      <span class="eyebrow">NUESTRA FILOSOFÍA</span>
+
+      <h2>Una estrella debe tener una razón</h2>
+
+      <p>
+        En Las Recetas de Gia Gia creemos que cada platillo
+        tiene una historia, una identidad y un lugar dentro
+        de la gastronomía griega.
+      </p>
+
+      <p>
+        Por eso, nuestras estrellas no son una simple impresión
+        personal. Son una valoración editorial que toma en cuenta
+        la tradición, la calidad de la preparación y el reconocimiento
+        que cada receta tiene dentro y fuera de Grecia.
+      </p>
+
+      <p>
+        Nuestro propósito es ofrecer a los lectores una orientación
+        honesta, sencilla y fundamentada sobre los platillos
+        que forman parte de nuestro recetario.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- NUESTROS CRITERIOS -->
+
+  <section class="evaluation-section"
+           style="background:var(--sand);max-width:none">
+
+    <div style="max-width:1150px;margin:auto">
+
+      <span class="eyebrow">NUESTROS CRITERIOS</span>
+
+      <h2>¿Qué tomamos en cuenta?</h2>
+
+      <p>
+        Consideramos cuatro aspectos generales para construir
+        nuestra valoración editorial.
+      </p>
+
+      <div class="evaluation-grid">
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">01</span>
+
+          <h3>Tradición y autenticidad</h3>
+
+          <p>
+            El origen del platillo, su relación con la cultura
+            griega, sus ingredientes característicos y su
+            permanencia en las tradiciones culinarias.
+          </p>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">02</span>
+
+          <h3>Calidad culinaria</h3>
+
+          <p>
+            La selección de ingredientes, el equilibrio de sabores,
+            las técnicas de preparación y el cuidado que requiere
+            su elaboración.
+          </p>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">03</span>
+
+          <h3>Reconocimiento gastronómico</h3>
+
+          <p>
+            La presencia del platillo en libros, publicaciones,
+            revistas, guías gastronómicas y medios especializados.
+          </p>
+        </article>
+
+        <article class="evaluation-card">
+          <span class="evaluation-number">04</span>
+
+          <h3>Opinión y experiencia</h3>
+
+          <p>
+            Las aportaciones de chefs, cocineros, especialistas,
+            aficionados a la gastronomía y comunidades que
+            comparten sus experiencias culinarias.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ESCALA DE ESTRELLAS -->
+
+  <section class="evaluation-section">
+
+    <span class="eyebrow">NUESTRA ESCALA</span>
+
+    <h2>¿Qué significan nuestras estrellas?</h2>
+
+    <p>
+      Utilizamos una escala editorial de cuatro y cinco estrellas
+      para distinguir las recetas que forman parte de nuestro
+      recetario.
+    </p>
+
+    <div class="evaluation-scale">
+
+      <div class="scale-row">
+
+        <div class="scale-stars">★★★★★</div>
+
+        <div>
+          <strong>5 estrellas · Excelente</strong>
+
+          <p>
+            Receta sobresaliente por su tradición, identidad
+            griega, calidad culinaria y relevancia gastronómica.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="scale-row">
+
+        <div class="scale-stars">★★★★☆</div>
+
+        <div>
+          <strong>4 estrellas · Muy destacada</strong>
+
+          <p>
+            Receta de gran calidad y atractivo culinario,
+            que merece un lugar destacado en nuestra cocina,
+            aunque presenta alguna característica que la
+            distingue de las preparaciones más tradicionales.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="evaluation-note">
+
+      <strong>Una valoración propia:</strong>
+
+      las estrellas representan nuestro criterio editorial.
+      No son calificaciones oficiales, premios gastronómicos
+      ni puntuaciones otorgadas por terceros.
+
+    </div>
+
+  </section>
+
+
+  <!-- FUENTES DE CONSULTA -->
+
+  <section class="evaluation-section"
+           style="background:var(--sand);max-width:none">
+
+    <div style="max-width:1150px;margin:auto">
+
+      <span class="eyebrow">NUESTRAS REFERENCIAS</span>
+
+      <h2>¿Dónde buscamos información?</h2>
+
+      <p>
+        Para conocer mejor la historia, la preparación y el
+        reconocimiento de la gastronomía griega, consultamos
+        distintas fuentes de información.
+      </p>
+
+      <p>
+        Cada fuente aporta una perspectiva diferente:
+        algunas documentan la tradición, otras ofrecen criterios
+        profesionales y otras reflejan la experiencia de los
+        aficionados a la cocina.
+      </p>
+
+      <div class="evaluation-sources">
+
+        <article class="source-card">
+
+          <h3>Guías gastronómicas</h3>
+
+          <p>
+            Referencias internacionales sobre calidad,
+            técnica culinaria, identidad y experiencia gastronómica.
+          </p>
+
+          <a href="https://guide.michelin.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Consultar Guía MICHELIN ↗
+          </a>
+
+        </article>
+
+
+        <article class="source-card">
+
+          <h3>Premios gastronómicos de Grecia</h3>
+
+          <p>
+            Referencias especializadas en la cocina griega,
+            sus ingredientes, preparaciones y propuestas culinarias.
+          </p>
+
+          <a href="https://en.greekcuisineawards.gr/thesmos/procedure.aspx"
+             target="_blank"
+             rel="noopener noreferrer">
+            Greek Cuisine Awards ↗
+          </a>
+
+        </article>
+
+
+        <article class="source-card">
+
+          <h3>Atlas y rankings gastronómicos</h3>
+
+          <p>
+            Plataformas que reúnen información y opiniones
+            sobre platillos, ingredientes y tradiciones
+            culinarias de distintas regiones.
+          </p>
+
+          <a href="https://www.tasteatlas.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Consultar TasteAtlas ↗
+          </a>
+
+        </article>
+
+
+        <article class="source-card">
+
+          <h3>Revistas y publicaciones especializadas</h3>
+
+          <p>
+            Artículos, recetas, investigaciones y análisis
+            sobre ingredientes y técnicas de cocina.
+          </p>
+
+          <a href="https://www.seriouseats.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Consultar Serious Eats ↗
+          </a>
+
+        </article>
+
+
+        <article class="source-card">
+
+          <h3>Instituciones culinarias</h3>
+
+          <p>
+            Material de formación profesional sobre técnicas,
+            preparación de alimentos y evaluación culinaria.
+          </p>
+
+          <a href="https://www.ice.edu/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Institute of Culinary Education ↗
+          </a>
+
+        </article>
+
+
+        <article class="source-card">
+
+          <h3>Chefs, autores y aficionados</h3>
+
+          <p>
+            Libros, entrevistas, experiencias, comunidades
+            gastronómicas y opiniones de quienes mantienen
+            viva la tradición culinaria.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TRANSPARENCIA -->
+
+  <section class="evaluation-section">
+
+    <div class="evaluation-disclaimer">
+
+      <h3>Nuestro compromiso con la honestidad editorial</h3>
+
+      <p>
+        Las estrellas de Las Recetas de Gia Gia representan
+        una valoración editorial propia. No son estrellas
+        MICHELIN, premios oficiales ni calificaciones otorgadas
+        por TasteAtlas u otras instituciones.
+      </p>
+
+      <p>
+        Las referencias gastronómicas nos ayudan a conocer
+        mejor cada preparación, pero la valoración final
+        corresponde a nuestro propio criterio editorial.
+      </p>
+
+      <p>
+        Queremos que cada estrella represente nuestro respeto
+        por la cocina griega, sus tradiciones y las historias
+        que se transmiten alrededor de la mesa.
+      </p>
+
+      <p>
+        Porque detrás de cada receta hay mucho más que
+        ingredientes: hay cultura, memoria y familia.
+      </p>
+
+    </div>
+
+    <a href="index.html" class="evaluation-back">
+      ← Volver a Las Recetas de Gia Gia
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer id="site-footer"></footer>
+
+
+<script>
+"use strict";
+
+function construirNavegacion() {
+
+  document.getElementById("site-header").innerHTML = `
+    <nav class="navbar">
+
+      <a class="brand" href="index.html">
+
+        <span class="brand-symbol">ΓΓ</span>
+
+        <span class="brand-name">
+          Las Recetas de Gia Gia
+          <small>EL SABOR DEBE SER AUTÉNTICO · EL SABOR DE GRECIA</small>
+        </span>
+
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="seccion.html?tipo=gia-gia">Gia Gia</a>
+        <a href="recetario.html">Recetario</a>
+        <a href="evaluacion.html">Evaluación editorial</a>
+        <a href="seccion.html?tipo=publicaciones">Publicaciones</a>
+        <a href="seccion.html?tipo=bebidas">Bebidas</a>
+      </div>
+
+    </nav>
+  `;
+}
+
+
+function construirPie() {
+
+  document.getElementById("site-footer").innerHTML = `
+    <div class="site-footer">
+
+      <h2>Las Recetas de Gia Gia</h2>
+
+      <p>Sabores, historias y tradiciones de Grecia.</p>
+
+      <p class="footer-motto">
+        El sabor debe ser auténtico.
+      </p>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="recetario.html">Recetario</a>
+        <a href="evaluacion.html">Modelo de evaluación</a>
+      </div>
+
+      <p>
+        © ${new Date().getFullYear()} Las Recetas de Gia Gia
+      </p>
+
+    </div>
+  `;
+}
+
+
+construirNavegacion();
+construirPie();
+</script>
+
+</body>
+</html>
