@@ -1291,4 +1291,16 @@ img { max-width: 100%; display: block; }
   }
 
 }
+/* ESPACIADO ENTRE CATEGORÍAS EN LA PORTADA */
 
+.category-group {
+  margin-top: 48px;
+}
+
+.category-group + .category-group {
+  margin-top: 56px;
+}
+
+.category-group .section-heading {
+  margin-bottom: 24px;
+}
