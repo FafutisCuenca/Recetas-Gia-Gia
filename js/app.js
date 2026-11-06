@@ -793,6 +793,258 @@ const secciones = {
 
 };
 
+
+function renderHistoriaGiaGia() {
+  return `
+    <article class="gia-story">
+
+      <header class="gia-story-intro">
+        <span class="gia-story-kicker">LAS RAÍCES DE NUESTRA COCINA</span>
+        <h2>Una historia que se cocina con el corazón</h2>
+        <p class="gia-story-lead">
+          Hay recetas que se aprenden siguiendo instrucciones y otras
+          que se aprenden mirando, escuchando y compartiendo la vida.
+          La historia de la Sra. Fafutis pertenece a estas últimas.
+        </p>
+      </header>
+
+      <section class="gia-story-section">
+        <span class="gia-story-number">01</span>
+        <div>
+          <h2>De Evia a México: el origen de nuestras raíces</h2>
+
+          <p>
+            La historia familiar de la Sra. Fafutis está profundamente
+            ligada a Grecia. Sus padres y sus abuelos procedían de
+            <strong>Evia (Εύβοια)</strong>, una de las grandes islas
+            griegas, situada frente a la costa oriental de Grecia.
+            De aquella tierra llegaron costumbres, sabores, recuerdos
+            y una manera muy particular de entender la mesa familiar.
+          </p>
+
+          <p>
+            Como ocurrió con muchas familias griegas, sus raíces
+            quedaron unidas a la historia de la migración hacia México
+            durante las primeras décadas del siglo XX. Después de la
+            Primera Guerra Mundial, distintas familias buscaron nuevas
+            oportunidades al otro lado del Atlántico.
+          </p>
+
+          <p>
+            En la memoria de nuestra familia se conserva el recuerdo
+            de aquellos primeros asentamientos en Veracruz y de los
+            caminos que posteriormente llevaron a algunas familias
+            griegas hacia otras regiones del país. Algunas encontraron
+            oportunidades en la actividad minera de Pachuca; otras
+            se establecieron en estados como Jalisco, Sonora y Sinaloa,
+            donde participaron en actividades agrícolas y comerciales.
+          </p>
+
+          <p>
+            Esta historia forma parte de la memoria familiar y de un
+            capítulo más amplio de la presencia griega en México.
+            Es el origen de una herencia cultural que, generación
+            tras generación, encontró un lugar en nuestro país.
+          </p>
+        </div>
+      </section>
+
+      <section class="gia-story-section">
+        <span class="gia-story-number">02</span>
+        <div>
+          <h2>Una infancia entre dos culturas</h2>
+
+          <p>
+            Nacida en mayo de 1942, hija de padre griego y madre
+            mexicana, la Sra. Fafutis creció en un hogar donde
+            convivían dos culturas, dos tradiciones y dos formas
+            de disfrutar la comida.
+          </p>
+
+          <p>
+            La cocina griega estaba presente todos los días.
+            Su padre preparaba los platillos de su tierra y ella,
+            desde pequeña, observaba con atención los ingredientes,
+            los aromas, los tiempos y los procedimientos. Así comenzó
+            un aprendizaje que no nació de un libro de recetas,
+            sino de la convivencia cotidiana y de la transmisión
+            familiar.
+          </p>
+
+          <p>
+            Con el paso de los años también incorporó los sabores
+            de la cocina mexicana, aprendiendo a desenvolverse entre
+            ambas tradiciones. Esa convivencia culinaria se convirtió
+            en una parte esencial de su propia historia.
+          </p>
+        </div>
+      </section>
+
+      <section class="gia-story-highlight">
+        <span class="gia-story-kicker">LOS PRIMEROS GRANDES APRENDIZAJES</span>
+        <h2>Moussaka y Pastitsio</h2>
+        <p>
+          Entre los primeros platillos griegos que aprendió a preparar
+          y perfeccionó destacan dos grandes clásicos de la cocina
+          helénica: la Moussaka (Μουσακάς) y el Pastitsio (Παστίτσιο).
+        </p>
+        <p>
+          Dos recetas que representan mucho más que una preparación:
+          son parte de aquella cocina familiar que observó desde niña
+          y que, con dedicación y práctica, hizo suya.
+        </p>
+      </section>
+
+      <section class="gia-story-section">
+        <span class="gia-story-number">03</span>
+        <div>
+          <h2>Grecia: volver a las raíces para seguir aprendiendo</h2>
+
+          <p>
+            Durante los últimos treinta años, sus frecuentes viajes
+            a Grecia han sido una oportunidad para reencontrarse con
+            sus raíces, conocer nuevos platillos, descubrir ingredientes
+            y profundizar en las técnicas de la cocina tradicional.
+          </p>
+
+          <p>
+            Cada viaje ha significado también una nueva oportunidad
+            de aprendizaje. La cocina griega no es una tradición
+            inmóvil: cambia de una región a otra, conserva sus
+            particularidades y ofrece siempre algo nuevo por descubrir.
+          </p>
+
+          <p>
+            A esta experiencia se ha sumado otro vínculo muy especial:
+            la familia griega de su nuera, esposa de su hijo, con quien
+            también ha compartido recetas, conocimientos y formas
+            de preparación que enriquecen su repertorio culinario.
+          </p>
+        </div>
+      </section>
+
+      <section class="gia-story-section">
+        <span class="gia-story-number">04</span>
+        <div>
+          <h2>Una cocina que reúne y se comparte</h2>
+
+          <p>
+            A lo largo de los años, sus platillos se han convertido
+            en preparaciones esperadas por familiares, amigos y
+            conocidos. Muchas de sus recetas son solicitadas
+            especialmente para reuniones y celebraciones.
+          </p>
+
+          <p>
+            También ha tenido la oportunidad de cocinar en eventos
+            de la Comunidad Helénica de México, compartiendo con
+            otras personas los sabores que forman parte de su
+            historia y de la tradición griega.
+          </p>
+
+          <p>
+            A sus 84 años, continúa disfrutando de la cocina con
+            la misma pasión por preparar, perfeccionar y compartir.
+            Porque cocinar, para ella, sigue siendo una forma
+            de reunir a las personas y mantener vivas las tradiciones.
+          </p>
+        </div>
+      </section>
+
+      <section class="gia-story-section">
+        <span class="gia-story-number">05</span>
+        <div>
+          <h2>Las Recetas de Gia Gia: una herencia para compartir</h2>
+
+          <p>
+            Este recetario nace precisamente de esa historia.
+            Su propósito es conservar los conocimientos, las
+            preparaciones y las experiencias culinarias de la
+            Sra. Fafutis para que no se pierdan con el paso del tiempo.
+          </p>
+
+          <p>
+            Queremos que las nuevas generaciones puedan conocer
+            estas recetas, prepararlas en sus hogares y descubrir
+            la riqueza de la gastronomía griega. También queremos
+            acercar esta cocina a todas aquellas personas que
+            sienten cariño por Grecia, por su cultura y por sus sabores.
+          </p>
+
+          <p>
+            Cada receta que se incorpora representa una oportunidad
+            para conservar una parte de la memoria familiar y
+            compartirla con quienes vienen después.
+          </p>
+        </div>
+      </section>
+
+      <footer class="gia-story-closing">
+        <span class="gia-story-greek">Η παράδοση συνεχίζεται</span>
+        <h2>Una herencia que continúa</h2>
+        <p>
+          Las recetas pueden escribirse, los ingredientes pueden
+          medirse y las técnicas pueden enseñarse. Pero el verdadero
+          sabor de una tradición vive en las personas que la conservan,
+          la preparan y la comparten.
+        </p>
+        <p class="gia-story-signature">
+          Sra. Fafutis
+          <span>Conocida cariñosamente como Gia Gia</span>
+        </p>
+      </footer>
+
+      <section class="gia-story-sources">
+        <h2>Para conocer más sobre la historia griega en México</h2>
+        <p>
+          La historia familiar se complementa con investigaciones
+          y publicaciones que documentan la migración griega y
+          su presencia en distintas regiones de México. Estas
+          referencias aportan contexto histórico; no pretenden
+          sustituir los recuerdos ni los testimonios de nuestra familia.
+        </p>
+
+        <ol>
+          <li>
+            <strong>Una minoría olvidada: Griegos en México (1903-1942)</strong>
+            <span>
+              José Gabriel Baeza Espejel. Instituto Nacional de Migración,
+              2006.
+            </span>
+            <a href="https://www.inm.gob.mx/static/SEGOB/Archivos_CEM/Publicaciones/pdf/Una_minoria_olvidada.pdf"
+               target="_blank" rel="noopener">
+              Consultar publicación en PDF ↗
+            </a>
+          </li>
+
+          <li>
+            <strong>Inmigración griega y empresa agrícola en Sinaloa (1927-1971): éxitos y fracasos</strong>
+            <span>
+              Gustavo Aguilar Aguilar. Revista Secuencia, 2006.
+            </span>
+            <a href="https://www.scielo.org.mx/scielo.php?pid=S0186-03482006000100145&script=sci_arttext"
+               target="_blank" rel="noopener">
+              Consultar artículo ↗
+            </a>
+          </li>
+
+          <li>
+            <strong>Del Olimpo al barrio</strong>
+            <span>
+              Susana A. Ramírez Bello. Relatos e Historias en México.
+            </span>
+            <a href="https://relatosehistorias.mx/node/580"
+               target="_blank" rel="noopener">
+              Leer artículo ↗
+            </a>
+          </li>
+        </ol>
+      </section>
+
+    </article>
+  `;
+}
+
 // ------------------------------------------------------------
 // PÁGINA DE SECCIONES
 // ------------------------------------------------------------
