@@ -1054,55 +1054,78 @@ img { max-width: 100%; display: block; }
   display: none !important;
 }
 
-/* Conservar el consejo de Gia Gia */
 
-.tip-box {
+/* ==========================================================
+   SUGERENCIAS DE GIA GIA Y ACOMPAÑAMIENTOS
+   ========================================================== */
+
+/* Recuadro común con borde dorado */
+
+.tip-box,
+.section-wrap > section.section-wrap {
   display: block !important;
-  margin-top: 20px;
-  padding: 12px !important;
   background: white !important;
-  border: 1px solid #ccc !important;
+  border: 1px solid #b89a55 !important;
+  border-radius: 6px !important;
+  padding: 12px 15px !important;
+  margin: 14px 0 0 !important;
+  box-shadow: none !important;
   break-inside: avoid;
 }
 
-/* Conservar acompañamientos y nombres de bebidas */
+/* Eliminar el título secundario del consejo */
 
-.section-wrap > section.section-wrap {
-  display: block !important;
-  margin-top: 20px;
-  padding: 0 !important;
+.tip-box h3 {
+  display: none !important;
 }
 
+/* Unificar los títulos de ambas sugerencias */
 
-/* PRESENTACIÓN COMPACTA DE LAS BEBIDAS */
-
-.section-wrap > section.section-wrap {
-  display: block !important;
-  margin-top: 14px !important;
-  padding: 0 !important;
-}
-
+.tip-box .eyebrow,
 .section-wrap > section.section-wrap > .eyebrow {
-  font-size: 8pt;
-  color: #777;
+  display: block;
+  font-size: 8pt !important;
+  font-family: inherit !important;
+  font-weight: 600 !important;
+  color: #777 !important;
+  letter-spacing: 1px;
+  margin: 0 0 6px !important;
 }
+
+/* Texto del consejo */
+
+.tip-box p {
+  font-size: 9pt !important;
+  line-height: 1.45;
+  margin: 0 !important;
+}
+
+/* Eliminar la nota de validación familiar */
+
+.tip-box p + p {
+  display: none !important;
+}
+
+/* Título de acompañamientos */
 
 .section-wrap > section.section-wrap > h2 {
-  font-size: 12pt;
-  margin: 4px 0 6px;
-  font-weight: 600;
+  font-size: 12pt !important;
+  margin: 0 0 6px !important;
+  color: #777 !important;
 }
+
+/* Descripción del acompañamiento */
 
 .section-wrap > section.section-wrap > p {
-  font-size: 9pt;
-  margin: 4px 0;
+  font-size: 9pt !important;
+  margin: 4px 0 !important;
 }
 
-/* Nombres de bebidas sin tarjetas ni recuadros */
+/* Bebidas en formato compacto */
 
 .drink-grid {
   display: block !important;
-  margin: 5px 0 !important;
+  margin: 5px 0 0 !important;
 }
 
 .drink-card {
@@ -1117,7 +1140,7 @@ img { max-width: 100%; display: block; }
 .drink-card h3 {
   display: inline !important;
   font-size: 9pt !important;
-  font-weight: normal;
+  font-weight: normal !important;
   margin: 0 !important;
 }
 
@@ -1125,18 +1148,6 @@ img { max-width: 100%; display: block; }
   content: "  ·  ";
   color: #888;
 }
-
-.drink-card a {
-  display: none !important;
-}
-
-/* Ocultar el enlace al catálogo */
-
-.section-wrap > section.section-wrap > p a {
-  display: none !important;
-}
-
-/* Ocultar enlaces de navegación a las bebidas */
 
 .drink-card a,
 .section-wrap > section.section-wrap > p a {
