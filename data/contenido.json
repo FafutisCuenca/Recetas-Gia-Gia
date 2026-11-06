@@ -1410,7 +1410,675 @@
     "nombre": "Preparación familiar griega de Kotopoulo Lemonato",
     "url": ""
   }
+},
+    
+{
+  "id": "papoutsakia",
+  "nombre": "Papoutsakia de berenjena",
+  "nombreGriego": "Παπουτσάκια",
+  "pronunciacionGriega": "Paputsákia",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Berenjenas horneadas y rellenas de carne molida en salsa de tomate, cubiertas con una suave salsa bechamel y queso gratinado. Un clásico de la cocina casera griega.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "35 minutos",
+  "tiempoCoccion": "1 hora y 10 minutos",
+  "tiempoTotal": "1 hora y 45 minutos",
+  "historia": {
+    "titulo": "Pequeños zapatos de la cocina griega",
+    "texto": "Papoutsakia significa pequeños zapatos en griego, nombre que hace referencia a la forma de las berenjenas rellenas. Es una preparación tradicional que recuerda a los sabores de la moussaka: berenjena, carne sazonada con tomate y especias, y una cubierta cremosa de bechamel. Se encuentra en las mesas familiares y en las tabernas griegas, donde cada cocinero aporta su propio toque."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "3 grandes",
+      "nombre": "berenjenas"
+    },
+    {
+      "cantidad": "500 g",
+      "nombre": "carne molida de res"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla mediana finamente picada"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "dientes de ajo picados"
+    },
+    {
+      "cantidad": "400 g",
+      "nombre": "jitomate triturado"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "pasta de tomate"
+    },
+    {
+      "cantidad": "100 ml",
+      "nombre": "vino tinto seco"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "hoja de laurel"
+    },
+    {
+      "cantidad": "1/2 cucharadita",
+      "nombre": "canela molida"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "orégano seco"
+    },
+    {
+      "cantidad": "3 cucharadas",
+      "nombre": "perejil fresco picado"
+    },
+    {
+      "cantidad": "3 cucharadas",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "500 ml",
+      "nombre": "leche entera para la bechamel"
+    },
+    {
+      "cantidad": "50 g",
+      "nombre": "mantequilla"
+    },
+    {
+      "cantidad": "50 g",
+      "nombre": "harina de trigo"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "yema de huevo"
+    },
+    {
+      "cantidad": "80 g",
+      "nombre": "queso kefalotyri o graviera rallado, puede sustituirse por parmesano"
+    },
+    {
+      "cantidad": "1 pizca",
+      "nombre": "nuez moscada"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 190 °C. Lavar las berenjenas y cortarlas por la mitad a lo largo.",
+    "Hacer cortes superficiales en la pulpa sin perforar la piel. Sazonar con sal, pimienta y un poco de aceite de oliva.",
+    "Colocar las berenjenas en una charola con la pulpa hacia arriba y hornear durante 25 a 30 minutos, hasta que estén suaves.",
+    "Mientras tanto, calentar el aceite de oliva en una sartén. Sofreír la cebolla y el ajo hasta que estén transparentes.",
+    "Agregar la carne molida y cocinar hasta que cambie de color y pierda el exceso de líquido.",
+    "Incorporar el vino tinto y dejar que reduzca. Agregar el jitomate, la pasta de tomate, el laurel, la canela, el orégano, sal y pimienta.",
+    "Cocinar a fuego medio-bajo durante aproximadamente 25 a 30 minutos, hasta obtener una salsa espesa. Retirar el laurel y añadir el perejil.",
+    "Para la bechamel, derretir la mantequilla en una cacerola. Incorporar la harina y mezclar durante un par de minutos.",
+    "Agregar la leche poco a poco, batiendo constantemente para evitar grumos. Cocinar hasta obtener una crema espesa.",
+    "Retirar del fuego. Incorporar la yema de huevo, la nuez moscada y una parte del queso rallado. Mezclar hasta integrar.",
+    "Presionar ligeramente la pulpa de las berenjenas para formar un espacio para el relleno. Distribuir la salsa de carne sobre cada mitad.",
+    "Cubrir con bechamel y espolvorear el queso restante.",
+    "Hornear a 190 °C durante aproximadamente 25 a 30 minutos, hasta que la superficie esté dorada.",
+    "Dejar reposar unos minutos antes de servir."
+  ],
+  "consejo": "La berenjena debe quedar suave, pero conservar su forma. La salsa de carne debe estar suficientemente espesa para no humedecer demasiado el platillo. Dejar reposar antes de servir ayuda a que las porciones mantengan su presentación.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir con ensalada horiatiki, pan fresco y una porción de tzatziki. Combina muy bien con vino tinto seco.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Melitzanes Papoutsakia",
+    "url": "https://www.chefspencil.com/papoutsakia-stuffed-eggplants/"
+  }
+},
+{
+  "id": "dolmades",
+  "nombre": "Dolmades de hojas de parra",
+  "nombreGriego": "Ντολμάδες",
+  "pronunciacionGriega": "Dolmádes",
+  "categoria": "Entrada",
+  "categoriaId": "entrada",
+  "descripcion": "Hojas de parra rellenas de arroz, cebolla, hierbas frescas, limón y aceite de oliva. Un delicado platillo griego que se sirve frío o a temperatura ambiente.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 6,
+  "tiempoPreparacion": "40 minutos",
+  "tiempoCoccion": "50 minutos",
+  "tiempoTotal": "1 hora y 30 minutos",
+  "historia": {
+    "titulo": "El sabor de las hojas de parra",
+    "texto": "Los dolmades forman parte de una amplia tradición culinaria del Mediterráneo oriental. En Grecia son muy apreciados los rellenos de arroz y hierbas aromáticas, envueltos cuidadosamente en hojas de parra. Cada familia tiene su propia combinación de ingredientes y proporciones. Se sirven habitualmente como parte de una selección de entradas o mezedes, acompañados de limón y, en algunas versiones, salsa de yogur o avgolemono."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "40 a 45",
+      "nombre": "hojas de parra en conserva"
+    },
+    {
+      "cantidad": "250 g",
+      "nombre": "arroz de grano corto o medio"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla grande finamente picada"
+    },
+    {
+      "cantidad": "4",
+      "nombre": "cebollitas de cambray finamente picadas"
+    },
+    {
+      "cantidad": "1/2 taza",
+      "nombre": "perejil fresco picado"
+    },
+    {
+      "cantidad": "1/4 taza",
+      "nombre": "eneldo fresco picado"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "menta fresca picada"
+    },
+    {
+      "cantidad": "120 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "limones, su jugo"
+    },
+    {
+      "cantidad": "300 ml",
+      "nombre": "caldo de verduras o agua"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra"
+    }
+  ],
+  "preparacion": [
+    "Si se utilizan hojas de parra en conserva, enjuagarlas cuidadosamente con agua fría para retirar el exceso de sal. Escurrirlas y reservar.",
+    "Calentar una parte del aceite de oliva en una sartén y sofreír la cebolla y las cebollitas hasta que estén suaves.",
+    "Agregar el arroz y mezclar durante un par de minutos.",
+    "Incorporar el perejil, el eneldo, la menta, la mitad del jugo de limón, sal y pimienta.",
+    "Añadir aproximadamente 100 ml de agua y cocinar unos minutos, hasta que el arroz absorba parte del líquido, pero sin terminar de cocerse. Dejar enfriar.",
+    "Extender una hoja de parra con las nervaduras hacia arriba y el extremo del tallo hacia quien prepara.",
+    "Colocar una pequeña porción del relleno cerca de la base de la hoja. Doblar los lados hacia el centro y enrollar firmemente, sin apretar demasiado para dejar espacio para que el arroz se expanda.",
+    "Repetir el procedimiento con todas las hojas.",
+    "Cubrir el fondo de una cacerola con algunas hojas de parra sobrantes. Acomodar los rollitos en capas, con la unión hacia abajo y muy juntos.",
+    "Agregar el resto del aceite de oliva, el jugo de limón y el caldo o agua suficiente para casi cubrir los rollitos.",
+    "Colocar un plato resistente al calor sobre los dolmades para mantenerlos en su sitio durante la cocción.",
+    "Tapar la cacerola y cocinar a fuego bajo durante aproximadamente 40 a 50 minutos, hasta que el arroz esté tierno y las hojas suaves.",
+    "Retirar del fuego y dejar reposar dentro de la cacerola antes de servir.",
+    "Servir fríos o a temperatura ambiente, acompañados de limón fresco."
+  ],
+  "consejo": "No llenar demasiado las hojas ni enrollarlas con excesiva fuerza: el arroz necesita espacio para expandirse. Mantener los rollitos juntos durante la cocción ayuda a que conserven su forma.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir con gajos de limón, tzatziki, aceitunas Kalamata y pan pita. Son excelentes como parte de una mesa de mezedes.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Dolmades",
+    "url": ""
+  }
+},
+{
+  "id": "tiropita",
+  "nombre": "Tiropita de queso feta",
+  "nombreGriego": "Τυρόπιτα",
+  "pronunciacionGriega": "Tirópita",
+  "categoria": "Entrada",
+  "categoriaId": "entrada",
+  "descripcion": "Pastelitos de pasta filo rellenos de queso feta, huevo y hierbas aromáticas. Crujientes por fuera y cremosos por dentro, son una de las entradas más queridas de Grecia.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 8,
+  "tiempoPreparacion": "30 minutos",
+  "tiempoCoccion": "30 minutos",
+  "tiempoTotal": "1 hora",
+  "historia": {
+    "titulo": "El queso y la pasta filo en la tradición griega",
+    "texto": "La tiropita es una preparación tradicional griega cuyo nombre combina las palabras tyri, queso, y pita, pastel o empanada. Existen muchas versiones regionales y familiares: algunas se preparan como un pastel grande y otras como pequeños triángulos individuales. El queso feta es uno de sus ingredientes más característicos y se combina con huevo para formar un relleno suave, envuelto en delicadas capas de pasta filo."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "450 g",
+      "nombre": "queso feta desmoronado"
+    },
+    {
+      "cantidad": "150 g",
+      "nombre": "ricotta o requesón bien escurrido"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "huevos"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "yogur griego natural"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "perejil fresco picado"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "eneldo fresco picado"
+    },
+    {
+      "cantidad": "400 g",
+      "nombre": "pasta filo"
+    },
+    {
+      "cantidad": "120 g",
+      "nombre": "mantequilla derretida"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "pimienta negra recién molida"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 180 °C.",
+    "En un recipiente mezclar el queso feta desmoronado, la ricotta o requesón, los huevos, el yogur, el perejil, el eneldo y la pimienta.",
+    "Extender una hoja de pasta filo sobre una superficie limpia y mantener cubiertas las hojas restantes con un paño ligeramente húmedo para evitar que se sequen.",
+    "Pincelar la hoja con mantequilla derretida y colocar encima otra hoja de pasta filo. Pincelar nuevamente.",
+    "Cortar las hojas en tiras largas de aproximadamente 7 a 8 centímetros de ancho.",
+    "Colocar una cucharada de relleno cerca de un extremo de cada tira.",
+    "Doblar una esquina sobre el relleno formando un triángulo y continuar doblando en forma de triángulo hasta llegar al extremo de la tira.",
+    "Colocar los triángulos en una charola para horno con la unión hacia abajo.",
+    "Pincelar la superficie con mantequilla derretida.",
+    "Hornear durante aproximadamente 25 a 30 minutos, hasta que estén inflados y dorados.",
+    "Dejar reposar unos minutos antes de servir para que el relleno se asiente."
+  ],
+  "consejo": "Trabajar rápidamente con la pasta filo y mantener las hojas que no se estén utilizando cubiertas. La mantequilla entre las capas es fundamental para conseguir una textura crujiente y dorada.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir calientes o tibias con aceitunas, jitomates cherry, tzatziki y una ensalada fresca. Son ideales para una mesa de entradas griegas.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Tiropita",
+    "url": ""
+  }
+},
+{
+  "id": "galaktoboureko",
+  "nombre": "Galaktoboureko",
+  "nombreGriego": "Γαλακτομπούρεκο",
+  "pronunciacionGriega": "Galaktobúreko",
+  "categoria": "Postre",
+  "categoriaId": "postre",
+  "descripcion": "Delicado pastel griego de pasta filo relleno de crema de leche y sémola, horneado hasta quedar dorado y bañado con un aromático almíbar de limón y canela.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 10,
+  "tiempoPreparacion": "35 minutos",
+  "tiempoCoccion": "50 minutos",
+  "tiempoTotal": "1 hora y 25 minutos, más el enfriamiento",
+  "historia": {
+    "titulo": "Una joya de la repostería griega",
+    "texto": "El galaktoboureko es uno de los postres más apreciados de la repostería griega. Su nombre hace referencia a la leche y a la preparación de tipo pastel. Combina una crema elaborada con leche, sémola, huevos y azúcar, envuelta entre capas de pasta filo untadas con mantequilla. Una vez horneado, se baña con almíbar aromatizado con limón y canela. Su contraste entre la cubierta crujiente y el interior cremoso lo convierte en un postre especial para reuniones familiares y celebraciones."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "1 paquete",
+      "nombre": "pasta filo de aproximadamente 400 g"
+    },
+    {
+      "cantidad": "180 g",
+      "nombre": "mantequilla derretida"
+    },
+    {
+      "cantidad": "1 litro",
+      "nombre": "leche entera"
+    },
+    {
+      "cantidad": "150 g",
+      "nombre": "sémola fina de trigo"
+    },
+    {
+      "cantidad": "180 g",
+      "nombre": "azúcar"
+    },
+    {
+      "cantidad": "4",
+      "nombre": "huevos"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "extracto de vainilla"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cáscara de limón, sin la parte blanca"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cáscara de naranja, opcional"
+    },
+    {
+      "cantidad": "1 pizca",
+      "nombre": "sal"
+    },
+    {
+      "cantidad": "250 g",
+      "nombre": "azúcar para el almíbar"
+    },
+    {
+      "cantidad": "200 ml",
+      "nombre": "agua para el almíbar"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "rama de canela"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "jugo de limón para el almíbar"
+    }
+  ],
+  "preparacion": [
+    "Preparar primero el almíbar. Colocar en una cacerola el agua, el azúcar, la rama de canela y el jugo de limón.",
+    "Calentar hasta que hierva y cocinar a fuego suave durante aproximadamente 5 minutos. Retirar del fuego y dejar enfriar completamente.",
+    "Para la crema, calentar la leche con la mitad del azúcar y las cáscaras de limón y naranja.",
+    "Cuando la leche esté caliente, retirar las cáscaras e incorporar la sémola fina poco a poco, mezclando constantemente con un batidor.",
+    "Cocinar a fuego bajo hasta que la mezcla espese y adquiera una consistencia cremosa.",
+    "En otro recipiente batir los huevos con el azúcar restante y la vainilla.",
+    "Agregar poco a poco unas cucharadas de la crema caliente a los huevos, batiendo constantemente para templarlos.",
+    "Incorporar la mezcla de huevo a la cacerola y cocinar a fuego bajo, removiendo hasta integrar. Retirar del fuego y dejar enfriar ligeramente.",
+    "Precalentar el horno a 180 °C. Engrasar una fuente rectangular con mantequilla.",
+    "Colocar varias hojas de pasta filo en el fondo de la fuente, pincelando cada una con mantequilla derretida y dejando que los bordes sobresalgan.",
+    "Verter la crema sobre la base de pasta filo y distribuirla uniformemente.",
+    "Doblar hacia el interior los bordes de las hojas y cubrir con las hojas restantes, pincelando cada una con mantequilla.",
+    "Marcar ligeramente las porciones con un cuchillo, sin llegar hasta el fondo.",
+    "Hornear durante aproximadamente 45 a 50 minutos, hasta que la superficie esté profundamente dorada y crujiente.",
+    "Retirar del horno y verter lentamente el almíbar frío sobre el pastel caliente, distribuyéndolo por toda la superficie.",
+    "Dejar reposar hasta que absorba el almíbar y se enfríe antes de cortar y servir."
+  ],
+  "consejo": "El contraste de temperaturas es importante: el almíbar debe estar frío cuando se vierte sobre el pastel recién salido del horno. Esto ayuda a conservar la textura crujiente de la pasta filo mientras la crema permanece suave.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir a temperatura ambiente, acompañado de café griego o un café tradicional. Puede decorarse con una pequeña cantidad de canela molida.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Preparación tradicional griega de Galaktoboureko",
+    "url": "https://www.elzymi.gr/uploads/originals/1/arabatzis-cookbook-210x290-final-web.pdf"
+  }
+},
+{
+  "id": "htapodi-sti-schara",
+  "nombre": "Pulpo a la parrilla",
+  "nombreGriego": "Χταπόδι στη σχάρα",
+  "pronunciacionGriega": "Htapódi sti schára",
+  "categoria": "Entrada",
+  "categoriaId": "entrada",
+  "descripcion": "Tentáculos de pulpo cocinados lentamente hasta quedar tiernos y después asados a la parrilla para conseguir una superficie ligeramente crujiente. Se terminan con aceite de oliva, limón y orégano griego.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 4,
+  "tiempoPreparacion": "15 minutos",
+  "tiempoCoccion": "1 hora y 10 minutos",
+  "tiempoTotal": "1 hora y 25 minutos",
+  "historia": {
+    "titulo": "El sabor del mar Egeo",
+    "texto": "El pulpo es uno de los productos del mar más apreciados en numerosas regiones costeras e islas de Grecia. En las tabernas junto al mar es habitual encontrarlo cocinado a la parrilla, acompañado de aceite de oliva, limón y orégano. La clave de esta preparación consiste en conseguir una textura tierna mediante una cocción lenta antes de marcarlo sobre el fuego. Es una entrada emblemática de las mesas de mariscos y de los tradicionales mezedes griegos."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "1.5 kg",
+      "nombre": "pulpo limpio, fresco o descongelado"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "hojas de laurel"
+    },
+    {
+      "cantidad": "10",
+      "nombre": "granos de pimienta negra"
+    },
+    {
+      "cantidad": "120 ml",
+      "nombre": "vinagre de vino tinto"
+    },
+    {
+      "cantidad": "80 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "limones, su jugo"
+    },
+    {
+      "cantidad": "1 cucharada",
+      "nombre": "orégano seco griego"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "diente de ajo finamente picado, opcional"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "perejil fresco picado"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal de mar y pimienta negra"
+    }
+  ],
+  "preparacion": [
+    "Limpiar el pulpo y comprobar que se hayan retirado correctamente el pico, los ojos y las partes no comestibles. Enjuagar y escurrir.",
+    "Colocar el pulpo en una cacerola amplia con el laurel, los granos de pimienta y el vinagre. No es necesario agregar abundante agua, pues el pulpo soltará líquido durante la cocción.",
+    "Tapar y cocinar a fuego bajo durante aproximadamente 45 a 60 minutos, dependiendo del tamaño y grosor del pulpo. Revisar ocasionalmente que conserve suficiente líquido y comprobar con un tenedor que esté tierno.",
+    "Retirar del fuego y dejar reposar hasta que se pueda manipular con seguridad.",
+    "Separar los tentáculos y cortarlos en porciones de tamaño adecuado para la parrilla.",
+    "Precalentar una parrilla o plancha a temperatura alta.",
+    "Colocar los tentáculos sobre la parrilla y cocinar aproximadamente de 3 a 4 minutos por cada lado, hasta que aparezcan marcas doradas y bordes ligeramente crujientes.",
+    "Mezclar el aceite de oliva, el jugo de limón, el orégano y el ajo opcional.",
+    "Retirar el pulpo de la parrilla y colocarlo en una fuente para servir.",
+    "Rociar con la mezcla de aceite y limón. Terminar con perejil, sal de mar y pimienta negra.",
+    "Servir inmediatamente mientras conserva su temperatura y textura."
+  ],
+  "consejo": "El secreto es no intentar asar el pulpo crudo directamente. La cocción lenta previa permite ablandar sus fibras y la parrilla aporta el aroma tostado característico. Evitar prolongar demasiado el asado final para que no pierda jugosidad.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir con limón fresco, aceitunas Kalamata, ensalada horiatiki y pan rústico. Es excelente como parte de una mesa de mariscos y mezedes, acompañado de vino blanco seco.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Greek Grilled Octopus - Lauer House",
+    "url": "https://lauerhouse.gr/greek-specialities/grilled-octopus"
+  }
+},
+{
+  "id": "magiritsa",
+  "nombre": "Magiritsa, sopa griega de Pascua",
+  "nombreGriego": "Μαγειρίτσα",
+  "pronunciacionGriega": "Maguirítsa",
+  "categoria": "Entrada",
+  "categoriaId": "entrada",
+  "descripcion": "Sopa tradicional de la Pascua ortodoxa griega, preparada con menudencias de cordero, lechuga, cebollitas, eneldo y arroz, terminada con la clásica salsa de huevo y limón llamada avgolemono.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 8,
+  "tiempoPreparacion": "40 minutos",
+  "tiempoCoccion": "1 hora y 20 minutos",
+  "tiempoTotal": "2 horas",
+  "historia": {
+    "titulo": "La sopa que anuncia la Pascua griega",
+    "texto": "La magiritsa ocupa un lugar muy especial en la tradición de la Pascua ortodoxa griega. Se sirve tradicionalmente después de la celebración de la Resurrección, durante la noche del Sábado Santo, para marcar el final del periodo de ayuno de la Cuaresma. Su preparación aprovecha las menudencias del cordero que se cocinará para la comida del Domingo de Pascua. Con hierbas frescas, lechuga, arroz y avgolemono, representa una transición hacia el banquete festivo del día siguiente. Existen variaciones regionales y familiares en sus ingredientes y consistencia."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "700 g",
+      "nombre": "menudencias de cordero limpias, incluyendo hígado, corazón y pulmón"
+    },
+    {
+      "cantidad": "200 g",
+      "nombre": "intestinos de cordero, opcionales, cuidadosamente limpiados"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "cebolla grande finamente picada"
+    },
+    {
+      "cantidad": "8",
+      "nombre": "cebollitas de cambray picadas"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "lechuga romana grande cortada en tiras"
+    },
+    {
+      "cantidad": "1/2 taza",
+      "nombre": "eneldo fresco picado"
+    },
+    {
+      "cantidad": "1/4 taza",
+      "nombre": "perejil fresco picado, opcional"
+    },
+    {
+      "cantidad": "100 g",
+      "nombre": "arroz de grano corto o medio"
+    },
+    {
+      "cantidad": "2 litros",
+      "nombre": "caldo de cordero o pollo"
+    },
+    {
+      "cantidad": "60 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "huevos"
+    },
+    {
+      "cantidad": "2",
+      "nombre": "limones, su jugo"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra"
+    }
+  ],
+  "preparacion": [
+    "Solicitar al carnicero menudencias de cordero aptas para consumo y correctamente preparadas. Mantenerlas refrigeradas hasta el momento de cocinarlas.",
+    "Lavar y limpiar cuidadosamente las menudencias y, si se utilizan, los intestinos. Evitar salpicaduras y contaminación cruzada en la cocina.",
+    "Colocar las menudencias en una cacerola con agua y llevar a ebullición durante aproximadamente 10 minutos. Retirar, desechar el agua y dejar enfriar lo suficiente para manipularlas.",
+    "Picar las menudencias en trozos pequeños. Si se utilizan intestinos, deben estar perfectamente limpios y cocidos antes de incorporarlos a la preparación.",
+    "Calentar el aceite de oliva en una olla amplia. Sofreír la cebolla y las partes blancas de las cebollitas de cambray.",
+    "Agregar las menudencias picadas y cocinar durante aproximadamente 10 minutos, removiendo para que se integren los sabores.",
+    "Incorporar el caldo y llevar a ebullición. Bajar el fuego y cocinar hasta que las menudencias estén completamente cocidas y tiernas.",
+    "Agregar la lechuga, el eneldo, el perejil y las partes verdes de las cebollitas. Cocinar hasta que las hojas se reduzcan y estén suaves.",
+    "Incorporar el arroz y cocinar a fuego medio-bajo hasta que esté tierno, aproximadamente 15 a 20 minutos. Ajustar la cantidad de caldo según la consistencia deseada.",
+    "Para preparar el avgolemono, batir los huevos en un recipiente y añadir poco a poco el jugo de limón.",
+    "Tomar varios cucharones del caldo caliente de la sopa y agregarlos lentamente a la mezcla de huevo y limón, batiendo constantemente para templarla.",
+    "Retirar la olla del fuego y verter poco a poco el avgolemono, mezclando suavemente para integrar. No dejar que la sopa hierva después de añadir el huevo.",
+    "Ajustar la sal y la pimienta y servir caliente, decorando con eneldo fresco."
+  ],
+  "consejo": "La limpieza y cocción correcta de las menudencias es fundamental. El avgolemono debe incorporarse fuera del hervor para conseguir una textura sedosa y evitar que el huevo se corte. La sopa puede variar de consistencia según la tradición de cada familia.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir caliente como parte de la cena de Resurrección del Sábado Santo. Se puede acompañar con pan fresco y limón adicional. Es la preparación tradicional que precede al gran almuerzo de cordero del Domingo de Pascua.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Traditional Magiritsa - Argiro",
+    "url": "https://www.argiro.gr/en/recipe/magiritsa-traditional-greek-easter-soup/"
+  }
+},
+{
+  "id": "arni-sto-fourno",
+  "nombre": "Cordero pascual al horno con papas",
+  "nombreGriego": "Αρνί στο φούρνο με πατάτες",
+  "pronunciacionGriega": "Arní sto fúrno me patátes",
+  "categoria": "Plato fuerte",
+  "categoriaId": "plato-fuerte",
+  "descripcion": "Pierna o paletilla de cordero horneada lentamente con papas, ajo, limón, aceite de oliva y orégano griego. Una preparación festiva inspirada en los sabores de la Pascua familiar helénica.",
+  "imagen": "",
+  "destacada": false,
+  "estado": "Referencia pendiente de validación",
+  "estadoPublicacion": "publicada",
+  "porciones": 8,
+  "tiempoPreparacion": "25 minutos",
+  "tiempoCoccion": "2 horas y 30 minutos",
+  "tiempoTotal": "2 horas y 55 minutos, más el reposo",
+  "historia": {
+    "titulo": "El cordero, protagonista de la Pascua griega",
+    "texto": "El cordero tiene un lugar central en las celebraciones de la Pascua ortodoxa griega. En muchas regiones y familias se prepara entero o en piezas grandes sobre un asador, alrededor del cual se reúne la familia para celebrar el Domingo de Pascua. También es común prepararlo al horno, acompañado de papas, ajo, limón y orégano. Esta versión conserva los sabores tradicionales y permite disfrutar en casa de un platillo festivo, generoso y lleno de aroma."
+  },
+  "ingredientes": [
+    {
+      "cantidad": "2.5 kg",
+      "nombre": "pierna o paletilla de cordero con hueso"
+    },
+    {
+      "cantidad": "1.5 kg",
+      "nombre": "papas peladas y cortadas en gajos"
+    },
+    {
+      "cantidad": "6",
+      "nombre": "dientes de ajo, algunos enteros y otros en láminas"
+    },
+    {
+      "cantidad": "150 ml",
+      "nombre": "jugo de limón recién exprimido"
+    },
+    {
+      "cantidad": "120 ml",
+      "nombre": "aceite de oliva extra virgen"
+    },
+    {
+      "cantidad": "2 cucharadas",
+      "nombre": "orégano seco griego"
+    },
+    {
+      "cantidad": "250 ml",
+      "nombre": "caldo de cordero o pollo"
+    },
+    {
+      "cantidad": "1 cucharadita",
+      "nombre": "mostaza, opcional"
+    },
+    {
+      "cantidad": "1",
+      "nombre": "rama de romero fresco, opcional"
+    },
+    {
+      "cantidad": "Al gusto",
+      "nombre": "sal y pimienta negra recién molida"
+    }
+  ],
+  "preparacion": [
+    "Precalentar el horno a 200 °C.",
+    "Secar el cordero con papel de cocina. Realizar pequeñas incisiones en la superficie e introducir algunas láminas de ajo.",
+    "En un recipiente mezclar el jugo de limón, el aceite de oliva, el orégano, la mostaza opcional, la sal y la pimienta.",
+    "Untar el cordero con la mezcla por todos sus lados y colocarlo en una fuente amplia para horno.",
+    "Distribuir las papas alrededor del cordero y agregar los dientes de ajo restantes.",
+    "Verter el caldo en el fondo de la fuente y añadir el romero si se desea.",
+    "Cubrir la fuente con papel aluminio y hornear durante aproximadamente 1 hora y 30 minutos.",
+    "Retirar el papel aluminio, bañar el cordero con sus propios jugos y continuar horneando entre 45 y 60 minutos, hasta que esté dorado y las papas tiernas.",
+    "Durante la cocción, revisar el líquido de la fuente y agregar un poco de caldo caliente si fuera necesario para evitar que se sequen las papas.",
+    "Comprobar la temperatura interna del cordero con un termómetro alimentario y ajustar la cocción al punto deseado y a las recomendaciones de seguridad alimentaria.",
+    "Retirar del horno y dejar reposar el cordero entre 15 y 20 minutos antes de cortarlo.",
+    "Servir las piezas de cordero rodeadas de papas, bañadas con los jugos de limón, aceite y hierbas de la fuente."
+  ],
+  "consejo": "El limón, el ajo y el orégano son esenciales para el sabor de esta preparación. Cubrir inicialmente el cordero ayuda a conservar la humedad; descubrirlo al final permite obtener una superficie dorada. El reposo antes de cortar ayuda a conservar sus jugos.",
+  "consejoValidado": false,
+  "acompanamiento": "Servir con ensalada horiatiki, tzatziki, pan rústico y vino tinto. Es el platillo central de una mesa de Pascua griega, ideal para compartir en familia.",
+  "bebidas": [],
+  "fuente": {
+    "nombre": "Traditional Greek Roast Lamb with Potatoes",
+    "url": "https://veritaspress.com/resourcefFiles/PentecostRecipes.pdf"
+  }
 }
+
 
 ],
   "bebidas": [
