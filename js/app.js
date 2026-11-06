@@ -88,7 +88,7 @@ function construirNavegacion() {
 
         <span class="brand-name">
           Las Recetas de Gia Gia
-          <small>EL SABOR DE GRECIA</small>
+          <small>EL SABOR DEBE SER AUTÉNTICO · EL SABOR DE GRECIA</small>
         </span>
       </a>
 
