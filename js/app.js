@@ -205,18 +205,87 @@ function recetaCard(r) {
 // PÁGINA DE INICIO
 // ------------------------------------------------------------
 
+
 function mostrarInicio() {
 
-  const destacadas = recetasPublicadas()
-    .filter(r => r.destacada);
+  // ----------------------------------------------------------
+  // RECETAS PUBLICADAS AGRUPADAS POR CATEGORÍA
+  // ----------------------------------------------------------
 
-  $("featured-recipes").innerHTML = destacadas.length
-    ? destacadas.map(recetaCard).join("")
-    : `
-      <div class="empty-state">
-        <p>Próximamente compartiremos nuestras primeras recetas.</p>
-      </div>
+  const categoriasInicio = [
+    {
+      nombre: "Entradas",
+      aliases: ["entrada", "entradas"]
+    },
+    {
+      nombre: "Ensaladas",
+      aliases: ["ensalada", "ensaladas"]
+    },
+    {
+      nombre: "Platos fuertes",
+      aliases: ["plato fuerte", "platos fuertes"]
+    },
+    {
+      nombre: "Postres",
+      aliases: ["postre", "postres"]
+    }
+  ];
+
+  function normalizarCategoria(valor) {
+    return String(valor || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[-_]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  const recetas = recetasPublicadas();
+  const contenedorCategorias = $("home-category-recipes");
+
+  contenedorCategorias.innerHTML = categoriasInicio.map(categoria => {
+
+    const recetasCategoria = recetas.filter(receta => {
+
+      const id = normalizarCategoria(receta.categoriaId);
+      const nombre = normalizarCategoria(receta.categoria);
+
+      return categoria.aliases.includes(id) ||
+             categoria.aliases.includes(nombre);
+
+    });
+
+    // No mostrar categorías que todavía no tengan
+    // recetas publicadas.
+
+    if (recetasCategoria.length === 0) {
+      return "";
+    }
+
+    return `
+      <section class="featured category-group">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">NUESTRA COCINA</span>
+            <h3>${categoria.nombre}</h3>
+          </div>
+        </div>
+
+        <div class="recipe-grid">
+          ${recetasCategoria.map(recetaCard).join("")}
+        </div>
+
+      </section>
     `;
+
+  }).join("");
+
+
+  // ----------------------------------------------------------
+  // SECCIONES EDITORIALES DE LA PORTADA
+  // ----------------------------------------------------------
 
   const secciones = [
     ["◉", "Conoce a Gia Gia", "La historia detrás de nuestra cocina.", "gia-gia"],
