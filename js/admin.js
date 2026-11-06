@@ -42,7 +42,46 @@ function normalizarEstado(receta) {
   // No confundimos el campo "estado" anterior con el editorial.
   return "borrador";
 }
+function normalizarCategoriaId(receta) {
+  const valor = String(
+    receta.categoriaId || receta.categoria || ""
+  )
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .replace(/[_\s]+/g, "-");
 
+  const equivalencias = {
+    "entrada": "entrada",
+    "entradas": "entrada",
+    "ensalada": "ensalada",
+    "ensaladas": "ensalada",
+    "sopa": "sopa",
+    "sopas": "sopa",
+    "plato-fuerte": "plato-fuerte",
+    "platos-fuertes": "plato-fuerte",
+    "postre": "postre",
+    "postres": "postre",
+    "aderezo": "aderezo",
+    "aderezos": "aderezo"
+  };
+
+  return equivalencias[valor] || valor;
+}
+
+function nombreCategoria(id) {
+  const nombres = {
+    "entrada": "Entrada",
+    "ensalada": "Ensalada",
+    "sopa": "Sopa",
+    "plato-fuerte": "Plato fuerte",
+    "postre": "Postre",
+    "aderezo": "Aderezo"
+  };
+
+  return nombres[id] || id;
+}
 function normalizarDatos(datos) {
   if (!datos || typeof datos !== "object") {
     throw new Error("El archivo no contiene un objeto JSON válido.");
@@ -72,6 +111,12 @@ function normalizarDatos(datos) {
     if (!receta.historia || typeof receta.historia !== "object") {
       receta.historia = { titulo: "", texto: "" };
     }
+
+    if (!receta.pronunciacionGriega) {
+  receta.pronunciacionGriega = "";
+}
+
+receta.categoriaId = normalizarCategoriaId(receta);
   });
 
   return datos;
@@ -175,19 +220,20 @@ function actualizarListaRecetas() {
   const categoria = $("admin-filter-category").value;
 
   const recetas = contenido.recetas.filter(receta => {
-    const coincideTexto = [
-      receta.id,
-      receta.nombre,
-      receta.nombreGriego,
-      receta.descripcion
-    ].join(" ").toLowerCase().includes(texto);
+const coincideTexto = [
+  receta.id,
+  receta.nombre,
+  receta.nombreGriego,
+  receta.pronunciacionGriega,
+  receta.descripcion
+].join(" ").toLowerCase().includes(texto);
 
     const coincideEstado =
       estado === "todos" || normalizarEstado(receta) === estado;
 
-    const coincideCategoria =
-      categoria === "todos" ||
-      (receta.categoriaId || receta.categoria) === categoria;
+const coincideCategoria =
+  categoria === "todos" ||
+  normalizarCategoriaId(receta) === categoria;
 
     return coincideTexto && coincideEstado && coincideCategoria;
   });
@@ -422,8 +468,8 @@ function cargarFormulario(receta) {
 
   $("recipe-name").value = receta.nombre || "";
   $("recipe-greek").value = receta.nombreGriego || "";
-  $("recipe-category").value =
-    receta.categoriaId || receta.categoria || "entrada";
+  $("recipe-pronunciation").value = receta.pronunciacionGriega || "";
+  $("recipe-category").value = normalizarCategoriaId(receta);
 
   $("recipe-region").value = receta.region || "";
   $("recipe-status").value = normalizarEstado(receta);
@@ -520,11 +566,13 @@ function guardarReceta(evento) {
     ...original,
 
     id,
-    nombre: $("recipe-name").value.trim(),
-    nombreGriego: $("recipe-greek").value.trim(),
+    nombre: $("recipe-name").value.trim(),nombreGriego: $("recipe-greek").value.trim(),
 
-    categoria,
-    categoriaId: categoria,
+pronunciacionGriega:
+  $("recipe-pronunciation").value.trim(),
+
+categoria: nombreCategoria(categoria),
+categoriaId: categoria,
 
     region: $("recipe-region").value.trim(),
 
