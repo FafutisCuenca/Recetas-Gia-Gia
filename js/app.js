@@ -575,6 +575,8 @@ function mostrarReceta() {
 
 <h1>${escapar(r.nombre)}</h1>
 
+${valoracionEditorialHTML(r, "detail")}
+
 ${r.nombreGriego ? `
   <p class="recipe-greek-name">
     ${escapar(r.nombreGriego)}
